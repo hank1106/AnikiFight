@@ -18,20 +18,7 @@ public class AnikiOne : MonoBehaviour {
 		this.force = ttt;
 	}
 
-	public void Die() {
-
-		arrAllAudioSource[1].Play();
-		anim.SetTrigger("Die");
-		rg2d.velocity = Vector2.zero;
-		rg2d.isKinematic = true;
-		CircleCollider2D collider = GetComponent<CircleCollider2D>();
-		collider.enabled = false;
-		Destroy (collider);
-		GameControl.instance.CountDead ();
-
-	}
-
-	private float force  = 3.5f;
+	private float force  = 3f;
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
@@ -49,76 +36,43 @@ public class AnikiOne : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (Input.GetKeyDown(KeyCode.D)) {
+			if (rg2d.velocity.x < 3f) {
+				rg2d.velocity = new Vector2 (force, rg2d.velocity.y);
+			}
+		}
+		if (Input.GetKeyUp(KeyCode.D)) {
+			rg2d.velocity = new Vector2 (0, rg2d.velocity.y);
+		}
+
+       if (Input.GetKeyDown(KeyCode.A)) {
+		   if (rg2d.velocity.x > -3f) {
+				rg2d.velocity = new Vector2 (-force, rg2d.velocity.y);
+			}
+	   }
+		
+		if (Input.GetKeyUp(KeyCode.A)) {
+			rg2d.velocity = new Vector2 (0, rg2d.velocity.y);
+		}
+		
+		if (Input.GetKeyDown(KeyCode.W)) {
+			rg2d.velocity = new Vector2 (rg2d.velocity.x, 5f);
+			anim.SetTrigger("w");
+		}
+		
+		if (Input.GetKeyDown(KeyCode.J)) {
+			anim.SetTrigger("j");
+		}
+		
+		if (Input.GetKeyDown(KeyCode.K)) {
+			anim.SetTrigger("k");
+		}
+		
+		
+		
+		
+           
+
 	}
-	void OnCollisionEnter2D( Collision2D col){
-		if (col.gameObject.layer == 8 || col.gameObject.layer == 10) {
-			rg2d.velocity = new Vector2 (force, 0);
-		} else if (col.gameObject.layer == 9) {
-			rg2d.velocity = new Vector2 (-force, 0);
-		} else if (col.gameObject.name.Contains ("basket")) {
-			print ("DDDDDDDDDDD");
-			/*
-			rg2d.velocity = Vector2.zero;
-			rg2d.isKinematic = true;
-			CircleCollider2D collider = GetComponent<CircleCollider2D>();
-			collider.enabled = false;
-			Destroy (collider);
-			arrAllAudioSource[2].Play();
-			*/
-		} else if (col.gameObject.name.Contains ("Ground")) {
-			arrAllAudioSource[1].Play();
-			anim.SetTrigger("Die");
-			rg2d.velocity = Vector2.zero;
-			rg2d.isKinematic = true;
-			CircleCollider2D collider = GetComponent<CircleCollider2D>();
-			collider.enabled = false;
-			Destroy (collider);
-			GameControl.instance.CountDead ();
-		} else if (col.gameObject.name.Contains ("bigstick")) {
-			arrAllAudioSource[1].Play();
-			anim.SetTrigger("Die");
-			rg2d.velocity = Vector2.zero;
-			rg2d.isKinematic = true;
-			CircleCollider2D collider = GetComponent<CircleCollider2D>();
-			collider.enabled = false;
-			Destroy (collider);
-			GameControl.instance.CountDead ();
-		} else if (col.gameObject.name.Contains ("spring")) {
-			rg2d.velocity = new Vector2 (force, 2f);
-			print ("speed: " + rg2d.velocity.x);
-			arrAllAudioSource[0].Play();
-
-		} else if (col.gameObject.layer == 11) {
-			//to right
-			rg2d.velocity = new Vector2 (3f, 0);
-
-		}
-		else if (col.gameObject.layer == 12) {
-			rg2d.velocity = new Vector2 (-3f, 0);
-
-		}
-		float ppp = rg2d.velocity.x;
-		print (ppp);
 	
-	}
-	void OnTriggerEnter2D(Collider2D other){
-		if (other.GetComponents<Chicken>() != null && other.name == "basket") {
-			print ("basket" );
-			rg2d.velocity = Vector2.zero;
-			rg2d.isKinematic = true;
-			CircleCollider2D collider = GetComponent<CircleCollider2D>();
-			collider.enabled = false;
-			Destroy (collider);
-			arrAllAudioSource[2].Play();
-			GameControl.instance.Score ();
-		}else if(other.GetComponents<Chicken>() != null && other.name.Contains("Waterfall")){
-			print ("waterfall" );
-			rg2d.velocity = new Vector2 (rg2d.velocity.x * 0.05f, 0);
-		}else if(other.GetComponents<Chicken>() != null && other.name == "collider"){
-			rg2d.transform.localScale = new Vector2(-rg2d.transform.localScale.x, rg2d.transform.localScale.y);
-		}
-	}
-	public void changeDirection(){
-		force = -force;
-	}
 }
