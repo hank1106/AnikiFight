@@ -8,6 +8,8 @@ public class AnikiOne : MonoBehaviour {
 	private Rigidbody2D rg2d;
 	public AudioSource[] arrAllAudioSource;
 	public Animator anim;
+	private bool leftTurn = false;
+	private bool rightTurn = true;
 	//private Animator anim ;
 
 	public Rigidbody2D GetRigidbody2D() {
@@ -18,24 +20,42 @@ public class AnikiOne : MonoBehaviour {
 		this.force = ttt;
 	}
 
-	private float force  = 3f;
+	private float force  = 3.5f;
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
 		rg2d = GetComponent<Rigidbody2D> (); 
 
-			rg2d.transform.localScale = new Vector2(-rg2d.transform.localScale.x, rg2d.transform.localScale.y);
+			//rg2d.transform.localScale = new Vector2(-rg2d.transform.localScale.x, rg2d.transform.localScale.y);
 		
 		if (SceneManager.GetActiveScene ().name == "Level0")
-			force = 3.5f;
 
-		rg2d.velocity = new Vector2 (force, 0);
+		rg2d.velocity = new Vector2 (0, 0);
 		arrAllAudioSource = GetComponents<AudioSource>();
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		float player = GameObject.Find("Aniki").transform.position.x;
+		float AI = GameObject.Find("Enemy").transform.position.x;
+		
+		if (AI - player > 2f) {
+				if (leftTurn) {
+					 rg2d.transform.localScale = new Vector2(-rg2d.transform.localScale.x, rg2d.transform.localScale.y);
+					leftTurn = false;
+					rightTurn = true;
+				}
+		}
+		
+		if (AI - player < -2f) {
+			   if (rightTurn) {
+					 rg2d.transform.localScale = new Vector2(-rg2d.transform.localScale.x, rg2d.transform.localScale.y);
+					rightTurn = false;
+					leftTurn = true;
+				}
+	   }
+		
 		if (Input.GetKeyDown(KeyCode.D)) {
 			if (rg2d.velocity.x < 3f) {
 				rg2d.velocity = new Vector2 (force, rg2d.velocity.y);
@@ -56,7 +76,7 @@ public class AnikiOne : MonoBehaviour {
 		}
 		
 		if (Input.GetKeyDown(KeyCode.W)) {
-			rg2d.velocity = new Vector2 (rg2d.velocity.x, 5f);
+			rg2d.velocity = new Vector2 (rg2d.velocity.x, 9f);
 			anim.SetTrigger("w");
 		}
 		
