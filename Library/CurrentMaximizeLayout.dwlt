@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1664
     height: 913
-  m_MinSize: {x: 713, y: 492}
-  m_MaxSize: {x: 18008, y: 14042}
+  m_MinSize: {x: 705, y: 471}
+  m_MaxSize: {x: 18002, y: 14021}
   vertical: 0
-  controlID: 302
+  controlID: 9670
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -121,10 +121,10 @@ MonoBehaviour:
     y: 0
     width: 839
     height: 913
-  m_MinSize: {x: 202, y: 342}
-  m_MaxSize: {x: 4002, y: 8042}
+  m_MinSize: {x: 200, y: 321}
+  m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
-  controlID: 185
+  controlID: 9526
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -213,9 +213,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 8.972597
+    m_Target: 14.879292
     speed: 2
-    m_Value: 8.972597
+    m_Value: 14.879292
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -286,8 +286,12 @@ MonoBehaviour:
     m_ValueSerializationHelper:
     - {x: 454.2, y: 239.8}
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 0}
-  m_BreadCrumbs: []
+  m_AnimatorController: {fileID: 9100000, guid: 9459a4dc9f5294941a6cc3907029d8dc,
+    type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: 1107300733675236308, guid: 9459a4dc9f5294941a6cc3907029d8dc,
+      type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
   blendTreeGraph: {fileID: 0}
@@ -343,10 +347,10 @@ MonoBehaviour:
     y: 0
     width: 463
     height: 913
-  m_MinSize: {x: 234, y: 492}
-  m_MaxSize: {x: 10004, y: 14042}
+  m_MinSize: {x: 230, y: 471}
+  m_MaxSize: {x: 10000, y: 14021}
   vertical: 1
-  controlID: 237
+  controlID: 9600
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -365,8 +369,8 @@ MonoBehaviour:
     y: 0
     width: 463
     height: 326
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 11}
@@ -400,8 +404,8 @@ MonoBehaviour:
     height: 305
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
+    m_SelectedIDs: 1e270000
+    m_LastClickedID: 10014
     m_ExpandedIDs: 1afcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -488,18 +492,19 @@ MonoBehaviour:
     m_ScenePaths: []
     m_ShowAllHits: 0
     m_SearchArea: 0
-    m_Folders: []
+    m_Folders:
+    - Assets/Animation
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: /Users/lihongrui/Desktop/anikiFight/AnikiFight
+  m_LastProjectPath: /Users/lihongrui/Desktop/AnikFight
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 0a260000
     m_LastClickedID: 9738
-    m_ExpandedIDs: f4250000122600003c260000462600007e260000c4260000da260000
+    m_ExpandedIDs: fa25000018260000422600004c260000ca260000ce260000e0260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -525,9 +530,9 @@ MonoBehaviour:
       m_ResourceFile: 
   m_AssetTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: 1e270000
     m_LastClickedID: 0
-    m_ExpandedIDs: f4250000122600003c260000462600007e260000c4260000da260000
+    m_ExpandedIDs: fa25000018260000422600004c260000ca260000ce260000e0260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -552,8 +557,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 1e270000
+    m_LastClickedInstanceID: 10014
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
@@ -659,7 +664,7 @@ MonoBehaviour:
     y: 94
     width: 360
     height: 892
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 124.00391}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: -160

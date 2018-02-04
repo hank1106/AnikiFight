@@ -76,7 +76,7 @@ public class AnikiOne : MonoBehaviour {
 		}
 		
 		if (Input.GetKeyDown(KeyCode.W)) {
-			rg2d.velocity = new Vector2 (rg2d.velocity.x, 9f);
+			rg2d.velocity = new Vector2 (rg2d.velocity.x, 18f);
 			anim.SetTrigger("w");
 		}
 		
