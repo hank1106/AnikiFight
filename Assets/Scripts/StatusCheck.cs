@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using DA;
 
 namespace SC {
 
@@ -50,6 +51,22 @@ namespace SC {
             float distance = Mathf.Sqrt((AIX - playerX) * (AIX - playerX) + (AIY - playerY) * (AIY - playerY));
 
             if (Input.GetKeyDown(KeyCode.J) && distance <= LIGHT_ATTACK)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public static bool AnikiBeingHitCheck()
+        {
+            float playerX = GameObject.Find("Aniki").transform.position.x;
+            float playerY = GameObject.Find("Aniki").transform.position.y;
+            float AIX = GameObject.Find("Enemy").transform.position.x;
+            float AIY = GameObject.Find("Enemy").transform.position.y;
+
+            float distance = Mathf.Sqrt((AIX - playerX) * (AIX - playerX) + (AIY - playerY) * (AIY - playerY));
+
+            if (DumbAI.IS_COMBAT_BEING_USED && distance <= LIGHT_ATTACK)
             {
                 return true;
             }

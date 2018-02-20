@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
+using System;
+using System.Globalization;
+
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -9,135 +12,141 @@ using SC;
 
 
 
+namespace DA {
+	public class DumbAI : MonoBehaviour {
 
-public class DumbAI : MonoBehaviour {
+		public static bool IS_COMBAT_BEING_USED = false;
+		private Rigidbody2D rg2d;
+		private bool leftTurn = false;
+		private bool rightTurn = true;
+		private int countCombo = 0;
+    	private bool waiting = false;
+    	private float start_wating_time;
 
-	private Rigidbody2D rg2d;
-	private bool leftTurn = false;
-	private bool rightTurn = true;
-	private int countCombo = 0;
-    private bool waiting = false;
-    private float start_wating_time;
+    	private const float WAITING_TIME = 3.0f;
+    	private const int WAIT_FOR_A_WHILE = 0;
 
-    private const float WAITING_TIME = 3.0f;
-    private const int WAIT_FOR_A_WHILE = 0;
     
 
-    //Random random = new Random();
+    	//Random random = new Random();
 	
 	
-	public AudioSource[] arrAllAudioSource;
-	public Animator anim;
-	private float force  = 0;
+		public AudioSource[] arrAllAudioSource;
+		public Animator anim;
+		private float force  = 0;
 
-	private Rigidbody2D GetRigidbody2D() {
-		return this.rg2d;
-	}
+		private Rigidbody2D GetRigidbody2D() {
+			return this.rg2d;
+		}
 
-	private void SetForce(float ttt) {
-		this.force = ttt;
-	}
+		private void SetForce(float ttt) {
+			this.force = ttt;
+		}
 
-    public void Combat()
-    {
-        if (countCombo < 2)
-        {
-            anim.SetTrigger("j");
-            countCombo++;
-        }
-        else
-        {
-            anim.SetTrigger("k");
-        }
-    }
+    	public void Combat()
+    	{
+        	IS_COMBAT_BEING_USED = true;
+        	if (countCombo < 2)
+        	{
+            	anim.SetTrigger("j");
+            	countCombo++;
+        	}
+        	else
+        	{
+            	anim.SetTrigger("k");
+        	}
+        	System.Threading.Thread.Sleep(500);
+        	IS_COMBAT_BEING_USED = false;
+    	}
 
-    // Use this for initialization
-    void Start () {
-		anim = GetComponent<Animator>();
-		rg2d = GetComponent<Rigidbody2D> (); 
+    	// Use this for initialization
+    	void Start () {
+			anim = GetComponent<Animator>();
+			rg2d = GetComponent<Rigidbody2D> (); 
 
 			//rg2d.transform.localScale = new Vector2(-rg2d.transform.localScale.x, rg2d.transform.localScale.y);
 		
-		if (SceneManager.GetActiveScene ().name == "Level0")
+			if (SceneManager.GetActiveScene ().name == "Level0")
 
-		rg2d.velocity = new Vector2 (0, 0);
-		arrAllAudioSource = GetComponents<AudioSource>();
+			rg2d.velocity = new Vector2 (0, 0);
+			arrAllAudioSource = GetComponents<AudioSource>();
 
-	}
+		}
 	
-	// Update is called once per frame
-	void Update () {
-        float playerX = GameObject.Find("Aniki").transform.position.x;
-        float AIX = GameObject.Find("Enemy").transform.position.x;
-        float playerY = GameObject.Find("Aniki").transform.position.y;
-        float AIY = GameObject.Find("Enemy").transform.position.y;
-        if(waiting == true)
-        {
-            if (Time.time - start_wating_time >= WAITING_TIME)
-            {
-                waiting = false;
-            }
-        }
+		// Update is called once per frame
+		void Update () {
+			Combat();
+        	float playerX = GameObject.Find("Aniki").transform.position.x;
+        	float AIX = GameObject.Find("Enemy").transform.position.x;
+        	float playerY = GameObject.Find("Aniki").transform.position.y;
+        	float AIY = GameObject.Find("Enemy").transform.position.y;
+        	if(waiting == true)
+        	{
+            	if (Time.time - start_wating_time >= WAITING_TIME)
+            	{
+                	waiting = false;
+            	}
+        	}
 
 
-        if (waiting == false) {
-            if (AIX - playerX > 2f)
-            {
-                if (rg2d.velocity.x < 3f)
-                {
-                    rg2d.velocity = new Vector2(-3f * Random.Range(0.1f, 0.7f), rg2d.velocity.y);
-                    if (leftTurn)
-                    {
-                        rg2d.transform.localScale = new Vector2(-rg2d.transform.localScale.x, rg2d.transform.localScale.y);
-                        leftTurn = false;
-                        rightTurn = true;
-                    }
+        	if (waiting == false) {
+            	if (AIX - playerX > 2f)
+            	{
+                	if (rg2d.velocity.x < 3f)
+                	{
+                    	rg2d.velocity = new Vector2(-3f * UnityEngine.Random.Range(0.1f, 0.7f), rg2d.velocity.y);
+                    	if (leftTurn)
+                    	{
+                        	rg2d.transform.localScale = new Vector2(-rg2d.transform.localScale.x, rg2d.transform.localScale.y);
+                        	leftTurn = false;
+                        	rightTurn = true;
+                    	}
 
-                }
+                	}
 
-            }
+            	}
 
-            if (AIX - playerX < -2f)
-            {
-                if (rg2d.velocity.x > -3f)
-                {
-                    rg2d.velocity = new Vector2(3f * Random.Range(0.1f, 0.7f), rg2d.velocity.y);
-                    if (rightTurn)
-                    {
-                        rg2d.transform.localScale = new Vector2(-rg2d.transform.localScale.x, rg2d.transform.localScale.y);
-                        rightTurn = false;
-                        leftTurn = true;
-                    }
+            	if (AIX - playerX < -2f)
+            	{
+                	if (rg2d.velocity.x > -3f)
+                	{
+                    	rg2d.velocity = new Vector2(3f * UnityEngine.Random.Range(0.1f, 0.7f), rg2d.velocity.y);
+                    	if (rightTurn)
+                    	{
+                        	rg2d.transform.localScale = new Vector2(-rg2d.transform.localScale.x, rg2d.transform.localScale.y);
+                        	rightTurn = false;
+                        	leftTurn = true;
+                    	}
 
-                }
-            }
+                	}
+            	}
 
-        }
+        	}
         
         
 
-        switch(CheckStatus())
-        {
-            case WAIT_FOR_A_WHILE:
-                if(waiting == true)
-                {
-                    if(Time.time - start_wating_time >= 2)
-                    {
-                        waiting = false;
-                    }
-                }
-                else
-                {
-                    waiting = true;
-                    start_wating_time = Time.time;
-                }
+        	switch(CheckStatus())
+        	{
+            	case WAIT_FOR_A_WHILE:
+                	if(waiting == true)
+                	{
+                    	if(Time.time - start_wating_time >= 2)
+                    	{
+                        	waiting = false;
+                    	}
+                	}
+                	else
+                	{
+                    	waiting = true;
+                    	start_wating_time = Time.time;
+                	}	
                 
 
-                //rg2d.velocity = new Vector2(0, rg2d.velocity.y);
-                break;
-            default:
-                break;
-        }
+                	//rg2d.velocity = new Vector2(0, rg2d.velocity.y);
+                	break;
+            	default:
+                	break;
+        	}
         //StatusCheck();
 		
 		//float distance = (AIX - playerX) * (AIX - playerX) + (AIY - playerY) * (AIY - playerY);
@@ -181,23 +190,24 @@ public class DumbAI : MonoBehaviour {
 	
            
 
-	}
+		}
 
-    int CheckStatus() {
-        float playerX = GameObject.Find("Aniki").transform.position.x;
-        float AIX = GameObject.Find("Enemy").transform.position.x;
-        float playerY = GameObject.Find("Aniki").transform.position.y;
-        float AIY = GameObject.Find("Enemy").transform.position.y;
+    	int CheckStatus() {
+        	float playerX = GameObject.Find("Aniki").transform.position.x;
+        	float AIX = GameObject.Find("Enemy").transform.position.x;
+        	float playerY = GameObject.Find("Aniki").transform.position.y;
+        	float AIY = GameObject.Find("Enemy").transform.position.y;
 
-        if (StatusCheck.BeingHitCheck())
-        {
-            return 0;
-        }
-        else
-        {
+        	if (StatusCheck.BeingHitCheck())
+        	{
+            	return 0;
+        	}
+        	else
+        	{
 
-        }
-        return -1;
-    }
+        	}
+        	return -1;
+    	}
 	
+	}
 }

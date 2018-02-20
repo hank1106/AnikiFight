@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using SC;
 public class AnikiOne : MonoBehaviour {
 
 	private Rigidbody2D rg2d;
@@ -37,6 +38,7 @@ public class AnikiOne : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		print(CheckStatus());
 		float player = GameObject.Find("Aniki").transform.position.x;
 		float AI = GameObject.Find("Enemy").transform.position.x;
 		
@@ -87,12 +89,23 @@ public class AnikiOne : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.K)) {
 			anim.SetTrigger("k");
 		}
-		
-		
-		
-		
-           
+    }
 
-	}
-	
+    int CheckStatus() {
+        	float playerX = GameObject.Find("Aniki").transform.position.x;
+        	float AIX = GameObject.Find("Enemy").transform.position.x;
+        	float playerY = GameObject.Find("Aniki").transform.position.y;
+        	float AIY = GameObject.Find("Enemy").transform.position.y;
+
+        	if (StatusCheck.BeingHitCheck())
+        	{
+            	return 0;
+        	}
+        	else
+        	{
+
+        	}
+        	return -1;
+    	} 
+
 }
