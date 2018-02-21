@@ -14,6 +14,7 @@ public class AnikiOne : MonoBehaviour {
 	private bool rightTurn = true;
 	private bool waiting = false;
 	private float start_wating_time;
+	private const float WAITING_TIME = 0.2f;
 	//private Animator anim ;
 
 	public Rigidbody2D GetRigidbody2D() {
@@ -98,8 +99,7 @@ public class AnikiOne : MonoBehaviour {
         {
            	if(waiting == true)
             {
-                print(Time.time - start_wating_time);
-                if(Time.time - start_wating_time >= 0.5)
+                if(Time.time - start_wating_time >= WAITING_TIME)
                 {
                     waiting = false;
                 }
