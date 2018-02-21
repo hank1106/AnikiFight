@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using DA;
+using System;
+using System.Globalization;
 
 namespace SC {
 
@@ -57,7 +59,7 @@ namespace SC {
             return false;
         }
 
-        public static bool AnikiBeingHitCheck()
+        public static bool WithinAttackDistance()
         {
             float playerX = GameObject.Find("Aniki").transform.position.x;
             float playerY = GameObject.Find("Aniki").transform.position.y;
@@ -65,8 +67,7 @@ namespace SC {
             float AIY = GameObject.Find("Enemy").transform.position.y;
 
             float distance = Mathf.Sqrt((AIX - playerX) * (AIX - playerX) + (AIY - playerY) * (AIY - playerY));
-
-            if (DumbAI.IS_COMBAT_BEING_USED && distance <= LIGHT_ATTACK)
+            if (distance <= LIGHT_ATTACK)
             {
                 return true;
             }

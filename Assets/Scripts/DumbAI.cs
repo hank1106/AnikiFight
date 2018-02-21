@@ -15,7 +15,7 @@ using SC;
 namespace DA {
 	public class DumbAI : MonoBehaviour {
 
-		public static bool IS_COMBAT_BEING_USED = false;
+		public static bool IS_ANIKI_BEING_ATTACKED = false;
 		private Rigidbody2D rg2d;
 		private bool leftTurn = false;
 		private bool rightTurn = true;
@@ -45,7 +45,6 @@ namespace DA {
 
     	public void Combat()
     	{
-        	IS_COMBAT_BEING_USED = true;
         	if (countCombo < 2)
         	{
             	anim.SetTrigger("j");
@@ -55,8 +54,14 @@ namespace DA {
         	{
             	anim.SetTrigger("k");
         	}
-        	System.Threading.Thread.Sleep(500);
-        	IS_COMBAT_BEING_USED = false;
+            if(StatusCheck.WithinAttackDistance())
+            {
+                IS_ANIKI_BEING_ATTACKED = true;
+            }
+            else
+            {
+                IS_ANIKI_BEING_ATTACKED = false;
+            }
     	}
 
     	// Use this for initialization
@@ -192,7 +197,8 @@ namespace DA {
 
 		}
 
-    	int CheckStatus() {
+    	int CheckStatus() 
+        {
         	float playerX = GameObject.Find("Aniki").transform.position.x;
         	float AIX = GameObject.Find("Enemy").transform.position.x;
         	float playerY = GameObject.Find("Aniki").transform.position.y;

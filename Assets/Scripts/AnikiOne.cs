@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using SC;
+using DA;
 public class AnikiOne : MonoBehaviour {
 
 	private Rigidbody2D rg2d;
@@ -11,6 +12,8 @@ public class AnikiOne : MonoBehaviour {
 	public Animator anim;
 	private bool leftTurn = false;
 	private bool rightTurn = true;
+	private bool waiting = false;
+	private float start_wating_time;
 	//private Animator anim ;
 
 	public Rigidbody2D GetRigidbody2D() {
@@ -38,74 +41,87 @@ public class AnikiOne : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		print(CheckStatus());
-		float player = GameObject.Find("Aniki").transform.position.x;
-		float AI = GameObject.Find("Enemy").transform.position.x;
+		if(waiting == false)
+		{
+			float player = GameObject.Find("Aniki").transform.position.x;
+			float AI = GameObject.Find("Enemy").transform.position.x;
 		
-		if (AI - player > 2f) {
+			if (AI - player > 2f) {
 				if (leftTurn) {
 					 rg2d.transform.localScale = new Vector2(-rg2d.transform.localScale.x, rg2d.transform.localScale.y);
 					leftTurn = false;
 					rightTurn = true;
 				}
-		}
+			}
 		
-		if (AI - player < -2f) {
+			if (AI - player < -2f) {
 			   if (rightTurn) {
-					 rg2d.transform.localScale = new Vector2(-rg2d.transform.localScale.x, rg2d.transform.localScale.y);
+					rg2d.transform.localScale = new Vector2(-rg2d.transform.localScale.x, rg2d.transform.localScale.y);
 					rightTurn = false;
 					leftTurn = true;
 				}
-	   }
+	   		}
 		
-		if (Input.GetKeyDown(KeyCode.D)) {
-			if (rg2d.velocity.x < 3f) {
-				rg2d.velocity = new Vector2 (force, rg2d.velocity.y);
+			if (Input.GetKeyDown(KeyCode.D)) {
+				if (rg2d.velocity.x < 3f) {
+					rg2d.velocity = new Vector2 (force, rg2d.velocity.y);
+				}
 			}
-		}
-		if (Input.GetKeyUp(KeyCode.D)) {
-			rg2d.velocity = new Vector2 (0, rg2d.velocity.y);
-		}
+			if (Input.GetKeyUp(KeyCode.D)) {
+				rg2d.velocity = new Vector2 (0, rg2d.velocity.y);
+			}
 
-       if (Input.GetKeyDown(KeyCode.A)) {
-		   if (rg2d.velocity.x > -3f) {
-				rg2d.velocity = new Vector2 (-force, rg2d.velocity.y);
+       		if (Input.GetKeyDown(KeyCode.A)) {
+		   		if (rg2d.velocity.x > -3f) {
+					rg2d.velocity = new Vector2 (-force, rg2d.velocity.y);
+				}
+	   		}
+		
+			if (Input.GetKeyUp(KeyCode.A)) {
+				rg2d.velocity = new Vector2 (0, rg2d.velocity.y);
 			}
-	   }
 		
-		if (Input.GetKeyUp(KeyCode.A)) {
-			rg2d.velocity = new Vector2 (0, rg2d.velocity.y);
-		}
+			if (Input.GetKeyDown(KeyCode.W)) {
+				rg2d.velocity = new Vector2 (rg2d.velocity.x, 18f);
+				anim.SetTrigger("w");
+			}
 		
-		if (Input.GetKeyDown(KeyCode.W)) {
-			rg2d.velocity = new Vector2 (rg2d.velocity.x, 18f);
-			anim.SetTrigger("w");
-		}
+			if (Input.GetKeyDown(KeyCode.J)) {
+				anim.SetTrigger("j");
+			}
 		
-		if (Input.GetKeyDown(KeyCode.J)) {
-			anim.SetTrigger("j");
+			if (Input.GetKeyDown(KeyCode.K)) {
+				anim.SetTrigger("k");
+			}
 		}
-		
-		if (Input.GetKeyDown(KeyCode.K)) {
-			anim.SetTrigger("k");
-		}
+		if(isBeingHit())
+        {
+           	if(waiting == true)
+            {
+                print(Time.time - start_wating_time);
+                if(Time.time - start_wating_time >= 0.5)
+                {
+                    waiting = false;
+                }
+            }
+            else
+            {
+                waiting = true;
+                start_wating_time = Time.time;
+            }
+        }
     }
 
-    int CheckStatus() {
-        	float playerX = GameObject.Find("Aniki").transform.position.x;
-        	float AIX = GameObject.Find("Enemy").transform.position.x;
-        	float playerY = GameObject.Find("Aniki").transform.position.y;
-        	float AIY = GameObject.Find("Enemy").transform.position.y;
-
-        	if (StatusCheck.BeingHitCheck())
-        	{
-            	return 0;
-        	}
-        	else
-        	{
-
-        	}
-        	return -1;
-    	} 
+    bool isBeingHit() 
+    {
+        if(DumbAI.IS_ANIKI_BEING_ATTACKED)
+        {
+        	return true;
+        }
+        else
+        {
+        	return false;
+        }
+    }
 
 }
