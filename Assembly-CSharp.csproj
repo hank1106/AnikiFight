@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4B6C0F54-36FF-CCF1-4331-4AF0CDCC70A5}</ProjectGuid>
+    <ProjectGuid>{2CE2612F-DFFE-0539-F260-07041EE6B0C7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -52,7 +52,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\AnikiOne.cs" />
+     <Compile Include="Assets\Scripts\DataModel.cs" />
      <Compile Include="Assets\Scripts\DumbAI.cs" />
+     <Compile Include="Assets\Scripts\StatusCheck.cs" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
