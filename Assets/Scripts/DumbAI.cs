@@ -13,14 +13,23 @@ public class DumbAI : MonoBehaviour {
 	private Rigidbody2D rg2d;
 	private bool leftTurn = false;
 	private bool rightTurn = true;
+	private bool waiting = false;
+	private bool invincible = false;
+	
+	private int attackRate = 20;
 	private int countCombo = 0;
-    private bool waiting = false;
+	
     private float start_wating_time;
+	private float start_invincible_time;
 	private float random_decision_time;
 	private int playerType = -1;
-	private int health = 10;
+	private int health = 20;
 
-    private const float WAITING_TIME = 3.0f;
+    private const float WAITING_TIME = 2f;
+	private const float INVINCIBLE_TIME = 0.7f;
+	private const int LIGHT_ATTACK_FREQUENCY = 10;
+	private const int HEAVY_ATTACK_FREQUENCY = 20;
+	private int ATTACK_WAITING_TIME = 0;
 	
     private const int WAIT_FOR_A_WHILE = 0;
 	private const int IDLE = -1;
@@ -44,14 +53,17 @@ public class DumbAI : MonoBehaviour {
         {
             anim.SetTrigger("j");
             countCombo++;
+			ATTACK_WAITING_TIME = LIGHT_ATTACK_FREQUENCY;
         }
         else
         {
             anim.SetTrigger("k");
 			countCombo = 0;
+			ATTACK_WAITING_TIME = HEAVY_ATTACK_FREQUENCY;
         }
 		
 		IS_ANIKI_BEING_ATTACKED = true;
+		Model.AIeffectiveAttack ++;
 		
     }
 
@@ -70,6 +82,7 @@ public class DumbAI : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+		GameObject.Find("Blood2").transform.localScale = new Vector3(8.05f * health / 20 , 0.34f, 0);
 		float playerX = GameObject.Find("Aniki").transform.position.x;
         float AIX = GameObject.Find("Enemy").transform.position.x;
         float playerY = GameObject.Find("Aniki").transform.position.y;
@@ -81,18 +94,18 @@ public class DumbAI : MonoBehaviour {
         
 		IS_ANIKI_BEING_ATTACKED = false;
 
-        switch(CheckStatus())
+        switch (CheckStatus())
         {
             case WAIT_FOR_A_WHILE:
-                if(waiting == true)
-                {
-                    if(Time.time - start_wating_time >= 2)
-                    {
+                if (waiting == true) {
+					
+                    if (Time.time - start_wating_time >= WAITING_TIME) {
                         waiting = false;
+						invincible = true;
+						start_invincible_time = Time.time;
                     }
-                }
-                else
-                {
+					
+                } else {
                     waiting = true;
                     start_wating_time = Time.time;
                 }
@@ -100,12 +113,19 @@ public class DumbAI : MonoBehaviour {
                 break;
 				
 			case IDLE:
+				if (invincible) {
+					if (start_invincible_time - Time.time >= INVINCIBLE_TIME) {
+						invincible = false;
+					}
+				}
 				
-				if(Time.time - start_wating_time >= 2)
-                    {
+				if (Time.time - start_wating_time >= WAITING_TIME) {
+					
 						int run = StatusCheck.PositionCheck(playerX, playerY, AIX, AIY, rg2d);
-                        if (run == 1) {
+					
+                        if (run == 1 && attackRate >= ATTACK_WAITING_TIME) {
 							Combat();
+							attackRate = 0;
 						} else if (run == 0 && playerType == 1) {
 							MoveAway();
 						} else {
@@ -117,10 +137,10 @@ public class DumbAI : MonoBehaviour {
 				
             case DIE:
 				anim.SetTrigger("die");
-                break;
+				break;
         }
 		
-		
+		attackRate ++;
 
 	}
 
@@ -129,11 +149,12 @@ public class DumbAI : MonoBehaviour {
         float AIX = GameObject.Find("Enemy").transform.position.x;
         float playerY = GameObject.Find("Aniki").transform.position.y;
         float AIY = GameObject.Find("Enemy").transform.position.y;
+		int hitResult = StatusCheck.BeingHitCheck();
 
-        if (StatusCheck.BeingHitCheck())
+        if (hitResult != 0 && !invincible)
         {
 			Model.PeffectiveAttack ++;
-			health--;
+			health = hitResult == 1 ? health - 1 : health - 2;
 			anim.SetTrigger("hit");
 			return 0;
         } else if (health <= 0) {
@@ -155,7 +176,7 @@ public class DumbAI : MonoBehaviour {
         float playerY = GameObject.Find("Aniki").transform.position.y;
         float AIY = GameObject.Find("Enemy").transform.position.y;
 		
-		if (randnum > 9.5f ) {
+		if (randnum > 9.7f ) {
 			randnum = -1;
 		} else {
 			randnum = 1;
@@ -173,7 +194,7 @@ public class DumbAI : MonoBehaviour {
 
 
         if (waiting == false) {
-			if (Random.Range(0, 10f) > 9.5f) {
+			if (Random.Range(0, 10f) > 9.8f) {
 				anim.SetTrigger("w");
 				rg2d.velocity = new Vector2 (rg2d.velocity.x, 8f);
 			}

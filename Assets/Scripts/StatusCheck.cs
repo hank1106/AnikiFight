@@ -11,7 +11,12 @@ namespace SC {
     {
 
         private const float LIGHT_ATTACK = 2.5f;
-		private const float HEAVY_ATTACK = 0.3f;
+		private const float HEAVY_ATTACK = 3f;
+		
+		public static int getHitType = 0;
+		private const int NONE = 0;
+		private const int LIGHT = 1;
+		private const int HEAVY = 2;
 
         public static int PositionCheck(float playerX, float playerY, float AIX, float AIY, Rigidbody2D rg2d)
         {
@@ -40,7 +45,7 @@ namespace SC {
             return false;
         }
 
-        public static bool BeingHitCheck()
+        public static int BeingHitCheck()
         {
             float playerX = GameObject.Find("Aniki").transform.position.x;
             float playerY = GameObject.Find("Aniki").transform.position.y;
@@ -49,14 +54,14 @@ namespace SC {
 
             float distance = Mathf.Sqrt((AIX - playerX) * (AIX - playerX) + (AIY - playerY) * (AIY - playerY));
 
-            if (Input.GetKeyDown(KeyCode.J) && distance <= LIGHT_ATTACK)
+            if (getHitType == 1 && distance <= LIGHT_ATTACK)
             {
-                return true;
-            } else if (Input.GetKeyDown(KeyCode.K) && distance <= HEAVY_ATTACK) {
-				return true;
+                return 1;
+            } else if (getHitType == 2 && distance <= HEAVY_ATTACK) {
+				return 2;
 				
 			}
-            return false;
+            return 0;
         }
 
     }
