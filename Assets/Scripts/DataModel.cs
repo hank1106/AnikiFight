@@ -12,7 +12,7 @@ namespace DM {
 		public static int AIeffectiveDefense = 1;
 		public static int PeffectiveAttack = 1;
 		public static int PeffectiveDefense = 1;
-		public static int InputAttack = 0;
+		public static int InputAttack = 1;
 		public static int RunAway = 0;
 
 		private static float x1 = 0;
@@ -27,10 +27,12 @@ namespace DM {
 		
         public static int DataProcess()
         {
-            x1 = InputAttack / PeffectiveAttack;
+            x1 = PeffectiveAttack / InputAttack;
 			x2 = RunAway;
 			x3 = PeffectiveAttack / PeffectiveDefense - 1;
 			x4 = AIeffectiveAttack / AIeffectiveDefense - 1;
+			
+			Vector4 Features = new Vector4(x1, x2, x3, x4);
 			
 			float Y = 0.1f * x1 + 0.9f * x2;
 			float X = x3 - x4;

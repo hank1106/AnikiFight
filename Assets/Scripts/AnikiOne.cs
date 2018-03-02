@@ -10,8 +10,10 @@ public class AnikiOne : MonoBehaviour {
 	private Rigidbody2D rg2d;
 	public AudioSource[] arrAllAudioSource;
 	public Animator anim;
+	AnimatorClipInfo[] m_CurrentClipInfo;
 	
 	private int attackRate = 1;
+	private int LightningCoolDown = 0;
 	
 	private bool dead = false;
 	private bool leftTurn = false;
@@ -27,7 +29,8 @@ public class AnikiOne : MonoBehaviour {
 	private const int LIGHT_ATTACK_FREQUENCY = 10;
 	private const int HEAVY_ATTACK_FREQUENCY = 20;
 	private int ATTACK_WAITING_TIME = 0;
-	private int health = 50;
+	private int health = 30;
+	BoxCollider2D collider;
 	//private Animator anim ;
 
 	public Rigidbody2D GetRigidbody2D() {
@@ -37,18 +40,36 @@ public class AnikiOne : MonoBehaviour {
 	private float force  = 3.5f;
 	// Use this for initialization
 	void Start () {
+		
 		anim = GetComponent<Animator>();
 		rg2d = GetComponent<Rigidbody2D> (); 
+		StatusCheck.PlightningStatus = false;
+		collider = GetComponent<BoxCollider2D>();
 		
 	}
+	
+	void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name.Contains ("Enemy") 
+			&& !StatusCheck.PlightningStatus 
+		    && StatusCheck.AIlightningStatus) {
+			
+			health = health - 2;
+			rg2d.velocity = new Vector2 (0, 4f);
+			GameControl.instance.ComboFail();
+			anim.SetTrigger("hit");
+			waiting = true;
+            start_wating_time = Time.time;
+		}
+    }
 	
 	// Update is called once per frame
 	void Update () {
 		float player = GameObject.Find("Aniki").transform.position.x;
 		float AI = GameObject.Find("Enemy").transform.position.x;
-		StatusCheck.getHitType = 0;
+		StatusCheck.AIgetHitType = 0;
 		
-		GameObject.Find("Blood1").transform.localScale = new Vector3(8.05f * health / 50 , 0.34f, 0);
+		GameObject.Find("Blood1").transform.localScale = new Vector3(8.05f * health / 30 , 0.34f, 0);
 		
 		if (health <= 0) {
 			anim.SetTrigger("die");
@@ -99,18 +120,30 @@ public class AnikiOne : MonoBehaviour {
 				if (Input.GetKeyDown(KeyCode.J) && attackRate > ATTACK_WAITING_TIME) {
 					anim.SetTrigger("j");
 					Model.InputAttack ++;
-					StatusCheck.getHitType = 1;
+					StatusCheck.AIgetHitType = 1;
+					GameControl.instance.Score ();
 					attackRate = 0;
 					ATTACK_WAITING_TIME = LIGHT_ATTACK_FREQUENCY;
 				}
 
 				if (Input.GetKeyDown(KeyCode.K) && attackRate > ATTACK_WAITING_TIME) {
 					anim.SetTrigger("k");
-					StatusCheck.getHitType = 2;
+					StatusCheck.AIgetHitType = 2;
+					GameControl.instance.Score ();
 					Model.InputAttack ++;
 					attackRate = 0;
 					ATTACK_WAITING_TIME = HEAVY_ATTACK_FREQUENCY;
 				}
+				
+				if (Input.GetKeyDown(KeyCode.L) && LightningCoolDown == 0) {
+					anim.SetTrigger("lightning");
+					Model.InputAttack ++;
+					attackRate = 0;
+					ATTACK_WAITING_TIME = 10;
+					LightningCoolDown = 150;
+					
+				}
+				
 				
 				if (invincible) {
 					if(Time.time - start_invincible_time >= INVINCIBLE_TIME) {
@@ -120,17 +153,16 @@ public class AnikiOne : MonoBehaviour {
 				
 				
 			} else {
-			 if(Time.time - start_wating_time >= WAITING_TIME) {
+			 if (Time.time - start_wating_time >= WAITING_TIME) {
                     waiting = false;
 				 	start_invincible_time = Time.time;
 				 	invincible = true;
-				 print(health);
                 }
 			}
 		
 		
 		
-		if(isBeingHit()) {
+		if (isBeingHit()) {
 			rg2d.velocity = new Vector2 (0, rg2d.velocity.y);
                 if (!waiting) {
 					waiting = true;
@@ -141,9 +173,24 @@ public class AnikiOne : MonoBehaviour {
 			
 		}
 		
+		m_CurrentClipInfo = this.anim.GetCurrentAnimatorClipInfo(0);
+		
+		if (m_CurrentClipInfo[0].clip.name == "LightningOn") {
+			float playerX = GameObject.Find("Aniki").transform.position.x;
+        	float AIX = GameObject.Find("Enemy").transform.position.x;
+			int direct = AIX - playerX > 2f ? 1 : -1;
+			invincible = true;
+			rg2d.velocity = new Vector2 (50 * direct, rg2d.velocity.y);
+			StatusCheck.PlightningStatus = true;
+			
+		} else if (m_CurrentClipInfo[0].clip.name == "LightningEnd") {
+			rg2d.velocity = new Vector2 (0, rg2d.velocity.y);
+			StatusCheck.PlightningStatus = false;
+			collider.enabled = true;
+		}
+		
 		attackRate ++;
-		
-		
+		LightningCoolDown = LightningCoolDown > 0 ? LightningCoolDown - 1 : 0;
     }
 	
 	bool isBeingHit() 
