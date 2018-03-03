@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{2CE2612F-DFFE-0539-F260-07041EE6B0C7}</ProjectGuid>
+    <ProjectGuid>{3578A609-05FC-EC42-CB3A-A2605F9C40BF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\DumbAI1.cs" />
      <Compile Include="Assets\Scripts\AnikiOne.cs" />
      <Compile Include="Assets\Scripts\DataModel.cs" />
      <Compile Include="Assets\Scripts\DumbAI.cs" />
