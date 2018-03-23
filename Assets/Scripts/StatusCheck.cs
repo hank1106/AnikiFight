@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
+using DM;
 
 namespace SC {
 
@@ -24,12 +24,12 @@ namespace SC {
         public static int PositionCheck(float playerX, float playerY, float AIX, float AIY, Rigidbody2D rg2d)
         {
             float distance = (AIX - playerX) * (AIX - playerX) + (AIY - playerY) * (AIY - playerY);
-
+			Model.RunAway = distance - Model.RunAway;
             if (distance < 4f)
             {
                 return 1;
                 // TODO: speed to 0
-            } else if (distance > 4f && distance < 25f) {
+            } else if (distance > 9f && distance < 25f) {
 				return 0;
 			} else if (distance > 15f) {
 				return 2;
@@ -50,10 +50,13 @@ namespace SC {
 
             if (AIgetHitType == 1 && distance <= LIGHT_ATTACK)
             {
+				GameControl.instance.Score ();
                 return 1;
             } else if (AIgetHitType == 2 && distance <= HEAVY_ATTACK) {
+				GameControl.instance.Score ();
 				return 2;
 			} else if (AIgetHitType == 3) {
+				GameControl.instance.Score ();
 				return 3;
 			}
             return 0;

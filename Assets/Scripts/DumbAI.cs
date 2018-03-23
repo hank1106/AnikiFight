@@ -11,10 +11,12 @@ using DM;
 public class DumbAI : MonoBehaviour {
 
 	private Rigidbody2D rg2d;
+	
 	private bool leftTurn = false;
 	private bool rightTurn = true;
 	private bool waiting = false;
 	private bool invincible = false;
+	private bool trigger = true;
 	
 	private int attackRate = 20;
 	private int countCombo = 0;
@@ -25,10 +27,12 @@ public class DumbAI : MonoBehaviour {
 	private float random_decision_time;
 	private int playerType = -1;
 	private int health = 25;
+	private float start_data_record = 0;
 
-    private const float WAITING_TIME = 2f;
+    private const float WAITING_TIME = 1.5f;
 	private const float INVINCIBLE_TIME = 0.7f;
 	private const int LIGHT_ATTACK_FREQUENCY = 10;
+	private const int DATA_CONVOLUTION_WINDOW = 5;
 	private const int HEAVY_ATTACK_FREQUENCY = 20;
 	private int ATTACK_WAITING_TIME = 0;
 	
@@ -101,8 +105,23 @@ public class DumbAI : MonoBehaviour {
 		
 		int direct = AIX - playerX > 2f ? -1 : 1;
 		
-		if (Time.time > 15) {
+		if (Time.time - start_data_record > DATA_CONVOLUTION_WINDOW) {
+			start_data_record = Time.time;
 			playerType = Model.DataProcess();
+			string text = "Time : " + Time.time + " " + "Player type: " + playerType + "\n " +
+                       "AIeffectiveAttack: " + Model.AIeffectiveAttack + " " +
+						"AIeffectiveDefense: " + Model.AIeffectiveDefense + " " +
+						"PeffectiveAttack: " + Model.PeffectiveAttack + " " +
+						"PeffectiveDefense: " + Model.PeffectiveDefense + " " +
+						"InputAttack: " + Model.InputAttack + " " +
+						"RunAway: " + Model.RunAway + "\n ";
+			
+			using (System.IO.StreamWriter file = 
+            new System.IO.StreamWriter(@"/Users/lihongrui/Desktop/anikiFight/AnikiFight/Assets/Scripts/DataCollector.txt", true))
+        	{
+				file.WriteLine(text);
+        	}
+        
 		}
         
 		IS_ANIKI_BEING_ATTACKED = false;
@@ -111,38 +130,48 @@ public class DumbAI : MonoBehaviour {
         {
             case WAIT_FOR_A_WHILE:
                 if (waiting == true) {
-					
                     if (Time.time - start_wating_time >= WAITING_TIME) {
                         waiting = false;
 						invincible = true;
 						start_invincible_time = Time.time;
-						rg2d.velocity = new Vector2 (-5f * direct, 10f);
                     }
 					
                 } else {
                     waiting = true;
                     start_wating_time = Time.time;
                 }
-                
+				
                 break;
 				
 			case IDLE:
 				if (invincible) {
-					if (start_invincible_time - Time.time >= INVINCIBLE_TIME) {
+					if (Time.time - start_invincible_time >= INVINCIBLE_TIME) {
 						invincible = false;
 					}
+				}
+				
+				if (Input.GetKeyUp(KeyCode.L)) {
+					anim.SetTrigger("w");
+					rg2d.velocity = new Vector2 (7f * direct, 15f);
+					print("Avoid!");
+				}
+				
+				if (Time.time - start_wating_time <= WAITING_TIME + 0.1
+				   && Time.time - start_wating_time > WAITING_TIME && Time.time != 0) {
+						anim.SetTrigger("w");
+						rg2d.velocity = new Vector2 (-7f * direct, 10f);
 				}
 				
 				if (Time.time - start_wating_time >= WAITING_TIME) {
 					 
 						int run = StatusCheck.PositionCheck(playerX, playerY, AIX, AIY, rg2d);
-					
+						
                         if (run == 1 && attackRate >= ATTACK_WAITING_TIME) {
 							Combat();
 							attackRate = 0;
 						} else if (run == 0 && playerType == 1) {
 							MoveAway();
-						} else if (run ==2 && LightningCoolDown >1000) {
+						} else if (run ==2 && LightningCoolDown >800) {
 							anim.SetTrigger("lightning");
 							attackRate = 0;
 							ATTACK_WAITING_TIME = 10;
@@ -161,16 +190,19 @@ public class DumbAI : MonoBehaviour {
 		
 		m_CurrentClipInfo = this.anim.GetCurrentAnimatorClipInfo(0);
 		
-		if (m_CurrentClipInfo[0].clip.name == "LightningOn") {
+		
+		if (m_CurrentClipInfo[0].clip.name == "LightningOn" && trigger) {
 		
 			rg2d.velocity = new Vector2 (50 * direct, rg2d.velocity.y);
 			StatusCheck.AIlightningStatus = true;
 			attackRate = 0;
+			trigger = false;
 			
 		} else if (m_CurrentClipInfo[0].clip.name == "LightningEnd") {
 			rg2d.velocity = new Vector2 (0, rg2d.velocity.y);
 			StatusCheck.AIlightningStatus = false;
 			collider.enabled = true;
+			trigger = true;
 		}
 		
 		attackRate ++;
@@ -271,16 +303,18 @@ public class DumbAI : MonoBehaviour {
 	}
 	
 	void MoveAway() {
-		float randnum = Random.Range(0, 10f);
+//		float randnum = Random.Range(0, 10f);
 		
 		float playerX = GameObject.Find("Aniki").transform.position.x;
         float AIX = GameObject.Find("Enemy").transform.position.x;
 		
-		if (randnum > 9.7f ) {
-			randnum = -1;
-		} else {
-			randnum = 1;
-		}
+//		if (randnum > 9.9f ) {
+//			randnum = -1;
+//		} else {
+//			randnum = 1;
+//		}
+		
+		int randnum = 1;
 		
         if(waiting == true)
         {
@@ -298,7 +332,7 @@ public class DumbAI : MonoBehaviour {
 				rg2d.velocity = new Vector2 (rg2d.velocity.x, 8f);
 			}
 			
-            if (AIX - playerX > 2f)
+            if (AIX - playerX > 0)
             {
                 if (rg2d.velocity.x < 3f)
                 {
@@ -314,7 +348,7 @@ public class DumbAI : MonoBehaviour {
 
             }
 
-            if (AIX - playerX < -2f)
+            if (AIX - playerX < 0)
             {
                 if (rg2d.velocity.x > -3f)
                 {

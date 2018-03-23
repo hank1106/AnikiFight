@@ -6,19 +6,24 @@ using UnityEngine.SceneManagement;
 
 namespace DM {
 
-    public class Model
+    public class Model:MonoBehaviour
     {
 		public static int AIeffectiveAttack = 1;
 		public static int AIeffectiveDefense = 1;
 		public static int PeffectiveAttack = 1;
 		public static int PeffectiveDefense = 1;
 		public static int InputAttack = 1;
-		public static int RunAway = 0;
+		public static float RunAway = 0;
+		
+		//Initial Hann window size
+		// The weight of nth element: w(n) = sin2(3.14 * n / (N - 1))
 
 		private static float x1 = 0;
 		private static float x2 = 0;
 		private static float x3 = 0;
 		private static float x4 = 0;
+		
+		private static List<Vector4> StructuredData;
 		
 		private const int AGILE = 0;
 		private const int AGGRESSIVE = 1;
@@ -33,9 +38,15 @@ namespace DM {
 			x4 = AIeffectiveAttack / AIeffectiveDefense - 1;
 			
 			Vector4 Features = new Vector4(x1, x2, x3, x4);
+			StructuredData.Add(Features);
+			//
 			
-			float Y = 0.1f * x1 + 0.9f * x2;
+			//Convolution process
+			
+			float Y = 0.8f * x1 + 0.2f * x2;
 			float X = x3 - x4;
+			
+			print("X:" + X + " Y:" + Y);
 
 			if (Y >= 0 && X >= 0) {
 				return AGGRESSIVE;

@@ -20,11 +20,12 @@ public class AnikiOne : MonoBehaviour {
 	private bool rightTurn = true;
 	private bool waiting = false;
 	private bool invincible = false;
+	private bool trigger = true;
 	
 	private float start_wating_time = 0;
 	private float start_invincible_time = 0;
 	
-	private const float WAITING_TIME = 2f;
+	private const float WAITING_TIME = 1.2f;
 	private const float INVINCIBLE_TIME = 1f;
 	private const int LIGHT_ATTACK_FREQUENCY = 10;
 	private const int HEAVY_ATTACK_FREQUENCY = 20;
@@ -98,6 +99,7 @@ public class AnikiOne : MonoBehaviour {
 						rg2d.velocity = new Vector2 (force, rg2d.velocity.y);
 					}
 				}
+				
 				if (Input.GetKeyUp(KeyCode.D)) {
 					rg2d.velocity = new Vector2 (0, rg2d.velocity.y);
 				}
@@ -121,7 +123,6 @@ public class AnikiOne : MonoBehaviour {
 					anim.SetTrigger("j");
 					Model.InputAttack ++;
 					StatusCheck.AIgetHitType = 1;
-					GameControl.instance.Score ();
 					attackRate = 0;
 					ATTACK_WAITING_TIME = LIGHT_ATTACK_FREQUENCY;
 				}
@@ -129,7 +130,6 @@ public class AnikiOne : MonoBehaviour {
 				if (Input.GetKeyDown(KeyCode.K) && attackRate > ATTACK_WAITING_TIME) {
 					anim.SetTrigger("k");
 					StatusCheck.AIgetHitType = 2;
-					GameControl.instance.Score ();
 					Model.InputAttack ++;
 					attackRate = 0;
 					ATTACK_WAITING_TIME = HEAVY_ATTACK_FREQUENCY;
@@ -175,18 +175,21 @@ public class AnikiOne : MonoBehaviour {
 		
 		m_CurrentClipInfo = this.anim.GetCurrentAnimatorClipInfo(0);
 		
-		if (m_CurrentClipInfo[0].clip.name == "LightningOn") {
+		if (m_CurrentClipInfo[0].clip.name == "LightningOn" && trigger) {
+			
 			float playerX = GameObject.Find("Aniki").transform.position.x;
         	float AIX = GameObject.Find("Enemy").transform.position.x;
 			int direct = AIX - playerX > 2f ? 1 : -1;
 			invincible = true;
 			rg2d.velocity = new Vector2 (50 * direct, rg2d.velocity.y);
 			StatusCheck.PlightningStatus = true;
+			trigger = false;
 			
 		} else if (m_CurrentClipInfo[0].clip.name == "LightningEnd") {
 			rg2d.velocity = new Vector2 (0, rg2d.velocity.y);
 			StatusCheck.PlightningStatus = false;
 			collider.enabled = true;
+			trigger = true;
 		}
 		
 		attackRate ++;

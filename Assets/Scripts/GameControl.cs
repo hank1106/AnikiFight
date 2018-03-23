@@ -28,9 +28,7 @@ public class GameControl : MonoBehaviour {
 	void Start () {
 		Combo = 0;
 		gameOver = 0;
-
 		gameOverText.text = "";
-
 	}
 
 	// Update is called once per frame
@@ -52,6 +50,8 @@ public class GameControl : MonoBehaviour {
 	
 	public void ComboFail() {
 		Combo = 0;
+		
+		ComboText.text = "";
 	}
 	public void PlayerDead() {
 		gameOver = 1;	
