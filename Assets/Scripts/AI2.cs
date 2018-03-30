@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 using SC;
 using DM;
 
-public class DumbAI : MonoBehaviour {
+public class AI2 : MonoBehaviour {
 
 	private Rigidbody2D rg2d;
 	
@@ -25,7 +25,7 @@ public class DumbAI : MonoBehaviour {
     private float start_wating_time;
 	private float start_invincible_time;
 	private float random_decision_time;
-	private int playerType = -1;
+	private int playerType = 0;
 	private int health = 25;
 	private float start_data_record = 0;
 
@@ -67,11 +67,11 @@ public class DumbAI : MonoBehaviour {
     {
 		float playerX = GameObject.Find("Aniki").transform.position.x;
         float AIX = GameObject.Find("Enemy").transform.position.x;
-		int direct = AIX - playerX > 2f ? -1 : 1;
+		int direct = AIX - playerX > 2f ? 1 : -1;
 		
 		if (Random.Range(0, 10f) > 8f) {
 				anim.SetTrigger("w");
-				rg2d.velocity = new Vector2 (7f * direct, 8f);
+				rg2d.velocity = new Vector2 (10f * direct, 12f);
 		} else {
 			if (countCombo < 2)
         	{
@@ -91,7 +91,6 @@ public class DumbAI : MonoBehaviour {
 			IS_ANIKI_BEING_ATTACKED = true;
 			Model.AIeffectiveAttack ++;
 		}
-		
     }
 
     // Use this for initialization
@@ -117,26 +116,7 @@ public class DumbAI : MonoBehaviour {
 		
 		int direct = AIX - playerX > 2f ? -1 : 1;
 		
-		if (Time.time - start_data_record > DATA_CONVOLUTION_WINDOW) {
-			start_data_record = Time.time;
-			playerType = Model.DataProcess();
-			print(playerType);
-			string text = "Time : " + Time.time + " " + "Player type: " + playerType + "\n " +
-                       "AIeffectiveAttack: " + Model.AIeffectiveAttack + " " +
-						"AIeffectiveDefense: " + Model.AIeffectiveDefense + " " +
-						"PeffectiveAttack: " + Model.PeffectiveAttack + " " +
-						"PeffectiveDefense: " + Model.PeffectiveDefense + " " +
-						"InputAttack: " + Model.InputAttack + " " +
-						"RunAway: " + Model.RunAway + "\n ";
 		
-			using (System.IO.StreamWriter file = 
-            new System.IO.StreamWriter(@"/Users/lihongrui/Desktop/anikiFight/AnikiFight/Assets/Scripts/DataCollector.txt", true))
-        	{
-				file.WriteLine(text);
-        	}
-        
-		}
-        
 		IS_ANIKI_BEING_ATTACKED = false;
 
         switch (CheckStatus())
@@ -225,9 +205,10 @@ public class DumbAI : MonoBehaviour {
 
     int CheckStatus() {
 		int hitResult = StatusCheck.AI2BeingHitCheck();
-
+		
         if (hitResult != 0 && !invincible)
         {
+			print("gethit");
 			Model.PeffectiveAttack ++;
 			health = hitResult == 1 ? health - 1 : health - 2;
 			anim.SetTrigger("hit");

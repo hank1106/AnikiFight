@@ -46,6 +46,7 @@ public class AnikiOne : MonoBehaviour {
 		rg2d = GetComponent<Rigidbody2D> (); 
 		StatusCheck.PlightningStatus = false;
 		collider = GetComponent<BoxCollider2D>();
+		rg2d.freezeRotation = true;
 		
 	}
 	
