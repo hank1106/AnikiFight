@@ -1,0 +1,629 @@
+Time : 10.02353 Player type: 1
+ AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 8 RunAway: 81.47468
+ Time : 5.005344 Player type: 3
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 3 PeffectiveDefense: 1 InputAttack: 4 RunAway: -27.88445
+ 
+Time : 10.02166 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 3 PeffectiveDefense: 1 InputAttack: 5 RunAway: 73.77856
+ 
+Time : 15.04023 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 3 PeffectiveDefense: 1 InputAttack: 5 RunAway: 60.508
+ 
+Time : 20.05567 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 3 PeffectiveDefense: 1 InputAttack: 5 RunAway: 50.61191
+ 
+Time : 25.06906 Player type: 1
+ AIeffectiveAttack: 6 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 9 RunAway: 92.96346
+ 
+Time : 30.0898 Player type: 1
+ AIeffectiveAttack: 6 AIeffectiveDefense: 1 PeffectiveAttack: 10 PeffectiveDefense: 1 InputAttack: 13 RunAway: 94.61823
+ 
+Time : 5.005714 Player type: 0
+ AIeffectiveAttack: 4 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 43.76926
+ 
+Time : 10.02151 Player type: 0
+ AIeffectiveAttack: 8 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: 55.19473
+ 
+Time : 5.000441 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 46.84967
+ 
+Time : 10.01675 Player type: 3
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: -17.29519
+ 
+Time : 15.01688 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 40.77357
+ 
+Time : 5.013332 Player type: 2
+ AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: -27.40816
+ 
+Time : 5.012054 Player type: 3
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: -17.8962
+ 
+Time : 5.030809 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 23.89923
+ 
+Time : 10.04666 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: 3.392151
+ 
+Time : 5.007683 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 67.42905
+ 
+Time : 10.00948 Player type: 3
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: -32.18523
+ 
+Time : 15.02534 Player type: 2
+ AIeffectiveAttack: 3 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: -48.04602
+ 
+Time : 20.04322 Player type: 0
+ AIeffectiveAttack: 8 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 55.63447
+ 
+Time : 25.0573 Player type: 2
+ AIeffectiveAttack: 14 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: -38.46648
+ 
+Time : 5.006191 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 154.3615
+ 
+Time : 10.02938 Player type: 3
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: -31.1373
+ 
+Time : 5.025849 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: 77.70929
+ 
+Time : 5.012466 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: 35.31147
+ 
+Time : 10.02905 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: 3.641403
+ 
+Time : 15.04881 Player type: 3
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 5 RunAway: -7.886276
+ 
+Time : 20.06198 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 6 RunAway: 75.65733
+ 
+Time : 25.08894 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 8 RunAway: 89.70783
+ 
+Time : 30.09727 Player type: 0
+ AIeffectiveAttack: 4 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 9 RunAway: 102.0689
+ 
+Time : 5.005595 Player type: 3
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: -23.20882
+ 
+Time : 10.02213 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: 52.55033
+ 
+Time : 15.03681 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: 26.00755
+ 
+Time : 20.03848 Player type: 0
+ AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 5 RunAway: 1.822546
+ 
+Time : 25.03849 Player type: 0
+ AIeffectiveAttack: 10 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 6 RunAway: 24.89237
+ 
+Time : 30.05368 Player type: 0
+ AIeffectiveAttack: 10 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 7 RunAway: 12.03881
+ 
+Time : 35.05462 Player type: 0
+ AIeffectiveAttack: 10 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 7 RunAway: 55.05991
+ 
+Time : 5.013728 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: 68.30717
+ 
+Time : 10.01729 Player type: 0
+ AIeffectiveAttack: 4 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: 117.2899
+ 
+Time : 15.02949 Player type: 0
+ AIeffectiveAttack: 4 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 5 RunAway: 75.79845
+ 
+Time : 20.02978 Player type: 0
+ AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 6 RunAway: 54.10619
+ 
+Time : 25.04722 Player type: 2
+ AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 7 RunAway: -13.84858
+ 
+Time : 2.002358 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 115.9184
+ 
+Time : 4.011405 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 73.83783
+ 
+Time : 2.014568 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 127.284
+ 
+Time : 4.022701 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 68.82861
+ 
+Time : 6.030915 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: -39.53277
+ 
+Time : 8.031074 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 4 PeffectiveDefense: 1 InputAttack: 6 RunAway: -45.93966
+ 
+Time : 2.011765 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 110.581
+ 
+Time : 4.01998 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 60.88744
+ 
+Time : 6.027724 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: -32.54941
+ 
+Time : 8.051714 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: -25.41514
+ 
+Time : 2.010277 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 120.9706
+ 
+Time : 4.02639 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 64.01163
+ 
+Time : 2.024583 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 44.90347
+ 
+Time : 4.032084 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 121.489
+ 
+Time : 6.033011 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 51.21432
+ 
+Time : 8.03324 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 9.214653
+ 
+Time : 10.04901 Player type: 0
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: -22.22235
+ 
+Time : 12.06474 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 3 RunAway: 38.50548
+ 
+Time : 14.06539 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 3 RunAway: 49.72207
+ 
+Time : 16.06812 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 3 RunAway: 23.70261
+ 
+Time : 18.08477 Player type: 0
+ AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 4 RunAway: -15.48088
+ 
+Time : 20.09979 Player type: 1
+ AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 5 RunAway: 8.707682
+ 
+Time : 22.11726 Player type: 0
+ AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 6 RunAway: -1.540697
+ 
+Time : 2.021635 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 12.92582
+ 
+Time : 4.033768 Player type: 1
+ AIeffectiveAttack: 4 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: -15.07036
+ 
+Time : 6.057723 Player type: 1
+ AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 30.46015
+ 
+Time : 8.074194 Player type: 1
+ AIeffectiveAttack: 10 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: -16.38946
+ 
+Time : 10.07797 Player type: 1
+ AIeffectiveAttack: 15 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: 47.22351
+ 
+Time : 12.09756 Player type: 0
+ AIeffectiveAttack: 15 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: -19.42418
+ 
+Time : 14.09762 Player type: 1
+ AIeffectiveAttack: 15 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 6 RunAway: 43.54747
+ 
+Time : 16.09781 Player type: 1
+ AIeffectiveAttack: 15 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 7 RunAway: 8.603117
+ 
+Time : 18.10212 Player type: 1
+ AIeffectiveAttack: 15 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 8 RunAway: 33.27621
+ 
+Time : 20.11414 Player type: 1
+ AIeffectiveAttack: 15 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 8 RunAway: 9.591824
+ 
+Time : 22.12171 Player type: 1
+ AIeffectiveAttack: 16 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 10 RunAway: 0.5830784
+ 
+Time : 24.13733 Player type: 1
+ AIeffectiveAttack: 20 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 10 RunAway: 28.90791
+ 
+Time : 26.15297 Player type: 1
+ AIeffectiveAttack: 20 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 11 RunAway: 42.19751
+ 
+Time : 28.15619 Player type: 1
+ AIeffectiveAttack: 20 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 11 RunAway: 30.67502
+ 
+Time : 30.17166 Player type: 1
+ AIeffectiveAttack: 20 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 11 RunAway: 22.17506
+ 
+Time : 32.19834 Player type: 1
+ AIeffectiveAttack: 22 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 13 RunAway: 11.7608
+ 
+Time : 34.21014 Player type: 0
+ AIeffectiveAttack: 25 AIeffectiveDefense: 1 PeffectiveAttack: 4 PeffectiveDefense: 1 InputAttack: 17 RunAway: -9.303753
+ 
+Time : 36.22139 Player type: 1
+ AIeffectiveAttack: 30 AIeffectiveDefense: 1 PeffectiveAttack: 5 PeffectiveDefense: 1 InputAttack: 18 RunAway: 14.8946
+ 
+Time : 2.001101 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 46.25663
+ 
+Time : 4.003164 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 23.45041
+ 
+Time : 6.019133 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: 9.487498
+ 
+Time : 8.034833 Player type: 1
+ AIeffectiveAttack: 6 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: 4.3016
+ 
+Time : 10.03811 Player type: 1
+ AIeffectiveAttack: 8 AIeffectiveDefense: 1 PeffectiveAttack: 6 PeffectiveDefense: 1 InputAttack: 8 RunAway: 14.02111
+ 
+Time : 12.03887 Player type: 1
+ AIeffectiveAttack: 8 AIeffectiveDefense: 1 PeffectiveAttack: 6 PeffectiveDefense: 1 InputAttack: 9 RunAway: 8.768931
+ 
+Time : 14.05324 Player type: 0
+ AIeffectiveAttack: 8 AIeffectiveDefense: 1 PeffectiveAttack: 8 PeffectiveDefense: 1 InputAttack: 12 RunAway: 0.6399436
+ 
+Time : 16.05758 Player type: 1
+ AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 10 PeffectiveDefense: 1 InputAttack: 15 RunAway: 39.85957
+ 
+Time : 18.08217 Player type: 1
+ AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 10 PeffectiveDefense: 1 InputAttack: 16 RunAway: 19.02228
+ 
+Time : 20.08525 Player type: 0
+ AIeffectiveAttack: 14 AIeffectiveDefense: 1 PeffectiveAttack: 11 PeffectiveDefense: 1 InputAttack: 17 RunAway: -12.29972
+ 
+Time : 22.08737 Player type: 1
+ AIeffectiveAttack: 14 AIeffectiveDefense: 1 PeffectiveAttack: 13 PeffectiveDefense: 1 InputAttack: 20 RunAway: 90.42202
+ 
+Time : 24.114 Player type: 0
+ AIeffectiveAttack: 15 AIeffectiveDefense: 1 PeffectiveAttack: 14 PeffectiveDefense: 1 InputAttack: 21 RunAway: -20.21061
+ 
+Time : 26.12955 Player type: 1
+ AIeffectiveAttack: 16 AIeffectiveDefense: 1 PeffectiveAttack: 19 PeffectiveDefense: 1 InputAttack: 26 RunAway: 26.30822
+ 
+Time : 28.13519 Player type: 0
+ AIeffectiveAttack: 16 AIeffectiveDefense: 1 PeffectiveAttack: 21 PeffectiveDefense: 1 InputAttack: 29 RunAway: -24.16691
+ 
+Time : 30.14587 Player type: 0
+ AIeffectiveAttack: 16 AIeffectiveDefense: 1 PeffectiveAttack: 22 PeffectiveDefense: 1 InputAttack: 30 RunAway: -24.16691
+ 
+Time : 2.023782 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 88.68957
+ 
+Time : 4.029052 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: -36.68332
+ 
+Time : 6.04389 Player type: 1
+ AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 5 RunAway: 83.92012
+ 
+Time : 8.059834 Player type: 1
+ AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 6 RunAway: 27.39495
+ 
+Time : 10.06373 Player type: 1
+ AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 6 RunAway: 52.89256
+ 
+Time : 12.06435 Player type: 0
+ AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 6 RunAway: -11.05001
+ 
+Time : 14.06837 Player type: 0
+ AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 6 PeffectiveDefense: 1 InputAttack: 10 RunAway: -33.05984
+ 
+Time : 16.10762 Player type: 1
+ AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 11 RunAway: 45.28806
+ 
+Time : 18.11338 Player type: 1
+ AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 11 RunAway: 49.29739
+ 
+Time : 20.11383 Player type: 1
+ AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 13 RunAway: 52.17934
+ 
+Time : 22.12842 Player type: 1
+ AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 14 RunAway: 89.32722
+ 
+Time : 24.14424 Player type: 1
+ AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 14 RunAway: 53.12256
+ 
+Time : 26.17168 Player type: 1
+ AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 14 RunAway: 34.43199
+ 
+Time : 28.18006 Player type: 0
+ AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 16 RunAway: -13.51519
+ 
+Time : 30.19607 Player type: 1
+ AIeffectiveAttack: 8 AIeffectiveDefense: 1 PeffectiveAttack: 8 PeffectiveDefense: 1 InputAttack: 17 RunAway: 80.38027
+ 
+Time : 32.19721 Player type: 1
+ AIeffectiveAttack: 8 AIeffectiveDefense: 1 PeffectiveAttack: 8 PeffectiveDefense: 1 InputAttack: 17 RunAway: 53.62791
+ 
+Time : 2.008778 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 91.10323
+ 
+Time : 4.022967 Player type: 1
+ AIeffectiveAttack: 3 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: 44.75616
+ 
+Time : 6.035227 Player type: 1
+ AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: -37.97913
+ 
+Time : 8.040735 Player type: 1
+ AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: 50.77812
+ 
+Time : 10.05603 Player type: 1
+ AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: 63.45686
+ 
+Time : 12.0725 Player type: 1
+ AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: 47.49084
+ 
+Time : 14.08888 Player type: 0
+ AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: -29.12901
+ 
+Time : 16.09184 Player type: 0
+ AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 5 RunAway: -36.65599
+ 
+Time : 18.10731 Player type: 1
+ AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 3 PeffectiveDefense: 1 InputAttack: 8 RunAway: 86.68587
+ 
+Time : 20.12345 Player type: 1
+ AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 3 PeffectiveDefense: 1 InputAttack: 9 RunAway: 46.39788
+ 
+Time : 22.12687 Player type: 0
+ AIeffectiveAttack: 8 AIeffectiveDefense: 1 PeffectiveAttack: 8 PeffectiveDefense: 1 InputAttack: 14 RunAway: -39.83445
+ 
+Time : 24.12771 Player type: 1
+ AIeffectiveAttack: 8 AIeffectiveDefense: 1 PeffectiveAttack: 8 PeffectiveDefense: 1 InputAttack: 14 RunAway: 64.59273
+ 
+Time : 26.14145 Player type: 0
+ AIeffectiveAttack: 8 AIeffectiveDefense: 1 PeffectiveAttack: 8 PeffectiveDefense: 1 InputAttack: 15 RunAway: -14.37434
+ 
+Time : 28.17124 Player type: 1
+ AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 9 PeffectiveDefense: 1 InputAttack: 17 RunAway: 36.50911
+ 
+Time : 30.17374 Player type: 0
+ AIeffectiveAttack: 13 AIeffectiveDefense: 1 PeffectiveAttack: 9 PeffectiveDefense: 1 InputAttack: 17 RunAway: 2.287315
+ 
+Time : 32.17504 Player type: 1
+ AIeffectiveAttack: 13 AIeffectiveDefense: 1 PeffectiveAttack: 9 PeffectiveDefense: 1 InputAttack: 17 RunAway: 78.48895
+ 
+Time : 34.18995 Player type: 0
+ AIeffectiveAttack: 13 AIeffectiveDefense: 1 PeffectiveAttack: 9 PeffectiveDefense: 1 InputAttack: 17 RunAway: -7.075676
+ 
+Time : 36.19096 Player type: 1
+ AIeffectiveAttack: 15 AIeffectiveDefense: 1 PeffectiveAttack: 9 PeffectiveDefense: 1 InputAttack: 17 RunAway: 37.72126
+ 
+Time : 38.20278 Player type: 1
+ AIeffectiveAttack: 19 AIeffectiveDefense: 1 PeffectiveAttack: 10 PeffectiveDefense: 1 InputAttack: 18 RunAway: 37.72126
+ 
+Time : 40.20779 Player type: 0
+ AIeffectiveAttack: 20 AIeffectiveDefense: 1 PeffectiveAttack: 12 PeffectiveDefense: 1 InputAttack: 20 RunAway: -26.57586
+ 
+Time : 42.2237 Player type: 0
+ AIeffectiveAttack: 20 AIeffectiveDefense: 1 PeffectiveAttack: 12 PeffectiveDefense: 1 InputAttack: 21 RunAway: -34.98001
+ 
+Time : 44.23919 Player type: 1
+ AIeffectiveAttack: 20 AIeffectiveDefense: 1 PeffectiveAttack: 12 PeffectiveDefense: 1 InputAttack: 21 RunAway: 46.25508
+ 
+Time : 46.23948 Player type: 1
+ AIeffectiveAttack: 20 AIeffectiveDefense: 1 PeffectiveAttack: 12 PeffectiveDefense: 1 InputAttack: 21 RunAway: 62.0145
+ 
+Time : 48.25542 Player type: 1
+ AIeffectiveAttack: 20 AIeffectiveDefense: 1 PeffectiveAttack: 12 PeffectiveDefense: 1 InputAttack: 21 RunAway: 80.78983
+ 
+Time : 50.26734 Player type: 1
+ AIeffectiveAttack: 20 AIeffectiveDefense: 1 PeffectiveAttack: 12 PeffectiveDefense: 1 InputAttack: 21 RunAway: 12.70764
+ 
+Time : 52.2739 Player type: 1
+ AIeffectiveAttack: 20 AIeffectiveDefense: 1 PeffectiveAttack: 12 PeffectiveDefense: 1 InputAttack: 21 RunAway: 94.26023
+ 
+Time : 54.28799 Player type: 1
+ AIeffectiveAttack: 20 AIeffectiveDefense: 1 PeffectiveAttack: 12 PeffectiveDefense: 1 InputAttack: 21 RunAway: 68.38832
+ 
+Time : 2.034679 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 90.27913
+ 
+Time : 4.050143 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 37.05631
+ 
+Time : 6.074169 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 42.28175
+ 
+Time : 8.074516 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: -16.17372
+ 
+Time : 10.07557 Player type: 0
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: -14.37879
+ 
+Time : 12.08677 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 40.8697
+ 
+Time : 14.09165 Player type: 0
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: -28.0572
+ 
+Time : 16.09298 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 5 RunAway: 45.86491
+ 
+Time : 18.11846 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 3 PeffectiveDefense: 1 InputAttack: 6 RunAway: 54.8971
+ 
+Time : 20.12462 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 3 PeffectiveDefense: 1 InputAttack: 6 RunAway: 52.90954
+ 
+Time : 22.14243 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 3 PeffectiveDefense: 1 InputAttack: 6 RunAway: 72.77054
+ 
+Time : 24.15749 Player type: 0
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 3 PeffectiveDefense: 1 InputAttack: 7 RunAway: -32.15221
+ 
+Time : 26.15892 Player type: 0
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 3 PeffectiveDefense: 1 InputAttack: 7 RunAway: -19.41074
+ 
+Time : 28.16636 Player type: 0
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 3 PeffectiveDefense: 1 InputAttack: 8 RunAway: -37.2959
+ 
+Time : 30.18989 Player type: 1
+ AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 4 PeffectiveDefense: 1 InputAttack: 10 RunAway: 98.98132
+ 
+Time : 32.19091 Player type: 1
+ AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 4 PeffectiveDefense: 1 InputAttack: 10 RunAway: 50.3914
+ 
+Time : 34.20602 Player type: 0
+ AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 4 PeffectiveDefense: 1 InputAttack: 12 RunAway: -19.45958
+ 
+Time : 36.2107 Player type: 0
+ AIeffectiveAttack: 3 AIeffectiveDefense: 1 PeffectiveAttack: 9 PeffectiveDefense: 1 InputAttack: 17 RunAway: -13.35005
+ 
+Time : 38.21837 Player type: 1
+ AIeffectiveAttack: 3 AIeffectiveDefense: 1 PeffectiveAttack: 9 PeffectiveDefense: 1 InputAttack: 17 RunAway: 50.13017
+ 
+Time : 40.2235 Player type: 0
+ AIeffectiveAttack: 3 AIeffectiveDefense: 1 PeffectiveAttack: 9 PeffectiveDefense: 1 InputAttack: 17 RunAway: -22.62556
+ 
+Time : 42.23796 Player type: 1
+ AIeffectiveAttack: 3 AIeffectiveDefense: 1 PeffectiveAttack: 13 PeffectiveDefense: 1 InputAttack: 21 RunAway: 52.91992
+ 
+Time : 44.24039 Player type: 1
+ AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 14 PeffectiveDefense: 1 InputAttack: 22 RunAway: 74.0434
+ 
+Time : 46.26621 Player type: 0
+ AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 14 PeffectiveDefense: 1 InputAttack: 23 RunAway: -14.92236
+ 
+Time : 48.27519 Player type: 0
+ AIeffectiveAttack: 8 AIeffectiveDefense: 1 PeffectiveAttack: 14 PeffectiveDefense: 1 InputAttack: 24 RunAway: -41.34074
+ 
+Time : 50.29097 Player type: 1
+ AIeffectiveAttack: 13 AIeffectiveDefense: 1 PeffectiveAttack: 16 PeffectiveDefense: 1 InputAttack: 26 RunAway: 44.10477
+ 
+Time : 52.29217 Player type: 1
+ AIeffectiveAttack: 13 AIeffectiveDefense: 1 PeffectiveAttack: 20 PeffectiveDefense: 1 InputAttack: 31 RunAway: 44.10477
+ 
+Time : 2.006885 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 72.43732
+ 
+Time : 4.022906 Player type: 1
+ AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 2.456994
+ 
+Time : 6.023097 Player type: 1
+ AIeffectiveAttack: 25 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 2.457049
+ 
+Time : 8.034053 Player type: 1
+ AIeffectiveAttack: 37 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 2.457049
+ 
+Time : 10.04998 Player type: 1
+ AIeffectiveAttack: 51 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 2.457049
+ 
+Time : 12.06929 Player type: 1
+ AIeffectiveAttack: 67 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 2.457049
+ 
+Time : 2.014726 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 72.43732
+ 
+Time : 4.019489 Player type: 1
+ AIeffectiveAttack: 11 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 2.457049
+ 
+Time : 2.018147 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 72.43732
+ 
+Time : 4.042133 Player type: 1
+ AIeffectiveAttack: 12 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 2.457049
+ 
+Time : 2.004137 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 72.43732
+ 
+Time : 4.023447 Player type: 1
+ AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 2.456977
+ 
+Time : 2.013448 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 72.43732
+ 
+Time : 4.0289 Player type: 1
+ AIeffectiveAttack: 11 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 2.456991
+ 
+Time : 6.030033 Player type: 1
+ AIeffectiveAttack: 27 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 2.457049
+ 
+Time : 2.001163 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 72.43732
+ 
+Time : 4.029778 Player type: 1
+ AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 2.457049
+ 
+Time : 6.045077 Player type: 1
+ AIeffectiveAttack: 25 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 2.457049
+ 
+Time : 2.007328 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 72.43732
+ 
+Time : 4.021324 Player type: 1
+ AIeffectiveAttack: 10 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 2.457049
+ 
+Time : 6.036483 Player type: 1
+ AIeffectiveAttack: 25 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 2.457049
+ 
+Time : 2.009288 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 72.43731
+ 
+Time : 4.025172 Player type: 1
+ AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 2.457049
+ 
+Time : 6.025177 Player type: 1
+ AIeffectiveAttack: 23 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 2.457049
+ 
+Time : 2.027694 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 72.43732
+ 
+Time : 4.043659 Player type: 1
+ AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 2.488489
+ 
+Time : 6.044402 Player type: 1
+ AIeffectiveAttack: 21 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 2.587237
+ 
+Time : 8.059447 Player type: 1
+ AIeffectiveAttack: 34 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 2.687906
+ 
+Time : 2.029784 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 72.43732
+ 
+Time : 4.03329 Player type: 1
+ AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 3.423331
+ 
+Time : 6.034364 Player type: 1
+ AIeffectiveAttack: 21 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 2.457062
+ 
+Time : 8.049491 Player type: 1
+ AIeffectiveAttack: 32 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 2.671597
+ 
+Time : 2.030124 Player type: 1
+ AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 72.43732
+ 
+Time : 4.046368 Player type: 1
+ AIeffectiveAttack: 8 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 9.45281
+ 
+Time : 6.046816 Player type: 1
+ AIeffectiveAttack: 8 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 4.029284
+ 
+Time : 8.048112 Player type: 1
+ AIeffectiveAttack: 11 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 3.466739
+ 
+Time : 10.0685 Player type: 1
+ AIeffectiveAttack: 17 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 13.57871
+ 
+Time : 12.07218 Player type: 1
+ AIeffectiveAttack: 17 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 62.48544
+ 
+Time : 14.08513 Player type: 1
+ AIeffectiveAttack: 17 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 66.95556
+ 
+Time : 16.08569 Player type: 1
+ AIeffectiveAttack: 17 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 18.59078
+ 
+Time : 18.10223 Player type: 1
+ AIeffectiveAttack: 20 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 2.457055
+ 
+Time : 20.11085 Player type: 1
+ AIeffectiveAttack: 22 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 26.66935
+ 
+Time : 22.11815 Player type: 1
+ AIeffectiveAttack: 22 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 139.5763
+ 

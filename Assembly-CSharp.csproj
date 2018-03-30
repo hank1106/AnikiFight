@@ -51,11 +51,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AI2.cs" />
      <Compile Include="Assets\Scripts\AnikiOne.cs" />
      <Compile Include="Assets\Scripts\DataModel.cs" />
      <Compile Include="Assets\Scripts\DumbAI.cs" />
+<<<<<<< HEAD
      <Compile Include="Assets\Scripts\gameStart.cs" />
+=======
+     <Compile Include="Assets\Scripts\GameControl.cs" />
+>>>>>>> master
      <Compile Include="Assets\Scripts\StatusCheck.cs" />
+     <None Include="Assets\Scripts\DataCollector.txt" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>

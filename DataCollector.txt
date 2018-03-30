@@ -1,0 +1,3 @@
+Time : 25.02515 Player type: 2
+ AIeffectiveAttack: 13 AIeffectiveDefense: 1 PeffectiveAttack: 9 PeffectiveDefense: 1 InputAttack: 10 RunAway: -39.13076
+ 
