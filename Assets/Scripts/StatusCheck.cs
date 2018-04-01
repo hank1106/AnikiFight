@@ -12,6 +12,8 @@ namespace SC {
 		public static int PgetHitType = 0;
 		public static int AIgetHitType = 0;
 		public static int AI2getHitType = 0;
+		public static int EnemygetHitType = 0;
+		
 		public static bool PlightningStatus = false;
 		public static bool AIlightningStatus = false;
 		
@@ -65,8 +67,8 @@ namespace SC {
 		
 		public static int AI2BeingHitCheck()
         {
-            float playerX = GameObject.Find("AI2").transform.position.x;
-            float playerY = GameObject.Find("AI2").transform.position.y;
+            float playerX = GameObject.Find("Aniki").transform.position.x;
+            float playerY = GameObject.Find("Aniki").transform.position.y;
             float AIX = GameObject.Find("Enemy").transform.position.x;
             float AIY = GameObject.Find("Enemy").transform.position.y;
 
@@ -80,6 +82,29 @@ namespace SC {
 				GameControl.instance.Score ();
 				return 2;
 			} else if (AI2getHitType == 3) {
+				GameControl.instance.Score ();
+				return 3;
+			}
+            return 0;
+        }
+		
+		public static int EnemyBeingHitCheck()
+        {
+            float playerX = GameObject.Find("Aniki").transform.position.x;
+            float playerY = GameObject.Find("Aniki").transform.position.y;
+            float AIX = GameObject.Find("Enemy").transform.position.x;
+            float AIY = GameObject.Find("Enemy").transform.position.y;
+
+            float distance = Mathf.Sqrt((AIX - playerX) * (AIX - playerX) + (AIY - playerY) * (AIY - playerY));
+
+            if (EnemygetHitType == 1 && distance <= LIGHT_ATTACK)
+            {
+				GameControl.instance.Score ();
+                return 1;
+            } else if (EnemygetHitType == 2 && distance <= HEAVY_ATTACK) {
+				GameControl.instance.Score ();
+				return 2;
+			} else if (EnemygetHitType == 3) {
 				GameControl.instance.Score ();
 				return 3;
 			}

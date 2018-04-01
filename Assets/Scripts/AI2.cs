@@ -65,29 +65,30 @@ public class AI2 : MonoBehaviour {
 
     public void Combat()
     {
-		float playerX = GameObject.Find("Aniki").transform.position.x;
-        float AIX = GameObject.Find("Enemy").transform.position.x;
+		float playerX = GameObject.Find("Enemy").transform.position.x;
+        float AIX = GameObject.Find("Aniki").transform.position.x;
 		int direct = AIX - playerX > 2f ? 1 : -1;
 		
 		if (Random.Range(0, 10f) > 8f) {
 				anim.SetTrigger("w");
 				rg2d.velocity = new Vector2 (10f * direct, 12f);
 		} else {
+			
 			if (countCombo < 2)
         	{
 				anim.SetTrigger("j");
 				countCombo++;
 				ATTACK_WAITING_TIME = LIGHT_ATTACK_FREQUENCY;
-				StatusCheck.AI2getHitType = 1;
+				StatusCheck.AIgetHitType = 1;
         	}
 			else
 			{
 				anim.SetTrigger("k");
 				countCombo = 0;
 				ATTACK_WAITING_TIME = HEAVY_ATTACK_FREQUENCY;
-				StatusCheck.AI2getHitType = 2;
+				StatusCheck.AIgetHitType = 2;
 			}
-			GameControl.instance.ComboFail();
+			
 			IS_ANIKI_BEING_ATTACKED = true;
 			Model.AIeffectiveAttack ++;
 		}
@@ -108,17 +109,15 @@ public class AI2 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		GameObject.Find("Blood2").transform.localScale = new Vector3(8.05f * health / 25 , 0.34f, 0);
-		float playerX = GameObject.Find("Aniki").transform.position.x;
-        float AIX = GameObject.Find("Enemy").transform.position.x;
-        float playerY = GameObject.Find("Aniki").transform.position.y;
-        float AIY = GameObject.Find("Enemy").transform.position.y;
+		GameObject.Find("Blood1").transform.localScale = new Vector3(8.05f * health / 25 , 0.34f, 0);
+        float AIX = GameObject.Find("Aniki").transform.position.x;
+        float AIY = GameObject.Find("Aniki").transform.position.y;
+		float playerX = GameObject.Find("Enemy").transform.position.x;
+		float playerY = GameObject.Find("Enemy").transform.position.y;
+		StatusCheck.AIgetHitType = 0;
 		
 		int direct = AIX - playerX > 2f ? -1 : 1;
-		
-		
-		IS_ANIKI_BEING_ATTACKED = false;
-
+	
         switch (CheckStatus())
         {
             case WAIT_FOR_A_WHILE:
@@ -146,7 +145,6 @@ public class AI2 : MonoBehaviour {
 				if (Input.GetKeyUp(KeyCode.L)) {
 					anim.SetTrigger("w");
 					rg2d.velocity = new Vector2 (7f * direct, 15f);
-					print("Avoid!");
 				}
 				
 				if (Time.time - start_wating_time <= WAITING_TIME + 0.1
@@ -158,7 +156,7 @@ public class AI2 : MonoBehaviour {
 				if (Time.time - start_wating_time >= WAITING_TIME) {
 					 
 						int run = StatusCheck.PositionCheck(playerX, playerY, AIX, AIY, rg2d);
-						
+					
                         if (run == 1 && attackRate >= ATTACK_WAITING_TIME) {
 							Combat();
 							attackRate = 0;
@@ -178,6 +176,7 @@ public class AI2 : MonoBehaviour {
 				
             case DIE:
 				anim.SetTrigger("die");
+				
 				break;
         }
 		
@@ -185,13 +184,16 @@ public class AI2 : MonoBehaviour {
 		
 		
 		if (m_CurrentClipInfo[0].clip.name == "LightningOn" && trigger) {
-		
+
 			rg2d.velocity = new Vector2 (50 * direct, rg2d.velocity.y);
+	
+			invincible = true;
 			StatusCheck.AIlightningStatus = true;
 			attackRate = 0;
 			trigger = false;
 			
 		} else if (m_CurrentClipInfo[0].clip.name == "LightningEnd") {
+			
 			rg2d.velocity = new Vector2 (0, rg2d.velocity.y);
 			StatusCheck.AIlightningStatus = false;
 			collider.enabled = true;
@@ -208,7 +210,6 @@ public class AI2 : MonoBehaviour {
 		
         if (hitResult != 0 && !invincible)
         {
-			print("gethit");
 			Model.PeffectiveAttack ++;
 			health = hitResult == 1 ? health - 1 : health - 2;
 			anim.SetTrigger("hit");

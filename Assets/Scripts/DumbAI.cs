@@ -69,11 +69,14 @@ public class DumbAI : MonoBehaviour {
         float AIX = GameObject.Find("Enemy").transform.position.x;
 		int direct = AIX - playerX > 2f ? -1 : 1;
 		
-		if (Random.Range(0, 10f) > 8f) {
+		if (Random.Range(0, 10f) > 9f) {
+			
 				anim.SetTrigger("w");
 				rg2d.velocity = new Vector2 (7f * direct, 8f);
+			
 		} else {
-			if (countCombo < 2)
+			
+			if (Random.Range(0, 10f) > 7f)
         	{
 				anim.SetTrigger("j");
 				countCombo++;
@@ -87,6 +90,7 @@ public class DumbAI : MonoBehaviour {
 				ATTACK_WAITING_TIME = HEAVY_ATTACK_FREQUENCY;
 				StatusCheck.AI2getHitType = 2;
 			}
+			
 			GameControl.instance.ComboFail();
 			IS_ANIKI_BEING_ATTACKED = true;
 			Model.AIeffectiveAttack ++;
@@ -100,8 +104,6 @@ public class DumbAI : MonoBehaviour {
 		rg2d = GetComponent<Rigidbody2D> ();
 		collider = GetComponent<BoxCollider2D>();
 
-		if (SceneManager.GetActiveScene ().name == "Level0")
-
 		rg2d.velocity = new Vector2 (0, 0);
 		rg2d.freezeRotation = true;
 	}
@@ -111,18 +113,18 @@ public class DumbAI : MonoBehaviour {
 		
 		GameObject.Find("Blood2").transform.localScale = new Vector3(8.05f * health / 25 , 0.34f, 0);
 		float playerX = GameObject.Find("Aniki").transform.position.x;
+		float playerY = GameObject.Find("Aniki").transform.position.y;
         float AIX = GameObject.Find("Enemy").transform.position.x;
-        float playerY = GameObject.Find("Aniki").transform.position.y;
         float AIY = GameObject.Find("Enemy").transform.position.y;
+		StatusCheck.AI2getHitType = 0;
 		
 		int direct = AIX - playerX > 2f ? -1 : 1;
 		
 		if (Time.time - start_data_record > DATA_CONVOLUTION_WINDOW) {
 			start_data_record = Time.time;
 			playerType = Model.DataProcess();
-			print(playerType);
-			string text = "Time : " + Time.time + " " + "Player type: " + playerType + "\n " +
-                       "AIeffectiveAttack: " + Model.AIeffectiveAttack + " " +
+	
+			string text = "AIeffectiveAttack: " + Model.AIeffectiveAttack + " " +
 						"AIeffectiveDefense: " + Model.AIeffectiveDefense + " " +
 						"PeffectiveAttack: " + Model.PeffectiveAttack + " " +
 						"PeffectiveDefense: " + Model.PeffectiveDefense + " " +
@@ -205,7 +207,6 @@ public class DumbAI : MonoBehaviour {
 		
 		
 		if (m_CurrentClipInfo[0].clip.name == "LightningOn" && trigger) {
-		
 			rg2d.velocity = new Vector2 (50 * direct, rg2d.velocity.y);
 			StatusCheck.AIlightningStatus = true;
 			attackRate = 0;
@@ -224,7 +225,7 @@ public class DumbAI : MonoBehaviour {
 	}
 
     int CheckStatus() {
-		int hitResult = StatusCheck.AI2BeingHitCheck();
+		int hitResult = StatusCheck.AIBeingHitCheck();
 
         if (hitResult != 0 && !invincible)
         {
