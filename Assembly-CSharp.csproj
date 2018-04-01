@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\DataModel.cs" />
      <Compile Include="Assets\Scripts\DumbAI.cs" />
      <Compile Include="Assets\Scripts\GameControl.cs" />
+     <Compile Include="Assets\Scripts\gameStart.cs" />
      <Compile Include="Assets\Scripts\StatusCheck.cs" />
      <None Include="Assets\Scripts\DataCollector.txt" />
  <Reference Include="UnityEngine.Analytics">

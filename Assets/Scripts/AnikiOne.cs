@@ -160,7 +160,10 @@ public class AnikiOne : MonoBehaviour {
 				 	start_invincible_time = Time.time;
 				 	invincible = true;
 				 	accumulated_waiting = 0;
-                }
+                } else if (Time.time - start_wating_time >= WAITING_TIME) {
+				  	waiting = false;
+			 	}
+				
 			}
 		
 		

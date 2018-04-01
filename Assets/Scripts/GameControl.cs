@@ -29,7 +29,8 @@ public class GameControl : MonoBehaviour {
 		Combo = 0;
 		gameOver = 0;
 		gameOverText.text = "";
-	}
+		
+	}						   
 
 	// Update is called once per frame
 	void Update () {
