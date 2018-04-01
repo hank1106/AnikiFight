@@ -29,7 +29,7 @@ public class AI2 : MonoBehaviour {
 	private int health = 25;
 	private float start_data_record = 0;
 
-    private const float WAITING_TIME = 1.5f;
+    private const float WAITING_TIME = 0.5f;
 	private const float INVINCIBLE_TIME = 0.7f;
 	private const int LIGHT_ATTACK_FREQUENCY = 10;
 	private const int DATA_CONVOLUTION_WINDOW = 2;

@@ -28,8 +28,9 @@ public class DumbAI : MonoBehaviour {
 	private int playerType = -1;
 	private int health = 25;
 	private float start_data_record = 0;
+	private int accumulated_waiting = 0;
 
-    private const float WAITING_TIME = 1.5f;
+    private const float WAITING_TIME = 0.5f;
 	private const float INVINCIBLE_TIME = 0.7f;
 	private const int LIGHT_ATTACK_FREQUENCY = 10;
 	private const int DATA_CONVOLUTION_WINDOW = 2;
@@ -76,7 +77,7 @@ public class DumbAI : MonoBehaviour {
 			
 		} else {
 			
-			if (Random.Range(0, 10f) > 7f)
+			if (Random.Range(0, 10f) > 4f)
         	{
 				anim.SetTrigger("j");
 				countCombo++;
@@ -140,16 +141,20 @@ public class DumbAI : MonoBehaviour {
 		}
         
 		IS_ANIKI_BEING_ATTACKED = false;
+		m_CurrentClipInfo = this.anim.GetCurrentAnimatorClipInfo(0);
 
         switch (CheckStatus())
         {
             case WAIT_FOR_A_WHILE:
                 if (waiting == true) {
-                    if (Time.time - start_wating_time >= WAITING_TIME) {
+                    if (Time.time - start_wating_time >= WAITING_TIME && accumulated_waiting > 9) {
                         waiting = false;
 						invincible = true;
 						start_invincible_time = Time.time;
-                    }
+						accumulated_waiting = 0;
+                    } else if (Time.time - start_wating_time > WAITING_TIME) {
+						waiting = false;
+					}
 					
                 } else {
                     waiting = true;
@@ -159,6 +164,9 @@ public class DumbAI : MonoBehaviour {
                 break;
 				
 			case IDLE:
+				if (m_CurrentClipInfo[0].clip.name == "LightningOn") {
+					break;
+				}
 				if (invincible) {
 					if (Time.time - start_invincible_time >= INVINCIBLE_TIME) {
 						invincible = false;
@@ -168,13 +176,17 @@ public class DumbAI : MonoBehaviour {
 				if (Input.GetKeyUp(KeyCode.L)) {
 					anim.SetTrigger("w");
 					rg2d.velocity = new Vector2 (7f * direct, 15f);
-					print("Avoid!");
 				}
 				
 				if (Time.time - start_wating_time <= WAITING_TIME + 0.1
-				   && Time.time - start_wating_time > WAITING_TIME && Time.time != 0) {
+				   && Time.time - start_wating_time > WAITING_TIME && Time.time > 5) {
+					
+					if (playerType == 1) {
 						anim.SetTrigger("w");
 						rg2d.velocity = new Vector2 (-7f * direct, 10f);
+						accumulated_waiting = 0;
+					}	
+					
 				}
 				
 				if (Time.time - start_wating_time >= WAITING_TIME) {
@@ -203,8 +215,6 @@ public class DumbAI : MonoBehaviour {
 				break;
         }
 		
-		m_CurrentClipInfo = this.anim.GetCurrentAnimatorClipInfo(0);
-		
 		
 		if (m_CurrentClipInfo[0].clip.name == "LightningOn" && trigger) {
 			rg2d.velocity = new Vector2 (50 * direct, rg2d.velocity.y);
@@ -232,6 +242,8 @@ public class DumbAI : MonoBehaviour {
 			Model.PeffectiveAttack ++;
 			health = hitResult == 1 ? health - 1 : health - 2;
 			anim.SetTrigger("hit");
+			accumulated_waiting ++;
+			start_wating_time = Time.time;
 			return 0;
         } else if (health <= 0) {
 			return 1;

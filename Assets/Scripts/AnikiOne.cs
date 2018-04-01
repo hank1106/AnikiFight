@@ -24,8 +24,9 @@ public class AnikiOne : MonoBehaviour {
 	
 	private float start_wating_time = 0;
 	private float start_invincible_time = 0;
+	private int accumulated_waiting = 0;
 	
-	private const float WAITING_TIME = 1.2f;
+	private const float WAITING_TIME = 0.4f;
 	private const float INVINCIBLE_TIME = 1f;
 	private const int LIGHT_ATTACK_FREQUENCY = 10;
 	private const int HEAVY_ATTACK_FREQUENCY = 20;
@@ -154,22 +155,23 @@ public class AnikiOne : MonoBehaviour {
 				
 				
 			} else {
-			 if (Time.time - start_wating_time >= WAITING_TIME) {
+			 if (Time.time - start_wating_time >= WAITING_TIME && accumulated_waiting > 9) {
                     waiting = false;
 				 	start_invincible_time = Time.time;
 				 	invincible = true;
+				 	accumulated_waiting = 0;
                 }
 			}
 		
 		
 		
 		if (isBeingHit()) {
-			rg2d.velocity = new Vector2 (0, rg2d.velocity.y);
+				rg2d.velocity = new Vector2 (0, rg2d.velocity.y);
+			
                 if (!waiting) {
 					waiting = true;
 					start_wating_time = Time.time;	
 				}
-                
         	}
 			
 		}
@@ -202,6 +204,8 @@ public class AnikiOne : MonoBehaviour {
         if(DumbAI.IS_ANIKI_BEING_ATTACKED && !dead && !invincible)
         {
 			anim.SetTrigger("hit");
+			start_wating_time = Time.time;	
+			accumulated_waiting ++;
 			rg2d.velocity = new Vector2 (0, rg2d.velocity.y);
 			health--;
         	return true;

@@ -32,9 +32,9 @@ namespace SC {
             {
                 return 1;
                 // TODO: speed to 0
-            } else if (distance > 9f && distance < 25f) {
+            } else if (distance > 9f && distance < 30f) {
 				return 0;
-			} else if (distance > 15f) {
+			} else if (distance > 30f) {
 				return 2;
 			}
 
