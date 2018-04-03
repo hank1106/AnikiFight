@@ -76,7 +76,7 @@ namespace DM {
 			float Y = 0;
 			foreach (Vector4 v in ProcessedData) {
 			
-				Y = 0.8f * v.w - 0.4f * v.x;
+				Y = 0.8f * v.w - 0.6f * v.x;
 				X = v.y - v.z;
 				
 				FeatureVectors.Add(new Vector2(Y, X));

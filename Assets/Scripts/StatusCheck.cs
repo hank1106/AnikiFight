@@ -17,7 +17,7 @@ namespace SC {
 		public static bool PlightningStatus = false;
 		public static bool AIlightningStatus = false;
 		
-        private const float LIGHT_ATTACK = 2.5f;
+        private const float LIGHT_ATTACK = 2f;
 		private const float HEAVY_ATTACK = 3f;
 		private const int NONE = 0;
 		private const int LIGHT = 1;
@@ -26,7 +26,7 @@ namespace SC {
 		
         public static int PositionCheck(float playerX, float playerY, float AIX, float AIY, Rigidbody2D rg2d)
         {
-            float distance = (AIX - playerX) * (AIX - playerX) + (AIY - playerY) * (AIY - playerY);
+            float distance = Mathf.Sqrt((AIX - playerX) * (AIX - playerX) + (AIY - playerY) * (AIY - playerY));
 			Model.RunAway = distance - Model.RunAway;
             if (distance < 4f)
             {
@@ -120,14 +120,15 @@ namespace SC {
             float AIY = GameObject.Find("Enemy").transform.position.y;
 
             float distance = Mathf.Sqrt((AIX - playerX) * (AIX - playerX) + (AIY - playerY) * (AIY - playerY));
-
-            if (PgetHitType == 1 && distance <= LIGHT_ATTACK)
-            {
-                return 1;
-            } else if (PgetHitType == 2 && distance <= HEAVY_ATTACK) {
-				return 2;
-				
+			if (DumbAI.IS_ANIKI_BEING_ATTACKED) {
+				if (PgetHitType == 1 && distance <= LIGHT_ATTACK)
+				{
+					return 1;
+				} else if (PgetHitType == 2 && distance <= HEAVY_ATTACK) {
+					return 2;
+				}
 			}
+            
             return 0;
         }
 

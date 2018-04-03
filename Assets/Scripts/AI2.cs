@@ -26,11 +26,11 @@ public class AI2 : MonoBehaviour {
 	private float start_invincible_time;
 	private float random_decision_time;
 	private int playerType = 0;
-	private int health = 25;
 	private float start_data_record = 0;
+	private int accumulated_waiting = 0;
 
     private const float WAITING_TIME = 0.5f;
-	private const float INVINCIBLE_TIME = 0.7f;
+	private const float INVINCIBLE_TIME = 1f;
 	private const int LIGHT_ATTACK_FREQUENCY = 10;
 	private const int DATA_CONVOLUTION_WINDOW = 2;
 	private const int HEAVY_ATTACK_FREQUENCY = 20;
@@ -42,6 +42,7 @@ public class AI2 : MonoBehaviour {
 	
 	public static bool IS_ANIKI_BEING_ATTACKED = false;
 	public Animator anim;
+	public int health = 50;
 	AnimatorClipInfo[] m_CurrentClipInfo;
 	BoxCollider2D collider;
 	
@@ -51,7 +52,7 @@ public class AI2 : MonoBehaviour {
 	
 	void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name.Contains ("Aniki") 
+        if (collision.gameObject.name.Contains ("Enemy") 
 			&& StatusCheck.PlightningStatus 
 		    && !StatusCheck.AIlightningStatus) {
 			GameControl.instance.Score();
@@ -69,7 +70,7 @@ public class AI2 : MonoBehaviour {
         float AIX = GameObject.Find("Aniki").transform.position.x;
 		int direct = AIX - playerX > 2f ? 1 : -1;
 		
-		if (Random.Range(0, 10f) > 8f) {
+		if (Random.Range(0, 10f) > 9.5f) {
 				anim.SetTrigger("w");
 				rg2d.velocity = new Vector2 (10f * direct, 12f);
 		} else {
@@ -90,7 +91,8 @@ public class AI2 : MonoBehaviour {
 			}
 			
 			IS_ANIKI_BEING_ATTACKED = true;
-			Model.AIeffectiveAttack ++;
+			Model.PeffectiveAttack ++;
+			Model.InputAttack ++;
 		}
     }
 
@@ -109,7 +111,7 @@ public class AI2 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		GameObject.Find("Blood1").transform.localScale = new Vector3(8.05f * health / 25 , 0.34f, 0);
+		GameObject.Find("Blood1").transform.localScale = new Vector3(8.05f * health / 50 , 0.34f, 0);
         float AIX = GameObject.Find("Aniki").transform.position.x;
         float AIY = GameObject.Find("Aniki").transform.position.y;
 		float playerX = GameObject.Find("Enemy").transform.position.x;
@@ -121,12 +123,20 @@ public class AI2 : MonoBehaviour {
         switch (CheckStatus())
         {
             case WAIT_FOR_A_WHILE:
-                if (waiting == true) {
-                    if (Time.time - start_wating_time >= WAITING_TIME) {
+                 if (waiting == true) {
+                    if (Time.time - start_wating_time >= WAITING_TIME && accumulated_waiting > 9) {
                         waiting = false;
 						invincible = true;
 						start_invincible_time = Time.time;
-                    }
+						accumulated_waiting = 0;
+                    } else if (Time.time - start_wating_time > WAITING_TIME) {
+						waiting = false;
+					} else if (accumulated_waiting > 11) {
+						waiting = false;
+						invincible = true;
+						start_invincible_time = Time.time;
+						accumulated_waiting = 0;
+					}
 					
                 } else {
                     waiting = true;
@@ -148,9 +158,11 @@ public class AI2 : MonoBehaviour {
 				}
 				
 				if (Time.time - start_wating_time <= WAITING_TIME + 0.1
-				   && Time.time - start_wating_time > WAITING_TIME && Time.time != 0) {
+				    && Time.time - start_wating_time > WAITING_TIME 
+					&& Time.time != 0) {
 						anim.SetTrigger("w");
 						rg2d.velocity = new Vector2 (-7f * direct, 10f);
+						accumulated_waiting = 0;
 				}
 				
 				if (Time.time - start_wating_time >= WAITING_TIME) {
@@ -160,6 +172,7 @@ public class AI2 : MonoBehaviour {
                         if (run == 1 && attackRate >= ATTACK_WAITING_TIME) {
 							Combat();
 							attackRate = 0;
+							accumulated_waiting = 0;
 						} else if (run == 0 && playerType == 1) {
 							MoveAway();
 						} else if (run ==2 && LightningCoolDown >800) {
@@ -208,13 +221,17 @@ public class AI2 : MonoBehaviour {
     int CheckStatus() {
 		int hitResult = StatusCheck.AI2BeingHitCheck();
 		
-        if (hitResult != 0 && !invincible)
+        if (hitResult != 0 && !invincible && health > 0)
         {
-			Model.PeffectiveAttack ++;
+			Model.AIeffectiveAttack ++;
 			health = hitResult == 1 ? health - 1 : health - 2;
 			anim.SetTrigger("hit");
+			accumulated_waiting ++;
+			start_wating_time = Time.time;
 			return 0;
         } else if (health <= 0) {
+			DumbAI.ThisWin ++;
+			SceneManager.LoadScene ("AIvsAI");
 			return 1;
 		}
         else

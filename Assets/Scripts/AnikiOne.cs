@@ -31,7 +31,7 @@ public class AnikiOne : MonoBehaviour {
 	private const int LIGHT_ATTACK_FREQUENCY = 10;
 	private const int HEAVY_ATTACK_FREQUENCY = 20;
 	private int ATTACK_WAITING_TIME = 0;
-	private int health = 30;
+	private int health = 50;
 	BoxCollider2D collider;
 	//private Animator anim ;
 
@@ -72,7 +72,7 @@ public class AnikiOne : MonoBehaviour {
 		float AI = GameObject.Find("Enemy").transform.position.x;
 		StatusCheck.AIgetHitType = 0;
 		
-		GameObject.Find("Blood1").transform.localScale = new Vector3(8.05f * health / 30 , 0.34f, 0);
+		GameObject.Find("Blood1").transform.localScale = new Vector3(8.05f * health / 50 , 0.34f, 0);
 		
 		if (health <= 0) {
 			anim.SetTrigger("die");
@@ -162,7 +162,12 @@ public class AnikiOne : MonoBehaviour {
 				 	accumulated_waiting = 0;
                 } else if (Time.time - start_wating_time >= WAITING_TIME) {
 				  	waiting = false;
-			 	}
+			 	} else if (accumulated_waiting > 11) {
+						waiting = false;
+						invincible = true;
+						start_invincible_time = Time.time;
+						accumulated_waiting = 0;
+					}
 				
 			}
 		
@@ -204,13 +209,13 @@ public class AnikiOne : MonoBehaviour {
 	
 	bool isBeingHit() 
     {
-        if(DumbAI.IS_ANIKI_BEING_ATTACKED && !dead && !invincible)
+        if(StatusCheck.PBeingHitCheck() > 0 && !dead && !invincible)
         {
 			anim.SetTrigger("hit");
 			start_wating_time = Time.time;	
 			accumulated_waiting ++;
 			rg2d.velocity = new Vector2 (0, rg2d.velocity.y);
-			health--;
+			health -= StatusCheck.PBeingHitCheck();
         	return true;
         }
         else
