@@ -16,6 +16,8 @@ namespace SC {
 		
 		public static bool PlightningStatus = false;
 		public static bool AIlightningStatus = false;
+		public static bool AIlightningPre = false;
+		public static bool PlightningPre = false;
 		
         private const float LIGHT_ATTACK = 2f;
 		private const float HEAVY_ATTACK = 3f;
@@ -28,14 +30,16 @@ namespace SC {
         {
             float distance = Mathf.Sqrt((AIX - playerX) * (AIX - playerX) + (AIY - playerY) * (AIY - playerY));
 			Model.RunAway = distance - Model.RunAway;
-            if (distance < 4f)
+            if (distance < 2.1f)
             {
-                return 1;
+                return 0;
                 // TODO: speed to 0
-            } else if (distance > 9f && distance < 30f) {
-				return 0;
-			} else if (distance > 30f) {
+            } else if (2f < distance && distance < 3.1f) {
+				return 1;
+			} else if (distance > 5f && distance < 12f) {
 				return 2;
+			} else if (distance > 12f) {
+				return 3;
 			}
 
             return -1;

@@ -64,7 +64,7 @@ public class AI2 : MonoBehaviour {
 		}
     }
 
-    public void Combat()
+    public void Combat(int x)
     {
 		float playerX = GameObject.Find("Enemy").transform.position.x;
         float AIX = GameObject.Find("Aniki").transform.position.x;
@@ -74,21 +74,33 @@ public class AI2 : MonoBehaviour {
 				anim.SetTrigger("w");
 				rg2d.velocity = new Vector2 (10f * direct, 12f);
 		} else {
-			
-			if (countCombo < 2)
-        	{
-				anim.SetTrigger("j");
-				countCombo++;
-				ATTACK_WAITING_TIME = LIGHT_ATTACK_FREQUENCY;
-				StatusCheck.AIgetHitType = 1;
-        	}
-			else
-			{
-				anim.SetTrigger("k");
-				countCombo = 0;
-				ATTACK_WAITING_TIME = HEAVY_ATTACK_FREQUENCY;
-				StatusCheck.AIgetHitType = 2;
+			if (x == 0) {
+				if (countCombo < 2)
+				{
+					anim.SetTrigger("j");
+					countCombo++;
+					ATTACK_WAITING_TIME = LIGHT_ATTACK_FREQUENCY;
+					StatusCheck.AIgetHitType = 1;
+				}
+				else
+				{
+					anim.SetTrigger("k");
+					countCombo = 0;
+					ATTACK_WAITING_TIME = HEAVY_ATTACK_FREQUENCY;
+					StatusCheck.AIgetHitType = 2;
+				}
+			} else if (x == 1) {
+				if (Random.Range(0, 10f) > 4f)
+				{
+					
+					anim.SetTrigger("k");
+					countCombo = 0;
+					ATTACK_WAITING_TIME = HEAVY_ATTACK_FREQUENCY;
+					StatusCheck.AIgetHitType = 2;
+				}
 			}
+			
+			
 			
 			IS_ANIKI_BEING_ATTACKED = true;
 			Model.PeffectiveAttack ++;
@@ -169,13 +181,15 @@ public class AI2 : MonoBehaviour {
 					 
 						int run = StatusCheck.PositionCheck(playerX, playerY, AIX, AIY, rg2d);
 					
-                        if (run == 1 && attackRate >= ATTACK_WAITING_TIME) {
-							Combat();
+                        if (run == 0 && attackRate >= ATTACK_WAITING_TIME) {
+							Combat(0);
 							attackRate = 0;
 							accumulated_waiting = 0;
-						} else if (run == 0 && playerType == 1) {
-							MoveAway();
-						} else if (run ==2 && LightningCoolDown >800) {
+						} else if (run == 1 && attackRate >= ATTACK_WAITING_TIME) {
+							Combat(1);
+							attackRate = 0;
+							accumulated_waiting = 0;
+						} else if (run > 2 && LightningCoolDown >800) {
 							anim.SetTrigger("lightning");
 							attackRate = 0;
 							ATTACK_WAITING_TIME = 10;

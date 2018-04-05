@@ -2818,3 +2818,1001 @@ AIeffectiveAttack: 84 AIeffectiveDefense: 1 PeffectiveAttack: 18 PeffectiveDefen
  
 AIeffectiveAttack: 84 AIeffectiveDefense: 1 PeffectiveAttack: 18 PeffectiveDefense: 1 InputAttack: 51 RunAway: 15.46455
  
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 0
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: -1.320354
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 14.8434
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 2.136003
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 13.83282
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: -0.4904041
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 2.593956
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 3.425487
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 3.436502
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 9.291186
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 0
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 7.050418
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: -0.5204191
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: -1.510424
+ 
+AIeffectiveAttack: 4 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 6 RunAway: -1.530426
+ 
+AIeffectiveAttack: 4 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 7 RunAway: 8.544983
+ 
+AIeffectiveAttack: 4 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 8 RunAway: 10.50498
+ 
+AIeffectiveAttack: 4 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 8 RunAway: -0.9918776
+ 
+AIeffectiveAttack: 6 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 11 RunAway: 7.331094
+ 
+AIeffectiveAttack: 14 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 12 RunAway: 6.186245
+ 
+AIeffectiveAttack: 15 AIeffectiveDefense: 1 PeffectiveAttack: 6 PeffectiveDefense: 1 InputAttack: 17 RunAway: 6.062217
+ 
+AIeffectiveAttack: 15 AIeffectiveDefense: 1 PeffectiveAttack: 12 PeffectiveDefense: 1 InputAttack: 23 RunAway: -4.235966
+ 
+AIeffectiveAttack: 21 AIeffectiveDefense: 1 PeffectiveAttack: 12 PeffectiveDefense: 1 InputAttack: 23 RunAway: 2.346166
+ 
+AIeffectiveAttack: 21 AIeffectiveDefense: 1 PeffectiveAttack: 12 PeffectiveDefense: 1 InputAttack: 23 RunAway: 0.1211329
+ 
+AIeffectiveAttack: 25 AIeffectiveDefense: 1 PeffectiveAttack: 12 PeffectiveDefense: 1 InputAttack: 24 RunAway: 8.7229
+ 
+AIeffectiveAttack: 30 AIeffectiveDefense: 1 PeffectiveAttack: 12 PeffectiveDefense: 1 InputAttack: 28 RunAway: -2.2929
+ 
+AIeffectiveAttack: 30 AIeffectiveDefense: 1 PeffectiveAttack: 12 PeffectiveDefense: 1 InputAttack: 30 RunAway: 7.187286
+ 
+AIeffectiveAttack: 37 AIeffectiveDefense: 1 PeffectiveAttack: 13 PeffectiveDefense: 1 InputAttack: 33 RunAway: 4.74715
+ 
+AIeffectiveAttack: 37 AIeffectiveDefense: 1 PeffectiveAttack: 17 PeffectiveDefense: 1 InputAttack: 37 RunAway: 4.636584
+ 
+AIeffectiveAttack: 37 AIeffectiveDefense: 1 PeffectiveAttack: 21 PeffectiveDefense: 1 InputAttack: 41 RunAway: 4.636584
+ 
+AIeffectiveAttack: 42 AIeffectiveDefense: 1 PeffectiveAttack: 24 PeffectiveDefense: 1 InputAttack: 45 RunAway: -2.580966
+ 
+AIeffectiveAttack: 44 AIeffectiveDefense: 1 PeffectiveAttack: 24 PeffectiveDefense: 1 InputAttack: 46 RunAway: 8.417412
+ 
+AIeffectiveAttack: 47 AIeffectiveDefense: 1 PeffectiveAttack: 24 PeffectiveDefense: 1 InputAttack: 46 RunAway: -2.349663
+ 
+AIeffectiveAttack: 51 AIeffectiveDefense: 1 PeffectiveAttack: 24 PeffectiveDefense: 1 InputAttack: 46 RunAway: -0.3302951
+ 
+AIeffectiveAttack: 56 AIeffectiveDefense: 1 PeffectiveAttack: 24 PeffectiveDefense: 1 InputAttack: 46 RunAway: 4.449962
+ 
+AIeffectiveAttack: 56 AIeffectiveDefense: 1 PeffectiveAttack: 24 PeffectiveDefense: 1 InputAttack: 47 RunAway: 2.005694
+ 
+AIeffectiveAttack: 57 AIeffectiveDefense: 1 PeffectiveAttack: 24 PeffectiveDefense: 1 InputAttack: 50 RunAway: -1.06422
+ 
+AIeffectiveAttack: 66 AIeffectiveDefense: 1 PeffectiveAttack: 24 PeffectiveDefense: 1 InputAttack: 50 RunAway: -1.063031
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 0
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 0
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 0
+ 
+AIeffectiveAttack: 16 AIeffectiveDefense: 1 PeffectiveAttack: 3 PeffectiveDefense: 1 InputAttack: 3 RunAway: 0.02267981
+ 
+AIeffectiveAttack: 28 AIeffectiveDefense: 1 PeffectiveAttack: 3 PeffectiveDefense: 1 InputAttack: 3 RunAway: 3.617274
+ 
+AIeffectiveAttack: 31 AIeffectiveDefense: 1 PeffectiveAttack: 8 PeffectiveDefense: 1 InputAttack: 7 RunAway: -1.109319
+ 
+AIeffectiveAttack: 42 AIeffectiveDefense: 1 PeffectiveAttack: 9 PeffectiveDefense: 1 InputAttack: 8 RunAway: 4.828036
+ 
+AIeffectiveAttack: 43 AIeffectiveDefense: 1 PeffectiveAttack: 24 PeffectiveDefense: 1 InputAttack: 16 RunAway: -2.13588
+ 
+AIeffectiveAttack: 50 AIeffectiveDefense: 1 PeffectiveAttack: 35 PeffectiveDefense: 1 InputAttack: 22 RunAway: -0.4580135
+ 
+AIeffectiveAttack: 57 AIeffectiveDefense: 1 PeffectiveAttack: 38 PeffectiveDefense: 1 InputAttack: 25 RunAway: 1.005163
+ 
+AIeffectiveAttack: 59 AIeffectiveDefense: 1 PeffectiveAttack: 46 PeffectiveDefense: 1 InputAttack: 30 RunAway: 1.590146
+ 
+AIeffectiveAttack: 59 AIeffectiveDefense: 1 PeffectiveAttack: 60 PeffectiveDefense: 1 InputAttack: 37 RunAway: -0.02264798
+ 
+AIeffectiveAttack: 67 AIeffectiveDefense: 1 PeffectiveAttack: 65 PeffectiveDefense: 1 InputAttack: 40 RunAway: 2.342708
+ 
+AIeffectiveAttack: 71 AIeffectiveDefense: 1 PeffectiveAttack: 68 PeffectiveDefense: 1 InputAttack: 43 RunAway: 2.596279
+ 
+AIeffectiveAttack: 71 AIeffectiveDefense: 1 PeffectiveAttack: 74 PeffectiveDefense: 1 InputAttack: 46 RunAway: -0.08865213
+ 
+AIeffectiveAttack: 80 AIeffectiveDefense: 1 PeffectiveAttack: 77 PeffectiveDefense: 1 InputAttack: 49 RunAway: -0.08865261
+ 
+AIeffectiveAttack: 80 AIeffectiveDefense: 1 PeffectiveAttack: 82 PeffectiveDefense: 1 InputAttack: 52 RunAway: 0.6609359
+ 
+AIeffectiveAttack: 85 AIeffectiveDefense: 1 PeffectiveAttack: 83 PeffectiveDefense: 1 InputAttack: 53 RunAway: 2.937157
+ 
+AIeffectiveAttack: 85 AIeffectiveDefense: 1 PeffectiveAttack: 83 PeffectiveDefense: 1 InputAttack: 53 RunAway: 2.937157
+ 
+AIeffectiveAttack: 86 AIeffectiveDefense: 1 PeffectiveAttack: 90 PeffectiveDefense: 1 InputAttack: 57 RunAway: -0.2523074
+ 
+AIeffectiveAttack: 86 AIeffectiveDefense: 1 PeffectiveAttack: 98 PeffectiveDefense: 1 InputAttack: 61 RunAway: 1.819805
+ 
+AIeffectiveAttack: 86 AIeffectiveDefense: 1 PeffectiveAttack: 98 PeffectiveDefense: 1 InputAttack: 61 RunAway: 1.819805
+ 
+AIeffectiveAttack: 86 AIeffectiveDefense: 1 PeffectiveAttack: 98 PeffectiveDefense: 1 InputAttack: 61 RunAway: 1.819805
+ 
+AIeffectiveAttack: 86 AIeffectiveDefense: 1 PeffectiveAttack: 98 PeffectiveDefense: 1 InputAttack: 61 RunAway: 1.819805
+ 
+AIeffectiveAttack: 96 AIeffectiveDefense: 1 PeffectiveAttack: 100 PeffectiveDefense: 1 InputAttack: 63 RunAway: -0.03491116
+ 
+AIeffectiveAttack: 110 AIeffectiveDefense: 1 PeffectiveAttack: 100 PeffectiveDefense: 1 InputAttack: 63 RunAway: 1.602409
+ 
+AIeffectiveAttack: 117 AIeffectiveDefense: 1 PeffectiveAttack: 103 PeffectiveDefense: 1 InputAttack: 65 RunAway: 1.752752
+ 
+AIeffectiveAttack: 117 AIeffectiveDefense: 1 PeffectiveAttack: 103 PeffectiveDefense: 1 InputAttack: 65 RunAway: 1.752752
+ 
+AIeffectiveAttack: 125 AIeffectiveDefense: 1 PeffectiveAttack: 104 PeffectiveDefense: 1 InputAttack: 66 RunAway: 1.787843
+ 
+AIeffectiveAttack: 144 AIeffectiveDefense: 1 PeffectiveAttack: 104 PeffectiveDefense: 1 InputAttack: 66 RunAway: 1.787853
+ 
+AIeffectiveAttack: 156 AIeffectiveDefense: 1 PeffectiveAttack: 107 PeffectiveDefense: 1 InputAttack: 68 RunAway: 3.048636
+ 
+AIeffectiveAttack: 156 AIeffectiveDefense: 1 PeffectiveAttack: 107 PeffectiveDefense: 1 InputAttack: 68 RunAway: 3.048636
+ 
+AIeffectiveAttack: 156 AIeffectiveDefense: 1 PeffectiveAttack: 107 PeffectiveDefense: 1 InputAttack: 68 RunAway: 3.048636
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 6.831583
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 6.77158
+ 
+AIeffectiveAttack: 8 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: -3.558152
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: -1.801577
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 1.138424
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 7.180438
+ 
+AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 10.26967
+ 
+AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 4.394392
+ 
+AIeffectiveAttack: 3 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 4 RunAway: -3.897944
+ 
+AIeffectiveAttack: 8 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 4 RunAway: 11.31119
+ 
+AIeffectiveAttack: 8 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 4 RunAway: 9.536455
+ 
+AIeffectiveAttack: 10 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 5 RunAway: -2.857204
+ 
+AIeffectiveAttack: 16 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 5 RunAway: 4.514832
+ 
+AIeffectiveAttack: 20 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 5 RunAway: -2.805913
+ 
+AIeffectiveAttack: 26 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 5 RunAway: -3.321584
+ 
+AIeffectiveAttack: 31 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 5 RunAway: 8.295945
+ 
+AIeffectiveAttack: 31 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 6 RunAway: 7.101624
+ 
+AIeffectiveAttack: 40 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 6 RunAway: 9.07902
+ 
+AIeffectiveAttack: 40 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 7 RunAway: 3.455778
+ 
+AIeffectiveAttack: 40 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 7 RunAway: 0.6635895
+ 
+AIeffectiveAttack: 45 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 9 RunAway: 2.82666
+ 
+AIeffectiveAttack: 50 AIeffectiveDefense: 1 PeffectiveAttack: 3 PeffectiveDefense: 1 InputAttack: 12 RunAway: 1.586599
+ 
+AIeffectiveAttack: 54 AIeffectiveDefense: 1 PeffectiveAttack: 3 PeffectiveDefense: 1 InputAttack: 12 RunAway: 6.724538
+ 
+AIeffectiveAttack: 57 AIeffectiveDefense: 1 PeffectiveAttack: 3 PeffectiveDefense: 1 InputAttack: 13 RunAway: 11.1683
+ 
+AIeffectiveAttack: 3 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 1.801378
+ 
+AIeffectiveAttack: 3 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 10.44516
+ 
+AIeffectiveAttack: 3 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 7.000764
+ 
+AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: 4.522607
+ 
+AIeffectiveAttack: 17 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 5 RunAway: -0.02902746
+ 
+AIeffectiveAttack: 25 AIeffectiveDefense: 1 PeffectiveAttack: 3 PeffectiveDefense: 1 InputAttack: 6 RunAway: -2.034191
+ 
+AIeffectiveAttack: 27 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 12 RunAway: -2.530735
+ 
+AIeffectiveAttack: 40 AIeffectiveDefense: 1 PeffectiveAttack: 9 PeffectiveDefense: 1 InputAttack: 14 RunAway: 6.312277
+ 
+AIeffectiveAttack: 41 AIeffectiveDefense: 1 PeffectiveAttack: 14 PeffectiveDefense: 1 InputAttack: 19 RunAway: 4.886049
+ 
+AIeffectiveAttack: 41 AIeffectiveDefense: 1 PeffectiveAttack: 19 PeffectiveDefense: 1 InputAttack: 24 RunAway: 4.88605
+ 
+AIeffectiveAttack: 50 AIeffectiveDefense: 1 PeffectiveAttack: 20 PeffectiveDefense: 1 InputAttack: 27 RunAway: -1.591801
+ 
+AIeffectiveAttack: 54 AIeffectiveDefense: 1 PeffectiveAttack: 20 PeffectiveDefense: 1 InputAttack: 28 RunAway: 8.276812
+ 
+AIeffectiveAttack: 55 AIeffectiveDefense: 1 PeffectiveAttack: 20 PeffectiveDefense: 1 InputAttack: 28 RunAway: 7.381617
+ 
+AIeffectiveAttack: 61 AIeffectiveDefense: 1 PeffectiveAttack: 20 PeffectiveDefense: 1 InputAttack: 29 RunAway: -0.02152205
+ 
+AIeffectiveAttack: 61 AIeffectiveDefense: 1 PeffectiveAttack: 20 PeffectiveDefense: 1 InputAttack: 29 RunAway: 7.934771
+ 
+AIeffectiveAttack: 64 AIeffectiveDefense: 1 PeffectiveAttack: 20 PeffectiveDefense: 1 InputAttack: 30 RunAway: -3.170041
+ 
+AIeffectiveAttack: 68 AIeffectiveDefense: 1 PeffectiveAttack: 20 PeffectiveDefense: 1 InputAttack: 30 RunAway: 7.05454
+ 
+AIeffectiveAttack: 68 AIeffectiveDefense: 1 PeffectiveAttack: 20 PeffectiveDefense: 1 InputAttack: 30 RunAway: 5.325826
+ 
+AIeffectiveAttack: 76 AIeffectiveDefense: 1 PeffectiveAttack: 21 PeffectiveDefense: 1 InputAttack: 31 RunAway: -1.160093
+ 
+AIeffectiveAttack: 82 AIeffectiveDefense: 1 PeffectiveAttack: 24 PeffectiveDefense: 1 InputAttack: 34 RunAway: 4.041304
+ 
+AIeffectiveAttack: 85 AIeffectiveDefense: 1 PeffectiveAttack: 24 PeffectiveDefense: 1 InputAttack: 34 RunAway: 7.735004
+ 
+AIeffectiveAttack: 87 AIeffectiveDefense: 1 PeffectiveAttack: 24 PeffectiveDefense: 1 InputAttack: 34 RunAway: 3.927013
+ 
+AIeffectiveAttack: 87 AIeffectiveDefense: 1 PeffectiveAttack: 30 PeffectiveDefense: 1 InputAttack: 40 RunAway: 3.788361
+ 
+AIeffectiveAttack: 87 AIeffectiveDefense: 1 PeffectiveAttack: 36 PeffectiveDefense: 1 InputAttack: 47 RunAway: -2.220861
+ 
+AIeffectiveAttack: 95 AIeffectiveDefense: 1 PeffectiveAttack: 36 PeffectiveDefense: 1 InputAttack: 48 RunAway: -0.6692653
+ 
+AIeffectiveAttack: 96 AIeffectiveDefense: 1 PeffectiveAttack: 36 PeffectiveDefense: 1 InputAttack: 49 RunAway: 6.207887
+ 
+AIeffectiveAttack: 96 AIeffectiveDefense: 1 PeffectiveAttack: 36 PeffectiveDefense: 1 InputAttack: 49 RunAway: 6.207887
+ 
+AIeffectiveAttack: 100 AIeffectiveDefense: 1 PeffectiveAttack: 40 PeffectiveDefense: 1 InputAttack: 52 RunAway: -4.475254
+ 
+AIeffectiveAttack: 115 AIeffectiveDefense: 1 PeffectiveAttack: 41 PeffectiveDefense: 1 InputAttack: 53 RunAway: -2.941205
+ 
+AIeffectiveAttack: 121 AIeffectiveDefense: 1 PeffectiveAttack: 46 PeffectiveDefense: 1 InputAttack: 58 RunAway: 8.171356
+ 
+AIeffectiveAttack: 127 AIeffectiveDefense: 1 PeffectiveAttack: 53 PeffectiveDefense: 1 InputAttack: 64 RunAway: -6.088454
+ 
+AIeffectiveAttack: 137 AIeffectiveDefense: 1 PeffectiveAttack: 54 PeffectiveDefense: 1 InputAttack: 65 RunAway: -6.970723
+ 
+AIeffectiveAttack: 139 AIeffectiveDefense: 1 PeffectiveAttack: 56 PeffectiveDefense: 1 InputAttack: 67 RunAway: 8.998226
+ 
+AIeffectiveAttack: 139 AIeffectiveDefense: 1 PeffectiveAttack: 56 PeffectiveDefense: 1 InputAttack: 67 RunAway: 8.998226
+ 
+AIeffectiveAttack: 140 AIeffectiveDefense: 1 PeffectiveAttack: 61 PeffectiveDefense: 1 InputAttack: 70 RunAway: 9.001574
+ 
+AIeffectiveAttack: 146 AIeffectiveDefense: 1 PeffectiveAttack: 62 PeffectiveDefense: 1 InputAttack: 71 RunAway: 9.001574
+ 
+AIeffectiveAttack: 146 AIeffectiveDefense: 1 PeffectiveAttack: 62 PeffectiveDefense: 1 InputAttack: 71 RunAway: 9.001574
+ 
+AIeffectiveAttack: 158 AIeffectiveDefense: 1 PeffectiveAttack: 66 PeffectiveDefense: 1 InputAttack: 74 RunAway: 10.43139
+ 
+AIeffectiveAttack: 170 AIeffectiveDefense: 1 PeffectiveAttack: 69 PeffectiveDefense: 1 InputAttack: 76 RunAway: -7.907222
+ 
+AIeffectiveAttack: 171 AIeffectiveDefense: 1 PeffectiveAttack: 70 PeffectiveDefense: 1 InputAttack: 77 RunAway: -7.90722
+ 
+AIeffectiveAttack: 171 AIeffectiveDefense: 1 PeffectiveAttack: 70 PeffectiveDefense: 1 InputAttack: 77 RunAway: -7.907228
+ 
+AIeffectiveAttack: 171 AIeffectiveDefense: 1 PeffectiveAttack: 70 PeffectiveDefense: 1 InputAttack: 77 RunAway: -7.907239
+ 
+AIeffectiveAttack: 172 AIeffectiveDefense: 1 PeffectiveAttack: 71 PeffectiveDefense: 1 InputAttack: 78 RunAway: -7.907245
+ 
+AIeffectiveAttack: 183 AIeffectiveDefense: 1 PeffectiveAttack: 75 PeffectiveDefense: 1 InputAttack: 81 RunAway: 12.35545
+ 
+AIeffectiveAttack: 197 AIeffectiveDefense: 1 PeffectiveAttack: 81 PeffectiveDefense: 1 InputAttack: 85 RunAway: 12.028
+ 
+AIeffectiveAttack: 213 AIeffectiveDefense: 1 PeffectiveAttack: 82 PeffectiveDefense: 1 InputAttack: 86 RunAway: -9.200058
+ 
+AIeffectiveAttack: 213 AIeffectiveDefense: 1 PeffectiveAttack: 82 PeffectiveDefense: 1 InputAttack: 86 RunAway: -9.200051
+ 
+AIeffectiveAttack: 216 AIeffectiveDefense: 1 PeffectiveAttack: 85 PeffectiveDefense: 1 InputAttack: 89 RunAway: -9.200052
+ 
+AIeffectiveAttack: 226 AIeffectiveDefense: 1 PeffectiveAttack: 85 PeffectiveDefense: 1 InputAttack: 89 RunAway: -5.681576
+ 
+AIeffectiveAttack: 226 AIeffectiveDefense: 1 PeffectiveAttack: 85 PeffectiveDefense: 1 InputAttack: 89 RunAway: -5.681582
+ 
+AIeffectiveAttack: 232 AIeffectiveDefense: 1 PeffectiveAttack: 87 PeffectiveDefense: 1 InputAttack: 91 RunAway: 9.816408
+ 
+AIeffectiveAttack: 232 AIeffectiveDefense: 1 PeffectiveAttack: 87 PeffectiveDefense: 1 InputAttack: 91 RunAway: 9.816408
+ 
+AIeffectiveAttack: 243 AIeffectiveDefense: 1 PeffectiveAttack: 88 PeffectiveDefense: 1 InputAttack: 92 RunAway: 11.05565
+ 
+AIeffectiveAttack: 243 AIeffectiveDefense: 1 PeffectiveAttack: 88 PeffectiveDefense: 1 InputAttack: 92 RunAway: -5.215439
+ 
+AIeffectiveAttack: 252 AIeffectiveDefense: 1 PeffectiveAttack: 90 PeffectiveDefense: 1 InputAttack: 94 RunAway: 9.401144
+ 
+AIeffectiveAttack: 252 AIeffectiveDefense: 1 PeffectiveAttack: 92 PeffectiveDefense: 1 InputAttack: 95 RunAway: -6.514484
+ 
+AIeffectiveAttack: 258 AIeffectiveDefense: 1 PeffectiveAttack: 94 PeffectiveDefense: 1 InputAttack: 97 RunAway: -6.514486
+ 
+AIeffectiveAttack: 258 AIeffectiveDefense: 1 PeffectiveAttack: 94 PeffectiveDefense: 1 InputAttack: 97 RunAway: -6.514491
+ 
+AIeffectiveAttack: 267 AIeffectiveDefense: 1 PeffectiveAttack: 95 PeffectiveDefense: 1 InputAttack: 98 RunAway: 11.78134
+ 
+AIeffectiveAttack: 267 AIeffectiveDefense: 1 PeffectiveAttack: 95 PeffectiveDefense: 1 InputAttack: 98 RunAway: 11.78134
+ 
+AIeffectiveAttack: 267 AIeffectiveDefense: 1 PeffectiveAttack: 95 PeffectiveDefense: 1 InputAttack: 98 RunAway: 11.78134
+ 
+AIeffectiveAttack: 268 AIeffectiveDefense: 1 PeffectiveAttack: 97 PeffectiveDefense: 1 InputAttack: 100 RunAway: 11.79079
+ 
+AIeffectiveAttack: 281 AIeffectiveDefense: 1 PeffectiveAttack: 97 PeffectiveDefense: 1 InputAttack: 100 RunAway: 14.88086
+ 
+AIeffectiveAttack: 281 AIeffectiveDefense: 1 PeffectiveAttack: 101 PeffectiveDefense: 1 InputAttack: 102 RunAway: 13.7826
+ 
+AIeffectiveAttack: 281 AIeffectiveDefense: 1 PeffectiveAttack: 115 PeffectiveDefense: 1 InputAttack: 109 RunAway: -12.2154
+ 
+AIeffectiveAttack: 293 AIeffectiveDefense: 1 PeffectiveAttack: 117 PeffectiveDefense: 1 InputAttack: 110 RunAway: -9.887879
+ 
+AIeffectiveAttack: 293 AIeffectiveDefense: 1 PeffectiveAttack: 117 PeffectiveDefense: 1 InputAttack: 110 RunAway: -9.887889
+ 
+AIeffectiveAttack: 294 AIeffectiveDefense: 1 PeffectiveAttack: 118 PeffectiveDefense: 1 InputAttack: 111 RunAway: -9.887892
+ 
+AIeffectiveAttack: 294 AIeffectiveDefense: 1 PeffectiveAttack: 119 PeffectiveDefense: 1 InputAttack: 112 RunAway: -9.887892
+ 
+AIeffectiveAttack: 295 AIeffectiveDefense: 1 PeffectiveAttack: 120 PeffectiveDefense: 1 InputAttack: 113 RunAway: -9.887899
+ 
+AIeffectiveAttack: 301 AIeffectiveDefense: 1 PeffectiveAttack: 121 PeffectiveDefense: 1 InputAttack: 114 RunAway: -7.840171
+ 
+AIeffectiveAttack: 301 AIeffectiveDefense: 1 PeffectiveAttack: 121 PeffectiveDefense: 1 InputAttack: 114 RunAway: -7.840176
+ 
+AIeffectiveAttack: 301 AIeffectiveDefense: 1 PeffectiveAttack: 121 PeffectiveDefense: 1 InputAttack: 114 RunAway: -7.840175
+ 
+AIeffectiveAttack: 312 AIeffectiveDefense: 1 PeffectiveAttack: 124 PeffectiveDefense: 1 InputAttack: 117 RunAway: 10.73164
+ 
+AIeffectiveAttack: 318 AIeffectiveDefense: 1 PeffectiveAttack: 127 PeffectiveDefense: 1 InputAttack: 120 RunAway: -8.46883
+ 
+AIeffectiveAttack: 338 AIeffectiveDefense: 1 PeffectiveAttack: 129 PeffectiveDefense: 1 InputAttack: 122 RunAway: -7.228579
+ 
+AIeffectiveAttack: 343 AIeffectiveDefense: 1 PeffectiveAttack: 134 PeffectiveDefense: 1 InputAttack: 127 RunAway: -7.228576
+ 
+AIeffectiveAttack: 348 AIeffectiveDefense: 1 PeffectiveAttack: 134 PeffectiveDefense: 1 InputAttack: 127 RunAway: -4.585263
+ 
+AIeffectiveAttack: 349 AIeffectiveDefense: 1 PeffectiveAttack: 136 PeffectiveDefense: 1 InputAttack: 129 RunAway: 6.129975
+ 
+AIeffectiveAttack: 364 AIeffectiveDefense: 1 PeffectiveAttack: 137 PeffectiveDefense: 1 InputAttack: 130 RunAway: 8.696602
+ 
+AIeffectiveAttack: 374 AIeffectiveDefense: 1 PeffectiveAttack: 137 PeffectiveDefense: 1 InputAttack: 130 RunAway: -4.631658
+ 
+AIeffectiveAttack: 377 AIeffectiveDefense: 1 PeffectiveAttack: 141 PeffectiveDefense: 1 InputAttack: 133 RunAway: 7.126258
+ 
+AIeffectiveAttack: 382 AIeffectiveDefense: 1 PeffectiveAttack: 142 PeffectiveDefense: 1 InputAttack: 134 RunAway: 7.126258
+ 
+AIeffectiveAttack: 387 AIeffectiveDefense: 1 PeffectiveAttack: 146 PeffectiveDefense: 1 InputAttack: 137 RunAway: -5.559366
+ 
+AIeffectiveAttack: 387 AIeffectiveDefense: 1 PeffectiveAttack: 146 PeffectiveDefense: 1 InputAttack: 137 RunAway: -5.559345
+ 
+AIeffectiveAttack: 387 AIeffectiveDefense: 1 PeffectiveAttack: 146 PeffectiveDefense: 1 InputAttack: 137 RunAway: -5.559358
+ 
+AIeffectiveAttack: 392 AIeffectiveDefense: 1 PeffectiveAttack: 150 PeffectiveDefense: 1 InputAttack: 140 RunAway: 7.12672
+ 
+AIeffectiveAttack: 392 AIeffectiveDefense: 1 PeffectiveAttack: 150 PeffectiveDefense: 1 InputAttack: 140 RunAway: 7.12672
+ 
+AIeffectiveAttack: 392 AIeffectiveDefense: 1 PeffectiveAttack: 150 PeffectiveDefense: 1 InputAttack: 140 RunAway: 7.12672
+ 
+AIeffectiveAttack: 392 AIeffectiveDefense: 1 PeffectiveAttack: 150 PeffectiveDefense: 1 InputAttack: 140 RunAway: 7.12672
+ 
+AIeffectiveAttack: 393 AIeffectiveDefense: 1 PeffectiveAttack: 151 PeffectiveDefense: 1 InputAttack: 141 RunAway: 7.12672
+ 
+AIeffectiveAttack: 401 AIeffectiveDefense: 1 PeffectiveAttack: 154 PeffectiveDefense: 1 InputAttack: 143 RunAway: 9.241173
+ 
+AIeffectiveAttack: 401 AIeffectiveDefense: 1 PeffectiveAttack: 154 PeffectiveDefense: 1 InputAttack: 143 RunAway: 9.241173
+ 
+AIeffectiveAttack: 401 AIeffectiveDefense: 1 PeffectiveAttack: 154 PeffectiveDefense: 1 InputAttack: 143 RunAway: 9.241173
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: -2.341578
+ 
+AIeffectiveAttack: 6 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: -1.381579
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 6.651146
+ 
+AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: -3.645777
+ 
+AIeffectiveAttack: 15 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 5.213276
+ 
+AIeffectiveAttack: 21 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 6.908036
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 7.011144
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: -2.041143
+ 
+AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 7.293228
+ 
+AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 7.618931
+ 
+AIeffectiveAttack: 3 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: -1.667277
+ 
+AIeffectiveAttack: 3 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: 1.540668
+ 
+AIeffectiveAttack: 12 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: 6.354883
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: -0.1715984
+ 
+AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 9.887297
+ 
+AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 8.584782
+ 
+AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 9.404812
+ 
+AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: -0.3722839
+ 
+AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: -2.406675
+ 
+AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: 0.7084274
+ 
+AIeffectiveAttack: 15 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: -5.911594
+ 
+AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 0.2586451
+ 
+AIeffectiveAttack: 4 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 5.509569
+ 
+AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: -2.005347
+ 
+AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 1.038366
+ 
+AIeffectiveAttack: 3 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 3 RunAway: 5.25645
+ 
+AIeffectiveAttack: 5 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 4 RunAway: -0.9369278
+ 
+AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 4 RunAway: 5.947273
+ 
+AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 5 RunAway: 9.238791
+ 
+AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 5 RunAway: 5.738327
+ 
+AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 6 RunAway: 7.138323
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 7.270032
+ 
+AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: -1.398104
+ 
+AIeffectiveAttack: 3 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: -0.8768525
+ 
+AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 0.05695629
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 8.100031
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 7.764442
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 1.451756
+ 
+AIeffectiveAttack: 8 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: -3.673846
+ 
+AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: -2.085941
+ 
+AIeffectiveAttack: 10 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: 7.87099
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 7.453206
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 7.677206
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 2.532043
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: -0.4798994
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 10.72988
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 7.063554
+ 
+AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 4 RunAway: 10.15819
+ 
+AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 5 RunAway: -2.377233
+ 
+AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 5 RunAway: 60.66109
+ 
+AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 5 RunAway: 184.2989
+ 
+AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 5 RunAway: 187.6266
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: -1.080732
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 10.22104
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 7.550773
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 0.5268154
+ 
+AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: -3.393064
+ 
+AIeffectiveAttack: 8 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 2.065362
+ 
+AIeffectiveAttack: 8 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: 9.252833
+ 
+AIeffectiveAttack: 15 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: -1.197886
+ 
+AIeffectiveAttack: 15 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: -1.072496
+ 
+AIeffectiveAttack: 19 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: -3.833339
+ 
+AIeffectiveAttack: 27 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: 5.35703
+ 
+AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 6.200179
+ 
+AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 0.8645401
+ 
+AIeffectiveAttack: 3 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: 7.017751
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 7.271566
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 10.60357
+ 
+AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 6.689048
+ 
+AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: -1.147943
+ 
+AIeffectiveAttack: 3 AIeffectiveDefense: 1 PeffectiveAttack: 3 PeffectiveDefense: 1 InputAttack: 5 RunAway: -2.95391
+ 
+AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 5 PeffectiveDefense: 1 InputAttack: 8 RunAway: -2.569316
+ 
+AIeffectiveAttack: 14 AIeffectiveDefense: 1 PeffectiveAttack: 6 PeffectiveDefense: 1 InputAttack: 9 RunAway: -2.181987
+ 
+AIeffectiveAttack: 23 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 10 RunAway: 4.948072
+ 
+AIeffectiveAttack: 27 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 11 RunAway: 4.166955
+ 
+AIeffectiveAttack: 32 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 11 RunAway: -2.804301
+ 
+AIeffectiveAttack: 37 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 11 RunAway: -2.099096
+ 
+AIeffectiveAttack: 40 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 11 RunAway: -3.031997
+ 
+AIeffectiveAttack: 45 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 11 RunAway: 4.583364
+ 
+AIeffectiveAttack: 51 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 11 RunAway: -3.096767
+ 
+AIeffectiveAttack: 60 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 11 RunAway: -2.171288
+ 
+AIeffectiveAttack: 62 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 11 RunAway: 7.910486
+ 
+AIeffectiveAttack: 65 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 11 RunAway: -2.439146
+ 
+AIeffectiveAttack: 65 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 11 RunAway: 7.038014
+ 
+AIeffectiveAttack: 67 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 11 RunAway: 8.165937
+ 
+AIeffectiveAttack: 67 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 11 RunAway: 8.376003
+ 
+AIeffectiveAttack: 70 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 11 RunAway: -3.859071
+ 
+AIeffectiveAttack: 78 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 11 RunAway: -3.859071
+ 
+AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: -2.200449
+ 
+AIeffectiveAttack: 3 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 7.221434
+ 
+AIeffectiveAttack: 3 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 10.99138
+ 
+AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 7.78036
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 7.190814
+ 
+AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: -4.649082
+ 
+AIeffectiveAttack: 15 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 6.009583
+ 
+AIeffectiveAttack: 25 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 6.009583
+ 
+AIeffectiveAttack: 33 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 6.009583
+ 
+AIeffectiveAttack: 37 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: -3.72999
+ 
+AIeffectiveAttack: 39 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: -0.5376663
+ 
+AIeffectiveAttack: 40 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 6.240198
+ 
+AIeffectiveAttack: 48 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 5.974826
+ 
+AIeffectiveAttack: 54 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: -4.439967
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 1.164235
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 1.591854
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 0.2060328
+ 
+AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 8.637924
+ 
+AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 12.78019
+ 
+AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 12.5765
+ 
+AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 10.53835
+ 
+AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 5.361996
+ 
+AIeffectiveAttack: 17 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 5.357044
+ 
+AIeffectiveAttack: 26 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 5.357025
+ 
+AIeffectiveAttack: 34 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: -3.996526
+ 
+AIeffectiveAttack: 41 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 9.255886
+ 
+AIeffectiveAttack: 42 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 9.064664
+ 
+AIeffectiveAttack: 42 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 11.72645
+ 
+AIeffectiveAttack: 42 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 2.744956
+ 
+AIeffectiveAttack: 43 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: 4.550903
+ 
+AIeffectiveAttack: 45 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: 6.731351
+ 
+AIeffectiveAttack: 45 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: 5.054057
+ 
+AIeffectiveAttack: 54 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: -1.572169
+ 
+AIeffectiveAttack: 63 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: 3.059577
+ 
+AIeffectiveAttack: 71 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: -1.685131
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 9.360773
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 13.36956
+ 
+AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: -2.350339
+ 
+AIeffectiveAttack: 12 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 3 RunAway: 5.548028
+ 
+AIeffectiveAttack: 17 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 4 RunAway: 0.01719093
+ 
+AIeffectiveAttack: 17 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 4 RunAway: 8.017473
+ 
+AIeffectiveAttack: 17 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 4 RunAway: 6.558614
+ 
+AIeffectiveAttack: 26 AIeffectiveDefense: 1 PeffectiveAttack: 3 PeffectiveDefense: 1 InputAttack: 5 RunAway: 6.982117
+ 
+AIeffectiveAttack: 27 AIeffectiveDefense: 1 PeffectiveAttack: 6 PeffectiveDefense: 1 InputAttack: 8 RunAway: 4.330784
+ 
+AIeffectiveAttack: 27 AIeffectiveDefense: 1 PeffectiveAttack: 13 PeffectiveDefense: 1 InputAttack: 15 RunAway: 4.329942
+ 
+AIeffectiveAttack: 36 AIeffectiveDefense: 1 PeffectiveAttack: 15 PeffectiveDefense: 1 InputAttack: 18 RunAway: 4.343548
+ 
+AIeffectiveAttack: 41 AIeffectiveDefense: 1 PeffectiveAttack: 15 PeffectiveDefense: 1 InputAttack: 18 RunAway: 6.528917
+ 
+AIeffectiveAttack: 42 AIeffectiveDefense: 1 PeffectiveAttack: 15 PeffectiveDefense: 1 InputAttack: 19 RunAway: -0.8172612
+ 
+AIeffectiveAttack: 43 AIeffectiveDefense: 1 PeffectiveAttack: 15 PeffectiveDefense: 1 InputAttack: 19 RunAway: -1.891208
+ 
+AIeffectiveAttack: 53 AIeffectiveDefense: 1 PeffectiveAttack: 15 PeffectiveDefense: 1 InputAttack: 19 RunAway: -1.904556
+ 
+AIeffectiveAttack: 56 AIeffectiveDefense: 1 PeffectiveAttack: 15 PeffectiveDefense: 1 InputAttack: 19 RunAway: 4.819474
+ 
+AIeffectiveAttack: 59 AIeffectiveDefense: 1 PeffectiveAttack: 16 PeffectiveDefense: 1 InputAttack: 20 RunAway: -2.25615
+ 
+AIeffectiveAttack: 66 AIeffectiveDefense: 1 PeffectiveAttack: 16 PeffectiveDefense: 1 InputAttack: 21 RunAway: 5.08629
+ 
+AIeffectiveAttack: 66 AIeffectiveDefense: 1 PeffectiveAttack: 16 PeffectiveDefense: 1 InputAttack: 21 RunAway: 4.576772
+ 
+AIeffectiveAttack: 76 AIeffectiveDefense: 1 PeffectiveAttack: 16 PeffectiveDefense: 1 InputAttack: 21 RunAway: -2.978971
+ 
+AIeffectiveAttack: 83 AIeffectiveDefense: 1 PeffectiveAttack: 16 PeffectiveDefense: 1 InputAttack: 21 RunAway: 4.571932
+ 
+AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 8.693253
+ 
+AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 9.643534
+ 
+AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: -0.627491
+ 
+AIeffectiveAttack: 6 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: 5.357186
+ 
+AIeffectiveAttack: 16 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: 5.899997
+ 
+AIeffectiveAttack: 24 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: -4.131817
+ 
+AIeffectiveAttack: 35 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 4 RunAway: -2.152883
+ 
+AIeffectiveAttack: 35 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 4 RunAway: 13.37366
+ 
+AIeffectiveAttack: 40 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 4 RunAway: -3.947153
+ 
+AIeffectiveAttack: 40 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 4 RunAway: 11.36306
+ 
+AIeffectiveAttack: 47 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 5 RunAway: -4.014979
+ 
+AIeffectiveAttack: 47 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 5 RunAway: -2.471806
+ 
+AIeffectiveAttack: 49 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 6 RunAway: 9.522097
+ 
+AIeffectiveAttack: 49 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 6 RunAway: 10.99235
+ 
+AIeffectiveAttack: 49 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 6 RunAway: 11.92566
+ 
+AIeffectiveAttack: 49 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 8 RunAway: -1.414588
+ 
+AIeffectiveAttack: 55 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 8 RunAway: 10.78923
+ 
+AIeffectiveAttack: 55 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 9 RunAway: 12.56598
+ 
+AIeffectiveAttack: 55 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 14 RunAway: 17.83954
+ 
+AIeffectiveAttack: 55 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 15 RunAway: 18.59752
+ 
+AIeffectiveAttack: 55 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 15 RunAway: 17.55889
+ 
+AIeffectiveAttack: 55 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 18 RunAway: 10.27961
+ 
+AIeffectiveAttack: 55 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 20 RunAway: 5.570494
+ 
+AIeffectiveAttack: 55 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 21 RunAway: 5.7464
+ 
+AIeffectiveAttack: 55 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 24 RunAway: 14.18838
+ 
+AIeffectiveAttack: 55 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 28 RunAway: 11.12387
+ 
+AIeffectiveAttack: 55 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 28 RunAway: 14.07484
+ 
+AIeffectiveAttack: 55 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 29 RunAway: 7.27237
+ 
+AIeffectiveAttack: 55 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 29 RunAway: 8.945969
+ 
+AIeffectiveAttack: 55 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 33 RunAway: 10.42831
+ 
+AIeffectiveAttack: 55 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 39 RunAway: 21.52161
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 7.43081
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 9.060961
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: 1.060369
+ 
+AIeffectiveAttack: 3 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: -3.606374
+ 
+AIeffectiveAttack: 5 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 5 RunAway: 7.16468
+ 
+AIeffectiveAttack: 14 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 5 RunAway: -1.242841
+ 
+AIeffectiveAttack: 15 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 5 RunAway: 6.759231
+ 
+AIeffectiveAttack: 17 AIeffectiveDefense: 1 PeffectiveAttack: 2 PeffectiveDefense: 1 InputAttack: 5 RunAway: 7.137708
+ 
+AIeffectiveAttack: 25 AIeffectiveDefense: 1 PeffectiveAttack: 3 PeffectiveDefense: 1 InputAttack: 6 RunAway: -2.144115
+ 
+AIeffectiveAttack: 33 AIeffectiveDefense: 1 PeffectiveAttack: 4 PeffectiveDefense: 1 InputAttack: 8 RunAway: 5.338299
+ 
+AIeffectiveAttack: 42 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 12 RunAway: -1.83397
+ 
+AIeffectiveAttack: 43 AIeffectiveDefense: 1 PeffectiveAttack: 13 PeffectiveDefense: 1 InputAttack: 18 RunAway: -4.212884
+ 
+AIeffectiveAttack: 43 AIeffectiveDefense: 1 PeffectiveAttack: 19 PeffectiveDefense: 1 InputAttack: 25 RunAway: 5.581135
+ 
+AIeffectiveAttack: 61 AIeffectiveDefense: 1 PeffectiveAttack: 21 PeffectiveDefense: 1 InputAttack: 27 RunAway: 7.872028
+ 
+AIeffectiveAttack: 69 AIeffectiveDefense: 1 PeffectiveAttack: 23 PeffectiveDefense: 1 InputAttack: 29 RunAway: -3.581348
+ 
+AIeffectiveAttack: 70 AIeffectiveDefense: 1 PeffectiveAttack: 23 PeffectiveDefense: 1 InputAttack: 30 RunAway: -4.764079
+ 
+AIeffectiveAttack: 78 AIeffectiveDefense: 1 PeffectiveAttack: 23 PeffectiveDefense: 1 InputAttack: 30 RunAway: -4.14835
+ 
+AIeffectiveAttack: 80 AIeffectiveDefense: 1 PeffectiveAttack: 23 PeffectiveDefense: 1 InputAttack: 30 RunAway: 9.107252
+ 
+AIeffectiveAttack: 80 AIeffectiveDefense: 1 PeffectiveAttack: 23 PeffectiveDefense: 1 InputAttack: 34 RunAway: 11.08149
+ 
+AIeffectiveAttack: 81 AIeffectiveDefense: 1 PeffectiveAttack: 23 PeffectiveDefense: 1 InputAttack: 38 RunAway: 8.152264
+ 
+AIeffectiveAttack: 85 AIeffectiveDefense: 1 PeffectiveAttack: 24 PeffectiveDefense: 1 InputAttack: 43 RunAway: 7.464354
+ 
+AIeffectiveAttack: 94 AIeffectiveDefense: 1 PeffectiveAttack: 25 PeffectiveDefense: 1 InputAttack: 48 RunAway: 8.642907
+ 
+AIeffectiveAttack: 98 AIeffectiveDefense: 1 PeffectiveAttack: 25 PeffectiveDefense: 1 InputAttack: 53 RunAway: 8.677516
+ 
+AIeffectiveAttack: 106 AIeffectiveDefense: 1 PeffectiveAttack: 26 PeffectiveDefense: 1 InputAttack: 58 RunAway: 11.05457
+ 
+AIeffectiveAttack: 107 AIeffectiveDefense: 1 PeffectiveAttack: 29 PeffectiveDefense: 1 InputAttack: 62 RunAway: 8.064817
+ 
+AIeffectiveAttack: 107 AIeffectiveDefense: 1 PeffectiveAttack: 34 PeffectiveDefense: 1 InputAttack: 67 RunAway: 8.064817
+ 
+AIeffectiveAttack: 107 AIeffectiveDefense: 1 PeffectiveAttack: 34 PeffectiveDefense: 1 InputAttack: 67 RunAway: 8.064817
+ 
+AIeffectiveAttack: 107 AIeffectiveDefense: 1 PeffectiveAttack: 34 PeffectiveDefense: 1 InputAttack: 67 RunAway: 8.064817
+ 
+AIeffectiveAttack: 107 AIeffectiveDefense: 1 PeffectiveAttack: 34 PeffectiveDefense: 1 InputAttack: 67 RunAway: 8.064817
+ 
+AIeffectiveAttack: 116 AIeffectiveDefense: 1 PeffectiveAttack: 35 PeffectiveDefense: 1 InputAttack: 68 RunAway: -5.737303
+ 
+AIeffectiveAttack: 127 AIeffectiveDefense: 1 PeffectiveAttack: 35 PeffectiveDefense: 1 InputAttack: 68 RunAway: 8.50856
+ 
+AIeffectiveAttack: 134 AIeffectiveDefense: 1 PeffectiveAttack: 36 PeffectiveDefense: 1 InputAttack: 69 RunAway: 8.509508
+ 
+AIeffectiveAttack: 145 AIeffectiveDefense: 1 PeffectiveAttack: 36 PeffectiveDefense: 1 InputAttack: 69 RunAway: -5.738251
+ 
+AIeffectiveAttack: 146 AIeffectiveDefense: 1 PeffectiveAttack: 36 PeffectiveDefense: 1 InputAttack: 69 RunAway: -5.73825
+ 
+AIeffectiveAttack: 164 AIeffectiveDefense: 1 PeffectiveAttack: 36 PeffectiveDefense: 1 InputAttack: 69 RunAway: 7.272092
+ 
+AIeffectiveAttack: 177 AIeffectiveDefense: 1 PeffectiveAttack: 38 PeffectiveDefense: 1 InputAttack: 70 RunAway: 7.984048
+ 
+AIeffectiveAttack: 177 AIeffectiveDefense: 1 PeffectiveAttack: 38 PeffectiveDefense: 1 InputAttack: 70 RunAway: 7.984048
+ 
+AIeffectiveAttack: 185 AIeffectiveDefense: 1 PeffectiveAttack: 38 PeffectiveDefense: 1 InputAttack: 70 RunAway: 7.573816
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: -4.768372E-05
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: -4.768372E-05
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: -4.768372E-05
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: -4.768372E-05
+ 
+AIeffectiveAttack: 2 AIeffectiveDefense: 1 PeffectiveAttack: 11 PeffectiveDefense: 1 InputAttack: 6 RunAway: 2.996003
+ 
+AIeffectiveAttack: 19 AIeffectiveDefense: 1 PeffectiveAttack: 21 PeffectiveDefense: 1 InputAttack: 11 RunAway: -1.496241
+ 
+AIeffectiveAttack: 33 AIeffectiveDefense: 1 PeffectiveAttack: 22 PeffectiveDefense: 1 InputAttack: 12 RunAway: 4.030316
+ 
+AIeffectiveAttack: 33 AIeffectiveDefense: 1 PeffectiveAttack: 22 PeffectiveDefense: 1 InputAttack: 12 RunAway: -0.3859439
+ 
+AIeffectiveAttack: 43 AIeffectiveDefense: 1 PeffectiveAttack: 30 PeffectiveDefense: 1 InputAttack: 16 RunAway: -1.705942
+ 
+AIeffectiveAttack: 43 AIeffectiveDefense: 1 PeffectiveAttack: 30 PeffectiveDefense: 1 InputAttack: 16 RunAway: -1.705944
+ 
+AIeffectiveAttack: 43 AIeffectiveDefense: 1 PeffectiveAttack: 38 PeffectiveDefense: 1 InputAttack: 20 RunAway: -1.803573
+ 
+AIeffectiveAttack: 49 AIeffectiveDefense: 1 PeffectiveAttack: 48 PeffectiveDefense: 1 InputAttack: 25 RunAway: 3.369794
+ 
+AIeffectiveAttack: 49 AIeffectiveDefense: 1 PeffectiveAttack: 48 PeffectiveDefense: 1 InputAttack: 25 RunAway: 3.369795
+ 
+AIeffectiveAttack: 58 AIeffectiveDefense: 1 PeffectiveAttack: 59 PeffectiveDefense: 1 InputAttack: 31 RunAway: -2.032551
+ 
+AIeffectiveAttack: 58 AIeffectiveDefense: 1 PeffectiveAttack: 59 PeffectiveDefense: 1 InputAttack: 31 RunAway: -2.032549
+ 
+AIeffectiveAttack: 58 AIeffectiveDefense: 1 PeffectiveAttack: 73 PeffectiveDefense: 1 InputAttack: 38 RunAway: 5.0177
+ 
+AIeffectiveAttack: 58 AIeffectiveDefense: 1 PeffectiveAttack: 73 PeffectiveDefense: 1 InputAttack: 38 RunAway: -3.450232
+ 
+AIeffectiveAttack: 58 AIeffectiveDefense: 1 PeffectiveAttack: 73 PeffectiveDefense: 1 InputAttack: 38 RunAway: -3.450232
+ 
+AIeffectiveAttack: 59 AIeffectiveDefense: 1 PeffectiveAttack: 87 PeffectiveDefense: 1 InputAttack: 45 RunAway: 6.3508
+ 
+AIeffectiveAttack: 66 AIeffectiveDefense: 1 PeffectiveAttack: 92 PeffectiveDefense: 1 InputAttack: 48 RunAway: 6.3508
+ 
+AIeffectiveAttack: 77 AIeffectiveDefense: 1 PeffectiveAttack: 93 PeffectiveDefense: 1 InputAttack: 49 RunAway: -4.784313
+ 
+AIeffectiveAttack: 82 AIeffectiveDefense: 1 PeffectiveAttack: 93 PeffectiveDefense: 1 InputAttack: 49 RunAway: -2.488128
+ 
+AIeffectiveAttack: 84 AIeffectiveDefense: 1 PeffectiveAttack: 94 PeffectiveDefense: 1 InputAttack: 50 RunAway: -2.488128
+ 
+AIeffectiveAttack: 96 AIeffectiveDefense: 1 PeffectiveAttack: 94 PeffectiveDefense: 1 InputAttack: 50 RunAway: 4.054899
+ 
+AIeffectiveAttack: 109 AIeffectiveDefense: 1 PeffectiveAttack: 98 PeffectiveDefense: 1 InputAttack: 52 RunAway: 5.257372
+ 
+AIeffectiveAttack: 119 AIeffectiveDefense: 1 PeffectiveAttack: 104 PeffectiveDefense: 1 InputAttack: 56 RunAway: 5.12996
+ 
+AIeffectiveAttack: 125 AIeffectiveDefense: 1 PeffectiveAttack: 105 PeffectiveDefense: 1 InputAttack: 57 RunAway: 8.348377
+ 
+AIeffectiveAttack: 131 AIeffectiveDefense: 1 PeffectiveAttack: 106 PeffectiveDefense: 1 InputAttack: 58 RunAway: -4.487809
+ 
+AIeffectiveAttack: 131 AIeffectiveDefense: 1 PeffectiveAttack: 106 PeffectiveDefense: 1 InputAttack: 58 RunAway: -4.487808
+ 
+AIeffectiveAttack: 138 AIeffectiveDefense: 1 PeffectiveAttack: 112 PeffectiveDefense: 1 InputAttack: 61 RunAway: 6.050916
+ 
+AIeffectiveAttack: 140 AIeffectiveDefense: 1 PeffectiveAttack: 113 PeffectiveDefense: 1 InputAttack: 62 RunAway: 6.050916
+ 
+AIeffectiveAttack: 159 AIeffectiveDefense: 1 PeffectiveAttack: 113 PeffectiveDefense: 1 InputAttack: 62 RunAway: -3.501664
+ 
+AIeffectiveAttack: 159 AIeffectiveDefense: 1 PeffectiveAttack: 113 PeffectiveDefense: 1 InputAttack: 62 RunAway: 7.653687
+ 
+AIeffectiveAttack: 159 AIeffectiveDefense: 1 PeffectiveAttack: 119 PeffectiveDefense: 1 InputAttack: 65 RunAway: -6.365607
+ 
+AIeffectiveAttack: 159 AIeffectiveDefense: 1 PeffectiveAttack: 133 PeffectiveDefense: 1 InputAttack: 72 RunAway: 8.039973
+ 
+AIeffectiveAttack: 165 AIeffectiveDefense: 1 PeffectiveAttack: 133 PeffectiveDefense: 1 InputAttack: 72 RunAway: 8.039973
+ 
+AIeffectiveAttack: 172 AIeffectiveDefense: 1 PeffectiveAttack: 134 PeffectiveDefense: 1 InputAttack: 73 RunAway: 8.049326
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: -0.3494844
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 3 RunAway: 7.194352
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: 10.25057
+ 
+AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: -2.345064
+ 
+AIeffectiveAttack: 9 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: -1.109818
+ 
+AIeffectiveAttack: 16 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: 5.059654
+ 
+AIeffectiveAttack: 20 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: -1.413077
+ 
+AIeffectiveAttack: 25 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 4 RunAway: 6.281668
+ 
+AIeffectiveAttack: 25 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 5 RunAway: -3.134847
+ 
+AIeffectiveAttack: 26 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 11 RunAway: -4.276042
+ 
+AIeffectiveAttack: 26 AIeffectiveDefense: 1 PeffectiveAttack: 13 PeffectiveDefense: 1 InputAttack: 18 RunAway: 5.636541
+ 
+AIeffectiveAttack: 37 AIeffectiveDefense: 1 PeffectiveAttack: 13 PeffectiveDefense: 1 InputAttack: 19 RunAway: -4.207612
+ 
+AIeffectiveAttack: 40 AIeffectiveDefense: 1 PeffectiveAttack: 13 PeffectiveDefense: 1 InputAttack: 19 RunAway: -3.673221
+ 
+AIeffectiveAttack: 41 AIeffectiveDefense: 1 PeffectiveAttack: 13 PeffectiveDefense: 1 InputAttack: 20 RunAway: -3.504029
+ 
+AIeffectiveAttack: 47 AIeffectiveDefense: 1 PeffectiveAttack: 13 PeffectiveDefense: 1 InputAttack: 20 RunAway: 5.664756
+ 
+AIeffectiveAttack: 51 AIeffectiveDefense: 1 PeffectiveAttack: 13 PeffectiveDefense: 1 InputAttack: 20 RunAway: 5.500952
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 7.151608
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 8.23262
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 7.150678
+ 
+AIeffectiveAttack: 3 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 1 RunAway: 6.597904
+ 
+AIeffectiveAttack: 4 AIeffectiveDefense: 1 PeffectiveAttack: 8 PeffectiveDefense: 1 InputAttack: 8 RunAway: 5.578031
+ 
+AIeffectiveAttack: 10 AIeffectiveDefense: 1 PeffectiveAttack: 13 PeffectiveDefense: 1 InputAttack: 14 RunAway: -3.795662
+ 
+AIeffectiveAttack: 18 AIeffectiveDefense: 1 PeffectiveAttack: 13 PeffectiveDefense: 1 InputAttack: 14 RunAway: -2.087592
+ 
+AIeffectiveAttack: 24 AIeffectiveDefense: 1 PeffectiveAttack: 14 PeffectiveDefense: 1 InputAttack: 16 RunAway: -2.746356
+ 
+AIeffectiveAttack: 30 AIeffectiveDefense: 1 PeffectiveAttack: 14 PeffectiveDefense: 1 InputAttack: 16 RunAway: 5.761675
+ 
+AIeffectiveAttack: 32 AIeffectiveDefense: 1 PeffectiveAttack: 14 PeffectiveDefense: 1 InputAttack: 16 RunAway: -0.2138605
+ 
+AIeffectiveAttack: 32 AIeffectiveDefense: 1 PeffectiveAttack: 14 PeffectiveDefense: 1 InputAttack: 17 RunAway: 6.783486
+ 
+AIeffectiveAttack: 34 AIeffectiveDefense: 1 PeffectiveAttack: 14 PeffectiveDefense: 1 InputAttack: 17 RunAway: 4.679503
+ 
+AIeffectiveAttack: 39 AIeffectiveDefense: 1 PeffectiveAttack: 14 PeffectiveDefense: 1 InputAttack: 17 RunAway: 7.913832
+ 
+AIeffectiveAttack: 40 AIeffectiveDefense: 1 PeffectiveAttack: 14 PeffectiveDefense: 1 InputAttack: 19 RunAway: -2.995625
+ 
+AIeffectiveAttack: 49 AIeffectiveDefense: 1 PeffectiveAttack: 14 PeffectiveDefense: 1 InputAttack: 19 RunAway: -2.995593
+ 
+AIeffectiveAttack: 3 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 5.93081
+ 
+AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 6 RunAway: 7.400812
+ 
+AIeffectiveAttack: 7 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 6 RunAway: 7.117439
+ 
+AIeffectiveAttack: 13 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 7 RunAway: -3.675321
+ 
+AIeffectiveAttack: 13 AIeffectiveDefense: 1 PeffectiveAttack: 7 PeffectiveDefense: 1 InputAttack: 13 RunAway: -4.534865
+ 
+AIeffectiveAttack: 13 AIeffectiveDefense: 1 PeffectiveAttack: 13 PeffectiveDefense: 1 InputAttack: 20 RunAway: 5.917827
+ 
+AIeffectiveAttack: 22 AIeffectiveDefense: 1 PeffectiveAttack: 13 PeffectiveDefense: 1 InputAttack: 21 RunAway: 8.047091
+ 
+AIeffectiveAttack: 26 AIeffectiveDefense: 1 PeffectiveAttack: 14 PeffectiveDefense: 1 InputAttack: 23 RunAway: -2.650648
+ 
+AIeffectiveAttack: 27 AIeffectiveDefense: 1 PeffectiveAttack: 14 PeffectiveDefense: 1 InputAttack: 25 RunAway: -5.061843
+ 
+AIeffectiveAttack: 29 AIeffectiveDefense: 1 PeffectiveAttack: 14 PeffectiveDefense: 1 InputAttack: 30 RunAway: 9.554241
+ 
+AIeffectiveAttack: 29 AIeffectiveDefense: 1 PeffectiveAttack: 14 PeffectiveDefense: 1 InputAttack: 30 RunAway: -1.981861
+ 
+AIeffectiveAttack: 29 AIeffectiveDefense: 1 PeffectiveAttack: 14 PeffectiveDefense: 1 InputAttack: 31 RunAway: 11.17052
+ 
+AIeffectiveAttack: 1 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: 7.926938
+ 
+AIeffectiveAttack: 4 AIeffectiveDefense: 1 PeffectiveAttack: 1 PeffectiveDefense: 1 InputAttack: 2 RunAway: -1.287098
+ 
+AIeffectiveAttack: 5 AIeffectiveDefense: 1 PeffectiveAttack: 3 PeffectiveDefense: 1 InputAttack: 4 RunAway: -3.556099
+ 
+AIeffectiveAttack: 5 AIeffectiveDefense: 1 PeffectiveAttack: 10 PeffectiveDefense: 1 InputAttack: 12 RunAway: -3.555925
+ 
+AIeffectiveAttack: 12 AIeffectiveDefense: 1 PeffectiveAttack: 13 PeffectiveDefense: 1 InputAttack: 15 RunAway: 5.370552
+ 
+AIeffectiveAttack: 16 AIeffectiveDefense: 1 PeffectiveAttack: 13 PeffectiveDefense: 1 InputAttack: 15 RunAway: 0.3787313
+ 
+AIeffectiveAttack: 16 AIeffectiveDefense: 1 PeffectiveAttack: 15 PeffectiveDefense: 1 InputAttack: 18 RunAway: -3.214312
+ 
+AIeffectiveAttack: 16 AIeffectiveDefense: 1 PeffectiveAttack: 22 PeffectiveDefense: 1 InputAttack: 25 RunAway: 4.574795
+ 
+AIeffectiveAttack: 23 AIeffectiveDefense: 1 PeffectiveAttack: 25 PeffectiveDefense: 1 InputAttack: 30 RunAway: -2.422528
+ 
+AIeffectiveAttack: 26 AIeffectiveDefense: 1 PeffectiveAttack: 25 PeffectiveDefense: 1 InputAttack: 30 RunAway: 6.010003
+ 
+AIeffectiveAttack: 26 AIeffectiveDefense: 1 PeffectiveAttack: 25 PeffectiveDefense: 1 InputAttack: 30 RunAway: 7.338324
+ 
+AIeffectiveAttack: 27 AIeffectiveDefense: 1 PeffectiveAttack: 26 PeffectiveDefense: 1 InputAttack: 32 RunAway: 5.805187
+ 
+AIeffectiveAttack: 32 AIeffectiveDefense: 1 PeffectiveAttack: 28 PeffectiveDefense: 1 InputAttack: 35 RunAway: 5.368629
+ 
+AIeffectiveAttack: 32 AIeffectiveDefense: 1 PeffectiveAttack: 35 PeffectiveDefense: 1 InputAttack: 42 RunAway: 5.368633
+ 
+AIeffectiveAttack: 41 AIeffectiveDefense: 1 PeffectiveAttack: 38 PeffectiveDefense: 1 InputAttack: 46 RunAway: 5.766684
+ 
+AIeffectiveAttack: 43 AIeffectiveDefense: 1 PeffectiveAttack: 38 PeffectiveDefense: 1 InputAttack: 46 RunAway: -4.174194
+ 
+AIeffectiveAttack: 52 AIeffectiveDefense: 1 PeffectiveAttack: 38 PeffectiveDefense: 1 InputAttack: 46 RunAway: -4.174196
+ 

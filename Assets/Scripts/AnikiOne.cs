@@ -44,6 +44,7 @@ public class AnikiOne : MonoBehaviour {
 	void Start () {
 		
 		anim = GetComponent<Animator>();
+		arrAllAudioSource = GetComponents<AudioSource>();
 		rg2d = GetComponent<Rigidbody2D> (); 
 		StatusCheck.PlightningStatus = false;
 		collider = GetComponent<BoxCollider2D>();
@@ -74,8 +75,9 @@ public class AnikiOne : MonoBehaviour {
 		
 		GameObject.Find("Blood1").transform.localScale = new Vector3(8.05f * health / 50 , 0.34f, 0);
 		
-		if (health <= 0) {
+		if (health <= 0 && !dead) {
 			anim.SetTrigger("die");
+			arrAllAudioSource[1].Play();
 			dead = true;
 		} else {
 			
@@ -138,8 +140,12 @@ public class AnikiOne : MonoBehaviour {
 				}
 				
 				if (Input.GetKeyDown(KeyCode.L) && LightningCoolDown == 0) {
+					arrAllAudioSource[0].Play();
 					anim.SetTrigger("lightning");
+					
 					Model.InputAttack ++;
+					StatusCheck.PlightningPre = true;
+					background.anim.SetTrigger("pre");
 					attackRate = 0;
 					ATTACK_WAITING_TIME = 10;
 					LightningCoolDown = 150;
@@ -187,7 +193,7 @@ public class AnikiOne : MonoBehaviour {
 		m_CurrentClipInfo = this.anim.GetCurrentAnimatorClipInfo(0);
 		
 		if (m_CurrentClipInfo[0].clip.name == "LightningOn" && trigger) {
-			
+			StatusCheck.PlightningPre = false;
 			float playerX = GameObject.Find("Aniki").transform.position.x;
         	float AIX = GameObject.Find("Enemy").transform.position.x;
 			int direct = AIX - playerX > 2f ? 1 : -1;

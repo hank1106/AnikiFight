@@ -4,3 +4,8 @@ This AI wins: 12 times The Enemy(AI2/Player) wins: 3 times
 This AI wins: 0 times The Enemy(AI2/Player) wins: 1 times 
 This AI wins: 3 times The Enemy(AI2/Player) wins: 1 times 
 
+This AI wins: 0 times The Enemy(AI2/Player) wins: 1 times 
+This AI wins: 0 times The Enemy(AI2/Player) wins: 1 times 
+This AI wins: 1 times The Enemy(AI2/Player) wins: 2 times 
+This AI wins: 0 times The Enemy(AI2/Player) wins: 1 times 
+This AI wins: 0 times The Enemy(AI2/Player) wins: 1 times 

@@ -53,10 +53,15 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\AI2.cs" />
      <Compile Include="Assets\Scripts\AnikiOne.cs" />
+     <Compile Include="Assets\Scripts\background.cs" />
+     <Compile Include="Assets\Scripts\Combo.cs" />
      <Compile Include="Assets\Scripts\DataModel.cs" />
      <Compile Include="Assets\Scripts\DumbAI.cs" />
      <Compile Include="Assets\Scripts\GameControl.cs" />
      <Compile Include="Assets\Scripts\gameStart.cs" />
+     <Compile Include="Assets\Scripts\Health.cs" />
+     <Compile Include="Assets\Scripts\NissanCombo.cs" />
+     <Compile Include="Assets\Scripts\NissanController.cs" />
      <Compile Include="Assets\Scripts\StatusCheck.cs" />
      <None Include="Assets\Scripts\Performance.txt" />
      <None Include="Assets\Scripts\DataCollector.txt" />
