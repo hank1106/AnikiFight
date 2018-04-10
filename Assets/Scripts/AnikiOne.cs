@@ -10,7 +10,15 @@ public class AnikiOne : MonoBehaviour {
 	private Rigidbody2D rg2d;
 	public AudioSource[] arrAllAudioSource;
 	public Animator anim;
-	AnimatorClipInfo[] m_CurrentClipInfo;
+	public static AnimatorClipInfo[] m_CurrentClipInfo;
+	
+	public int startingHealth = 100;                            // The amount of health the player starts the game with.
+    public int currentHealth;                                   // The current health the player has.
+    public Slider healthSlider;                                 // Reference to the UI's health bar.
+   
+    public float flashSpeed = 5f;                               // The speed the damageImage will fade at.
+    public Color flashColour = new Color(1f, 0f, 0f, 0.1f);     // The colour the damageImage is set to, to flash.
+
 	
 	private int attackRate = 1;
 	private int LightningCoolDown = 0;
@@ -31,7 +39,6 @@ public class AnikiOne : MonoBehaviour {
 	private const int LIGHT_ATTACK_FREQUENCY = 10;
 	private const int HEAVY_ATTACK_FREQUENCY = 20;
 	private int ATTACK_WAITING_TIME = 0;
-	private int health = 50;
 	BoxCollider2D collider;
 	//private Animator anim ;
 
@@ -42,13 +49,14 @@ public class AnikiOne : MonoBehaviour {
 	private float force  = 3.5f;
 	// Use this for initialization
 	void Start () {
-		
+		currentHealth = startingHealth;
 		anim = GetComponent<Animator>();
 		arrAllAudioSource = GetComponents<AudioSource>();
 		rg2d = GetComponent<Rigidbody2D> (); 
 		StatusCheck.PlightningStatus = false;
 		collider = GetComponent<BoxCollider2D>();
 		rg2d.freezeRotation = true;
+		healthSlider.value = currentHealth;
 		
 	}
 	
@@ -58,7 +66,8 @@ public class AnikiOne : MonoBehaviour {
 			&& !StatusCheck.PlightningStatus 
 		    && StatusCheck.AIlightningStatus) {
 			
-			health = health - 2;
+			currentHealth = currentHealth - 5;
+			healthSlider.value = currentHealth;
 			rg2d.velocity = new Vector2 (0, 4f);
 			GameControl.instance.ComboFail();
 			anim.SetTrigger("hit");
@@ -72,16 +81,15 @@ public class AnikiOne : MonoBehaviour {
 		float player = GameObject.Find("Aniki").transform.position.x;
 		float AI = GameObject.Find("Enemy").transform.position.x;
 		StatusCheck.AIgetHitType = 0;
+		m_CurrentClipInfo = this.anim.GetCurrentAnimatorClipInfo(0);
 		
-		GameObject.Find("Blood1").transform.localScale = new Vector3(8.05f * health / 50 , 0.34f, 0);
-		
-		if (health <= 0 && !dead) {
+		if (currentHealth <= 0 && !dead) {
 			anim.SetTrigger("die");
 			arrAllAudioSource[1].Play();
 			dead = true;
 		} else {
 			
-			if (!waiting) {
+			if (!waiting && (m_CurrentClipInfo[0].clip.name == "idle" || m_CurrentClipInfo[0].clip.name == "jump")) {
 				if (AI - player > 2f) {
 					if (leftTurn) {
 						 rg2d.transform.localScale = new Vector2(-rg2d.transform.localScale.x, rg2d.transform.localScale.y);
@@ -122,6 +130,12 @@ public class AnikiOne : MonoBehaviour {
 					rg2d.velocity = new Vector2 (rg2d.velocity.x, 18f);
 					anim.SetTrigger("w");
 				}
+				
+				if (Input.GetKeyDown(KeyCode.I)) {
+					rg2d.velocity = new Vector2 (0, 0);
+					arrAllAudioSource[3].Play();
+					//anim.SetTrigger("i");
+				}
 
 				if (Input.GetKeyDown(KeyCode.J) && attackRate > ATTACK_WAITING_TIME) {
 					anim.SetTrigger("j");
@@ -133,10 +147,10 @@ public class AnikiOne : MonoBehaviour {
 
 				if (Input.GetKeyDown(KeyCode.K) && attackRate > ATTACK_WAITING_TIME) {
 					anim.SetTrigger("k");
+					arrAllAudioSource[2].Play();
 					StatusCheck.AIgetHitType = 2;
 					Model.InputAttack ++;
 					attackRate = 0;
-					ATTACK_WAITING_TIME = HEAVY_ATTACK_FREQUENCY;
 				}
 				
 				if (Input.GetKeyDown(KeyCode.L) && LightningCoolDown == 0) {
@@ -190,8 +204,6 @@ public class AnikiOne : MonoBehaviour {
 			
 		}
 		
-		m_CurrentClipInfo = this.anim.GetCurrentAnimatorClipInfo(0);
-		
 		if (m_CurrentClipInfo[0].clip.name == "LightningOn" && trigger) {
 			StatusCheck.PlightningPre = false;
 			float playerX = GameObject.Find("Aniki").transform.position.x;
@@ -215,13 +227,31 @@ public class AnikiOne : MonoBehaviour {
 	
 	bool isBeingHit() 
     {
-        if(StatusCheck.PBeingHitCheck() > 0 && !dead && !invincible)
+        if(StatusCheck.PBeingHitCheck() > 0 && currentHealth > 0 && !invincible)
         {
+			int damage = 0;
 			anim.SetTrigger("hit");
 			start_wating_time = Time.time;	
 			accumulated_waiting ++;
 			rg2d.velocity = new Vector2 (0, rg2d.velocity.y);
-			health -= StatusCheck.PBeingHitCheck();
+			
+			if (StatusCheck.PBeingHitCheck() == 1) {
+				damage = 1;
+			} else if (StatusCheck.PBeingHitCheck() == 2) {
+				damage = 5;
+				float playerX = GameObject.Find("Aniki").transform.position.x;
+        		float AIX = GameObject.Find("Enemy").transform.position.x;
+				
+				if (playerX - AIX > 0) {
+					rg2d.velocity = new Vector2(6f, 0);
+				} else {
+					rg2d.velocity = new Vector2(-6f, 0);
+				}
+			}
+			
+			currentHealth -= damage;
+			healthSlider.value = currentHealth;
+
         	return true;
         }
         else

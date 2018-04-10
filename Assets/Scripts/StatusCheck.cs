@@ -59,7 +59,7 @@ namespace SC {
             {
 				GameControl.instance.Score ();
                 return 1;
-            } else if (AIgetHitType == 2 && distance <= HEAVY_ATTACK) {
+            } else if (AIgetHitType == 2 && distance <= HEAVY_ATTACK && AnikiOne.m_CurrentClipInfo[0].clip.name == "HeavyOn") {
 				GameControl.instance.Score ();
 				return 2;
 			} else if (AIgetHitType == 3) {
@@ -125,10 +125,10 @@ namespace SC {
 
             float distance = Mathf.Sqrt((AIX - playerX) * (AIX - playerX) + (AIY - playerY) * (AIY - playerY));
 			if (DumbAI.IS_ANIKI_BEING_ATTACKED) {
-				if (PgetHitType == 1 && distance <= LIGHT_ATTACK)
-				{
+				
+				if (PgetHitType == 1 && distance <= LIGHT_ATTACK) {
 					return 1;
-				} else if (PgetHitType == 2 && distance <= HEAVY_ATTACK) {
+				} else if (PgetHitType == 2 && distance <= HEAVY_ATTACK && DumbAI.m_CurrentClipInfo[0].clip.name == "HeavyOn") {
 					return 2;
 				}
 			}

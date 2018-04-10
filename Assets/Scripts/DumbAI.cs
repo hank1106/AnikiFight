@@ -12,13 +12,22 @@ public class DumbAI : MonoBehaviour {
 
 	private Rigidbody2D rg2d;
 	
+	public int startingHealth = 100;                            // The amount of health the player starts the game with.
+    public int currentHealth;                                   // The current health the player has.
+    public Slider healthSlider;                                 // Reference to the UI's health bar.
+    public Image damageImage;                                   // Reference to an image to flash on the screen on being hurt.
+    public AudioClip deathClip;                                 // The audio clip to play when the player dies.
+    public float flashSpeed = 5f;                               // The speed the damageImage will fade at.
+    public Color flashColour = new Color(1f, 0f, 0f, 0.1f);     // The colour the damageImage is set to, to flash.
+
+	
 	private bool leftTurn = false;
 	private bool rightTurn = true;
 	private bool waiting = false;
 	private bool invincible = false;
 	private bool trigger = true;
 	
-	private int attackRate = 20;
+	private int attackRate = 20;								//Define the maximum attack speed, the lower the faster.
 	private int countCombo = 0;
 	private int LightningCoolDown = 0;
 	
@@ -26,7 +35,6 @@ public class DumbAI : MonoBehaviour {
 	private float start_invincible_time;
 	private float random_decision_time;
 	private int playerType = 0;
-	private int health = 50;
 	private float start_data_record = 0;
 	private int accumulated_waiting = 0;
 
@@ -46,7 +54,7 @@ public class DumbAI : MonoBehaviour {
 	public static int ThisWin = 0;
 	public static int OtherWin = 0;
 	
-	AnimatorClipInfo[] m_CurrentClipInfo;
+	public static AnimatorClipInfo[] m_CurrentClipInfo;
 	BoxCollider2D collider;
 	
 	private Rigidbody2D GetRigidbody2D() {
@@ -59,7 +67,8 @@ public class DumbAI : MonoBehaviour {
 			&& StatusCheck.PlightningStatus 
 		    && !StatusCheck.AIlightningStatus) {
 			GameControl.instance.Score();
-			health = health - 5;
+			currentHealth = currentHealth - 5;
+			healthSlider.value = currentHealth;
 			rg2d.velocity = new Vector2 (0, 10f);
 			anim.SetTrigger("hit");
 			waiting = true;
@@ -123,15 +132,19 @@ public class DumbAI : MonoBehaviour {
 		anim = GetComponent<Animator>();
 		rg2d = GetComponent<Rigidbody2D> ();
 		collider = GetComponent<BoxCollider2D>();
+		
+		// Set the initial health of the player.
+        currentHealth = startingHealth;
 
 		rg2d.velocity = new Vector2 (0, 0);
 		rg2d.freezeRotation = true;
+		healthSlider.value = currentHealth;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
-		GameObject.Find("Blood2").transform.localScale = new Vector3(8.05f * health / 50 , 0.34f, 0);
+		//GameObject.Find("Blood2").transform.localScale = new Vector3(8.05f * health / 50 , 0.34f, 0);
 		float playerX = GameObject.Find("Aniki").transform.position.x;
 		float playerY = GameObject.Find("Aniki").transform.position.y;
         float AIX = GameObject.Find("Enemy").transform.position.x;
@@ -191,6 +204,7 @@ public class DumbAI : MonoBehaviour {
                 break;
 				
 			case IDLE:
+				
 				int run = StatusCheck.PositionCheck(playerX, playerY, AIX, AIY, rg2d);
 				
 				if (m_CurrentClipInfo[0].clip.name == "LightningOn") {
@@ -232,7 +246,7 @@ public class DumbAI : MonoBehaviour {
 							Combat(1);
 							attackRate = 0;
 							accumulated_waiting = 0;
-						} else if (run < 3 && playerType == 1) {
+						} else if (run < 2 && playerType == 1) {
 							MoveAway();
 						} else if (LightningCoolDown >800) {
 							
@@ -287,15 +301,33 @@ public class DumbAI : MonoBehaviour {
     int CheckStatus() {
 		int hitResult = StatusCheck.AIBeingHitCheck();
 
-        if (hitResult != 0 && !invincible && health > 0)
+        if (m_CurrentClipInfo[0].clip.name == "idle" || m_CurrentClipInfo[0].clip.name == "jump")
+        {
+			return -1;
+        } else if (hitResult != 0 && !invincible && currentHealth > 0)
         {
 			Model.PeffectiveAttack ++;
-			health = hitResult == 1 ? health - 1 : health - 2;
+			currentHealth = hitResult == 1 ? currentHealth - 1 : currentHealth - 3;
+			
+			// Set the health bar's value to the current health.
+        	healthSlider.value = currentHealth;
+			
 			anim.SetTrigger("hit");
+			if (hitResult == 2) {
+				float playerX = GameObject.Find("Aniki").transform.position.x;
+        		float AIX = GameObject.Find("Enemy").transform.position.x;
+				
+				if (playerX - AIX > 0) {
+					rg2d.velocity = new Vector2(-6f, 0);
+				} else {
+					rg2d.velocity = new Vector2(6f, 0);
+				}
+		
+			}
 			accumulated_waiting ++;
 			start_wating_time = Time.time;
 			return 0;
-        } else if (health <= 0) {
+        } else if (currentHealth <= 0) {
 			OtherWin ++;
 			string text = "This AI wins: " + ThisWin + " times " +
 						"The Enemy(AI2/Player) wins: " + OtherWin + " times ";
@@ -307,11 +339,10 @@ public class DumbAI : MonoBehaviour {
         	}
 			SceneManager.LoadScene ("AIvsAI");
 			return 1;
+		} else {
+			return 2;
 		}
-        else
-        {
-			return -1;
-        }
+        
         
     }
 	
@@ -363,6 +394,9 @@ public class DumbAI : MonoBehaviour {
                     }
 
                 }
+				else {
+					rg2d.velocity = new Vector2(-3f * randnum, rg2d.velocity.y);
+				}
 
             }
 
@@ -379,6 +413,10 @@ public class DumbAI : MonoBehaviour {
                     }
 
                 }
+				
+				else {
+					rg2d.velocity = new Vector2(3f * randnum, rg2d.velocity.y);
+				}
             }
 
         }
@@ -419,7 +457,9 @@ public class DumbAI : MonoBehaviour {
                         rightTurn = true;
                     }
 
-                }
+                } else {
+					rg2d.velocity = new Vector2(2.5f * randnum, rg2d.velocity.y);
+				}
 
             }
 
@@ -435,7 +475,9 @@ public class DumbAI : MonoBehaviour {
                         leftTurn = true;
                     }
 
-                }
+                } else {
+					rg2d.velocity = new Vector2(-2.5f * randnum, rg2d.velocity.y);
+				}
             }
 
         }
