@@ -308,7 +308,7 @@ public class DumbAI : MonoBehaviour {
         {
 			Model.PeffectiveAttack ++;
 			currentHealth = hitResult == 1 ? currentHealth - 1 : currentHealth - 3;
-			
+			print(currentHealth);
 			// Set the health bar's value to the current health.
         	healthSlider.value = currentHealth;
 			

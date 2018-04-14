@@ -65,6 +65,7 @@
      <Compile Include="Assets\Scripts\StatusCheck.cs" />
      <None Include="Assets\Scripts\Performance.txt" />
      <None Include="Assets\Scripts\DataCollector.txt" />
+     <None Include="Assets\Pixel Font - Tripfive\_README.txt" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
