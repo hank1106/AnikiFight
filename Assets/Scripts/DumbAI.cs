@@ -12,7 +12,7 @@ public class DumbAI : MonoBehaviour {
 
 	private Rigidbody2D rg2d;
 	
-	public int startingHealth = 100;                            // The amount of health the player starts the game with.
+	public int startingHealth = 50;                            // The amount of health the player starts the game with.
     public int currentHealth;                                   // The current health the player has.
     public Slider healthSlider;                                 // Reference to the UI's health bar.
     public Image damageImage;                                   // Reference to an image to flash on the screen on being hurt.
@@ -38,7 +38,7 @@ public class DumbAI : MonoBehaviour {
 	private float start_data_record = 0;
 	private int accumulated_waiting = 0;
 
-    private const float WAITING_TIME = 0.5f;
+    private const float WAITING_TIME = 0.8f;
 	private const float INVINCIBLE_TIME = 1f;
 	private const int LIGHT_ATTACK_FREQUENCY = 10;
 	private const int DATA_CONVOLUTION_WINDOW = 2;
@@ -329,6 +329,7 @@ public class DumbAI : MonoBehaviour {
 			return 0;
         } else if (currentHealth <= 0) {
 			OtherWin ++;
+			GameControl.instance.AIDead();
 			string text = "This AI wins: " + ThisWin + " times " +
 						"The Enemy(AI2/Player) wins: " + OtherWin + " times ";
 			print(text);
@@ -337,7 +338,7 @@ public class DumbAI : MonoBehaviour {
         	{
 				file.WriteLine(text);
         	}
-			SceneManager.LoadScene ("AIvsAI");
+			//SceneManager.LoadScene ("AIvsAI");
 			return 1;
 		} else {
 			return 2;

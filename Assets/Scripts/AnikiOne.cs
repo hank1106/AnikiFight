@@ -12,7 +12,7 @@ public class AnikiOne : MonoBehaviour {
 	public Animator anim;
 	public static AnimatorClipInfo[] m_CurrentClipInfo;
 	
-	public int startingHealth = 100;                            // The amount of health the player starts the game with.
+	public int startingHealth = 50;                            // The amount of health the player starts the game with.
     public int currentHealth;                                   // The current health the player has.
     public Slider healthSlider;                                 // Reference to the UI's health bar.
    
@@ -85,6 +85,7 @@ public class AnikiOne : MonoBehaviour {
 		
 		if (currentHealth <= 0 && !dead) {
 			anim.SetTrigger("die");
+			GameControl.instance.PlayerDead();
 			arrAllAudioSource[1].Play();
 			dead = true;
 		} else {
