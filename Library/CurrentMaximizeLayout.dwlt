@@ -20,6 +20,7 @@ MonoBehaviour:
     x: 0
     y: 30
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1280
     height: 643
   m_MinSize: {x: 913, y: 492}
@@ -34,6 +35,14 @@ MonoBehaviour:
   vertical: 0
   controlID: 15189
 >>>>>>> Game over sign.
+=======
+    width: 1440
+    height: 731
+  m_MinSize: {x: 713, y: 492}
+  m_MaxSize: {x: 18008, y: 14042}
+  vertical: 0
+  controlID: 13208
+>>>>>>> add help scene
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -57,6 +66,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 389
     width: 732
@@ -71,14 +81,31 @@ MonoBehaviour:
   m_Gizmos: 0
   m_Stats: 0
   m_SelectedSizes: 00000000000000000c0000000f000000000000000000000000000000000000000000000000000000
+=======
+    x: 0
+    y: 431
+    width: 824
+    height: 374
+  m_MaximizeOnPlay: 1
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 05000000000000000d00000010000000000000000000000000000000000000000000000000000000
+>>>>>>> add help scene
   m_TargetDisplay: 0
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -183
     m_HBaseRangeMax: 183
     m_VBaseRangeMin: -77.5
     m_VBaseRangeMax: 77.5
+=======
+    m_HBaseRangeMin: -158.66667
+    m_HBaseRangeMax: 158.66667
+    m_VBaseRangeMin: -89.25
+    m_VBaseRangeMax: 89.25
+>>>>>>> add help scene
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -96,6 +123,7 @@ MonoBehaviour:
       x: 0
       y: 17
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 732
       height: 310
     m_Scale: {x: 2, y: 2}
@@ -106,12 +134,19 @@ MonoBehaviour:
     m_Scale: {x: 2, y: 2}
     m_Translation: {x: 548.5, y: 238}
 >>>>>>> Game over sign.
+=======
+      width: 824
+      height: 357
+    m_Scale: {x: 2, y: 2}
+    m_Translation: {x: 412, y: 178.5}
+>>>>>>> add help scene
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
       x: -183
       y: -77.5
@@ -123,15 +158,25 @@ MonoBehaviour:
       width: 548.5
       height: 238
 >>>>>>> Game over sign.
+=======
+      x: -206
+      y: -89.25
+      width: 412
+      height: 178.5
+>>>>>>> add help scene
     m_MinimalGUI: 1
   m_defaultScale: 2
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 1464, y: 654}
 =======
   m_LastWindowPixelSize: {x: 2194, y: 986}
 >>>>>>> Game over sign.
+=======
+  m_LastWindowPixelSize: {x: 1648, y: 748}
+>>>>>>> add help scene
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000001000100000100
@@ -154,6 +199,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 734
     height: 643
   m_MinSize: {x: 402, y: 342}
@@ -168,6 +214,14 @@ MonoBehaviour:
   vertical: 1
   controlID: 15190
 >>>>>>> Game over sign.
+=======
+    width: 826
+    height: 731
+  m_MinSize: {x: 202, y: 421}
+  m_MaxSize: {x: 4002, y: 8021}
+  vertical: 1
+  controlID: 13209
+>>>>>>> add help scene
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -185,6 +239,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 734
     height: 295
   m_MinSize: {x: 400, y: 100}
@@ -197,16 +252,27 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 5}
 >>>>>>> Game over sign.
+=======
+    width: 826
+    height: 336
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 5}
+>>>>>>> add help scene
   m_Panes:
   - {fileID: 5}
   - {fileID: 6}
   - {fileID: 7}
+<<<<<<< HEAD
 <<<<<<< HEAD
   - {fileID: 8}
   m_Selected: 3
 =======
   m_Selected: 0
 >>>>>>> Game over sign.
+=======
+  m_Selected: 0
+>>>>>>> add help scene
   m_LastSelected: 2
 --- !u!114 &5
 MonoBehaviour:
@@ -230,6 +296,7 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 5
     y: 94
 <<<<<<< HEAD
@@ -238,15 +305,21 @@ MonoBehaviour:
     width: 1097
 >>>>>>> Game over sign.
     height: 416
+=======
+    x: 0
+    y: 95
+    width: 824
+    height: 315
+>>>>>>> add help scene
   m_SceneLighting: 1
-  lastFramingTime: 171286.9749917984
+  lastFramingTime: 4175.15943300724
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.1876817, y: 1.7149067, z: 0}
+    m_Target: {x: 8.100006, y: 126.100006, z: 0}
     speed: 2
-    m_Value: {x: 1.1876817, y: 1.7149067, z: 0}
+    m_Value: {x: 8.100006, y: 126.100006, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -273,9 +346,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 24.33303
     speed: 2
     m_Value: 24.33303
+=======
+    m_Target: 268.60056
+    speed: 2
+    m_Value: 268.60056
+>>>>>>> add help scene
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -338,8 +417,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 94
+<<<<<<< HEAD
     width: 732
     height: 274
+=======
+    width: 824
+    height: 315
+>>>>>>> add help scene
   m_ViewPositions:
     m_KeySerializationHelper:
     - {fileID: 1107300733675236308, guid: 9459a4dc9f5294941a6cc3907029d8dc, type: 2}
@@ -351,6 +435,7 @@ MonoBehaviour:
     - {x: 542.1883, y: 113.54532}
   m_PreviewAnimator: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_AnimatorController: {fileID: 0}
   m_BreadCrumbs: []
 =======
@@ -361,6 +446,10 @@ MonoBehaviour:
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
 >>>>>>> Game over sign.
+=======
+  m_AnimatorController: {fileID: 0}
+  m_BreadCrumbs: []
+>>>>>>> add help scene
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
   blendTreeGraph: {fileID: 0}
@@ -413,9 +502,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 295
     width: 734
     height: 348
+=======
+    y: 336
+    width: 826
+    height: 395
+>>>>>>> add help scene
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
 =======
@@ -447,6 +542,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 734
     y: 0
     width: 263
@@ -465,6 +561,16 @@ MonoBehaviour:
   m_MaxSize: {x: 4004, y: 8021}
   vertical: 1
   controlID: 15297
+=======
+    x: 826
+    y: 0
+    width: 295
+    height: 731
+  m_MinSize: {x: 234, y: 492}
+  m_MaxSize: {x: 10004, y: 14042}
+  vertical: 1
+  controlID: 13258
+>>>>>>> add help scene
 --- !u!114 &10
 >>>>>>> Game over sign.
 MonoBehaviour:
@@ -483,8 +589,13 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 263
     height: 234
+=======
+    width: 295
+    height: 266
+>>>>>>> add help scene
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 12}
@@ -522,6 +633,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 736
     y: 94
     width: 259
@@ -542,20 +654,31 @@ MonoBehaviour:
     m_LastClickedID: 19936
     m_ExpandedIDs: 60cafcff08f2fcfff0fefcff2a3efdffe651fdffac7afdffd08dfdff6ebbfdfff8cdfdff0ee7fdffd0ecfdff1c3bfeffc040ffff00dbfffff6f5ffff1afcffff00000000f02d0000f82f000032390000b4390000883b00000a3c0000103f0000923f0000f6460000364a00006e4b00009a4d0000
 >>>>>>> Game over sign.
+=======
+    x: 828
+    y: 95
+    width: 291
+    height: 245
+  m_TreeViewState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 762a0000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 8266f9ffbea8fdff40d8ffffd8eaffff70f0ffff5cf1ffffaaf3ffff08fcffff00000000862b00005c3f00007c3f0000943f0000be3f0000
+>>>>>>> add help scene
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Option
+      m_OriginalName: Option
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 16220
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 11}
     m_SearchString: 
@@ -580,9 +703,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 234
     width: 263
     height: 409
+=======
+    y: 266
+    width: 295
+    height: 465
+>>>>>>> add help scene
   m_MinSize: {x: 230, y: 250}
   m_MaxSize: {x: 10000, y: 10000}
 =======
@@ -626,10 +755,17 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 736
     y: 328
     width: 259
     height: 388
+=======
+    x: 828
+    y: 361
+    width: 291
+    height: 444
+>>>>>>> add help scene
   m_SearchFilter:
     m_NameFilter: 
     m_ClassNames: []
@@ -647,13 +783,21 @@ MonoBehaviour:
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
+<<<<<<< HEAD
   m_LastProjectPath: /Users/hankzhang/Documents/Ani
+=======
+  m_LastProjectPath: /Users/yuqianchen/Desktop/AnikiFight
+>>>>>>> add help scene
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 0a260000
     m_LastClickedID: 9738
+<<<<<<< HEAD
     m_ExpandedIDs: 762800008a280000c428000010290000122900002c290000d62e0000da2e0000
+=======
+    m_ExpandedIDs: 00000000e2260000002700004a270000a0270000ea2700002e280000da320000
+>>>>>>> add help scene
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -680,12 +824,18 @@ MonoBehaviour:
   m_AssetTreeState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: f0340000
 =======
     m_SelectedIDs: e04d0000
 >>>>>>> Game over sign.
     m_LastClickedID: 0
     m_ExpandedIDs: 762800008a280000c428000010290000122900002c290000d62e0000da2e0000
+=======
+    m_SelectedIDs: 762a0000
+    m_LastClickedID: 10870
+    m_ExpandedIDs: 00000000e2260000002700004a270000a0270000ea2700002e280000da320000
+>>>>>>> add help scene
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -711,12 +861,17 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedInstanceIDs: f0340000
     m_LastClickedInstanceID: 13552
 =======
     m_SelectedInstanceIDs: e04d0000
     m_LastClickedInstanceID: 19936
 >>>>>>> Game over sign.
+=======
+    m_SelectedInstanceIDs: 762a0000
+    m_LastClickedInstanceID: 10870
+>>>>>>> add help scene
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
@@ -768,6 +923,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 966
     y: 440
     width: 339
@@ -776,6 +932,11 @@ MonoBehaviour:
     y: 440
     width: 292
 >>>>>>> Game over sign.
+=======
+    x: 966
+    y: 440
+    width: 339
+>>>>>>> add help scene
     height: 584
 --- !u!114 &16
 MonoBehaviour:
@@ -791,11 +952,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 997
     y: 0
 <<<<<<< HEAD
     width: 283
     height: 643
+=======
+    x: 1121
+    y: 0
+    width: 319
+    height: 731
+>>>>>>> add help scene
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
@@ -832,10 +1000,17 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 999
     y: 94
     width: 281
     height: 622
+=======
+    x: 1123
+    y: 95
+    width: 317
+    height: 710
+>>>>>>> add help scene
   m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
