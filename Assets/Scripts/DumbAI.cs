@@ -81,7 +81,7 @@ public class DumbAI : MonoBehaviour {
 		float playerX = GameObject.Find("Aniki").transform.position.x;
         float AIX = GameObject.Find("Enemy").transform.position.x;
 		int direct = AIX - playerX > 2f ? -1 : 1;
-		if (Random.Range(0, 10f) > 9.5f) {
+		if (Random.Range(0, 10f) > 9.9f) {
 				anim.SetTrigger("w");
 				rg2d.velocity = new Vector2 (10f * direct, 12f);
 		} else {
@@ -299,28 +299,30 @@ public class DumbAI : MonoBehaviour {
 	}
 
     int CheckStatus() {
+	
 		int hitResult = StatusCheck.AIBeingHitCheck();
-
-        if (m_CurrentClipInfo[0].clip.name == "idle" || m_CurrentClipInfo[0].clip.name == "jump")
+		
+        if (hitResult == 0 && currentHealth > 0)
         {
 			return -1;
+			//return -1;
         } else if (hitResult != 0 && !invincible && currentHealth > 0)
         {
 			Model.PeffectiveAttack ++;
 			currentHealth = hitResult == 1 ? currentHealth - 1 : currentHealth - 3;
-			print(currentHealth);
+
 			// Set the health bar's value to the current health.
         	healthSlider.value = currentHealth;
-			
+			print(hitResult);
 			anim.SetTrigger("hit");
 			if (hitResult == 2) {
 				float playerX = GameObject.Find("Aniki").transform.position.x;
         		float AIX = GameObject.Find("Enemy").transform.position.x;
 				
 				if (playerX - AIX > 0) {
-					rg2d.velocity = new Vector2(-6f, 0);
+					rg2d.velocity = new Vector2(-6f, 3f);
 				} else {
-					rg2d.velocity = new Vector2(6f, 0);
+					rg2d.velocity = new Vector2(6f, 3f);
 				}
 		
 			}
@@ -330,18 +332,17 @@ public class DumbAI : MonoBehaviour {
         } else if (currentHealth <= 0) {
 			OtherWin ++;
 			GameControl.instance.AIDead();
-			string text = "This AI wins: " + ThisWin + " times " +
-						"The Enemy(AI2/Player) wins: " + OtherWin + " times ";
-			print(text);
-			using (System.IO.StreamWriter file = 
-            new System.IO.StreamWriter(@"/Users/lihongrui/Desktop/anikiFight/AnikiFight/Assets/Scripts/Performance.txt", true))
-        	{
-				file.WriteLine(text);
-        	}
-			//SceneManager.LoadScene ("AIvsAI");
+//			string text = "This AI wins: " + ThisWin + " times " +
+//						"The Enemy(AI2/Player) wins: " + OtherWin + " times ";
+//			print(text);
+//			using (System.IO.StreamWriter file = 
+//            new System.IO.StreamWriter(@"/Users/lihongrui/Desktop/anikiFight/AnikiFight/Assets/Scripts/Performance.txt", true))
+//        	{
+//				file.WriteLine(text);
+//        	}
 			return 1;
 		} else {
-			return 2;
+			return 0;
 		}
         
         

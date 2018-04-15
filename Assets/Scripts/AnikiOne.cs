@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEditor.Animations;
 using SC;
 using DM;
 public class AnikiOne : MonoBehaviour {
@@ -10,7 +11,7 @@ public class AnikiOne : MonoBehaviour {
 	private Rigidbody2D rg2d;
 	public AudioSource[] arrAllAudioSource;
 	public Animator anim;
-	public static AnimatorClipInfo[] m_CurrentClipInfo;
+	private AnimatorClipInfo[] m_CurrentClipInfo;
 	
 	public int startingHealth = 50;                            // The amount of health the player starts the game with.
     public int currentHealth;                                   // The current health the player has.
@@ -80,7 +81,7 @@ public class AnikiOne : MonoBehaviour {
 	void Update () {
 		float player = GameObject.Find("Aniki").transform.position.x;
 		float AI = GameObject.Find("Enemy").transform.position.x;
-		StatusCheck.AIgetHitType = 0;
+		
 		m_CurrentClipInfo = this.anim.GetCurrentAnimatorClipInfo(0);
 		
 		if (currentHealth <= 0 && !dead) {
@@ -89,8 +90,8 @@ public class AnikiOne : MonoBehaviour {
 			arrAllAudioSource[1].Play();
 			dead = true;
 		} else {
-			
-			if (!waiting && (m_CurrentClipInfo[0].clip.name == "idle" || m_CurrentClipInfo[0].clip.name == "jump")) {
+			if (!waiting ) {
+				StatusCheck.AIgetHitType = 0;
 				if (AI - player > 2f) {
 					if (leftTurn) {
 						 rg2d.transform.localScale = new Vector2(-rg2d.transform.localScale.x, rg2d.transform.localScale.y);
@@ -149,7 +150,6 @@ public class AnikiOne : MonoBehaviour {
 				if (Input.GetKeyDown(KeyCode.K) && attackRate > ATTACK_WAITING_TIME) {
 					anim.SetTrigger("k");
 					arrAllAudioSource[2].Play();
-					StatusCheck.AIgetHitType = 2;
 					Model.InputAttack ++;
 					attackRate = 0;
 				}

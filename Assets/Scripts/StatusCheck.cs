@@ -52,14 +52,14 @@ namespace SC {
             float playerY = GameObject.Find("Aniki").transform.position.y;
             float AIX = GameObject.Find("Enemy").transform.position.x;
             float AIY = GameObject.Find("Enemy").transform.position.y;
-
+			
             float distance = Mathf.Sqrt((AIX - playerX) * (AIX - playerX) + (AIY - playerY) * (AIY - playerY));
 
             if (AIgetHitType == 1 && distance <= LIGHT_ATTACK)
             {
 				GameControl.instance.Score ();
                 return 1;
-            } else if (AIgetHitType == 2 && distance <= HEAVY_ATTACK && AnikiOne.m_CurrentClipInfo[0].clip.name == "HeavyOn") {
+            } else if (AIgetHitType == 2 && distance <= HEAVY_ATTACK) {
 				GameControl.instance.Score ();
 				return 2;
 			} else if (AIgetHitType == 3) {

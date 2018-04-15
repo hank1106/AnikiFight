@@ -52,7 +52,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1214461338689092}
   m_BodyType: 0
-  m_Simulated: 1
+  m_Simulated: 0
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
@@ -119,6 +119,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrAllAudioSource: []
   anim: {fileID: 0}
+  startingHealth: 50
+  currentHealth: 0
+  healthSlider: {fileID: 0}
+  flashSpeed: 5
+  flashColour: {r: 1, g: 0, b: 0, a: 0.1}
 --- !u!212 &212965424849295390
 SpriteRenderer:
   m_ObjectHideFlags: 1
