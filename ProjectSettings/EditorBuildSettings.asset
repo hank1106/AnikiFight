@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/MultiNissan.unity
     guid: db8dff6398bfd48ebb478b78755ec40b
+  - enabled: 1
+    path: Assets/Scene/help.unity
+    guid: bba090071c19e490a80e966ec31acff4

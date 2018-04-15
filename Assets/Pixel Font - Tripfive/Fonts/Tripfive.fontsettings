@@ -7,7 +7,7 @@ Font:
   m_PrefabInternal: {fileID: 0}
   m_Name: Tripfive
   serializedVersion: 5
-  m_LineSpacing: 12
+  m_LineSpacing: 10
   m_DefaultMaterial: {fileID: 2100000, guid: c81f8d7093fca4469b1d13a985e9ae72, type: 2}
   m_FontSize: 0
   m_Texture: {fileID: 0}
