@@ -12,7 +12,7 @@ public class DumbAI : MonoBehaviour {
 
 	private Rigidbody2D rg2d;
 	
-	public int startingHealth = 50;                            // The amount of health the player starts the game with.
+	private int startingHealth = 100;                            // The amount of health the player starts the game with.
     public int currentHealth;                                   // The current health the player has.
     public Slider healthSlider;                                 // Reference to the UI's health bar.
     public Image damageImage;                                   // Reference to an image to flash on the screen on being hurt.
@@ -38,11 +38,11 @@ public class DumbAI : MonoBehaviour {
 	private float start_data_record = 0;
 	private int accumulated_waiting = 0;
 
-    private const float WAITING_TIME = 0.8f;
-	private const float INVINCIBLE_TIME = 1f;
-	private const int LIGHT_ATTACK_FREQUENCY = 10;
+    private const float WAITING_TIME = 0.4f;
+	private const float INVINCIBLE_TIME = 1.2f;
+	private const int LIGHT_ATTACK_FREQUENCY = 15;
 	private const int DATA_CONVOLUTION_WINDOW = 2;
-	private const int HEAVY_ATTACK_FREQUENCY = 20;
+	private const int HEAVY_ATTACK_FREQUENCY = 25;
 	private int ATTACK_WAITING_TIME = 0;
 	
     private const int WAIT_FOR_A_WHILE = 0;
@@ -81,7 +81,7 @@ public class DumbAI : MonoBehaviour {
 		float playerX = GameObject.Find("Aniki").transform.position.x;
         float AIX = GameObject.Find("Enemy").transform.position.x;
 		int direct = AIX - playerX > 2f ? -1 : 1;
-		if (Random.Range(0, 10f) > 9.9f) {
+		if (Random.Range(0, 10f) > 9.5f) {
 				anim.SetTrigger("w");
 				rg2d.velocity = new Vector2 (10f * direct, 12f);
 		} else {
@@ -122,8 +122,6 @@ public class DumbAI : MonoBehaviour {
 			
 		}
 			
-			GameControl.instance.ComboFail();
-			
 			Model.AIeffectiveAttack ++;
     }
 
@@ -155,7 +153,6 @@ public class DumbAI : MonoBehaviour {
 		
 		if (Time.time - start_data_record > DATA_CONVOLUTION_WINDOW) {
 			start_data_record = Time.time;
-			playerType = Model.DataProcess();
 			
 			string text = "AIeffectiveAttack: " + Model.AIeffectiveAttack + " " +
 						"AIeffectiveDefense: " + Model.AIeffectiveDefense + " " +
@@ -163,7 +160,8 @@ public class DumbAI : MonoBehaviour {
 						"PeffectiveDefense: " + Model.PeffectiveDefense + " " +
 						"InputAttack: " + Model.InputAttack + " " +
 						"RunAway: " + Model.RunAway + "\n ";
-		
+			playerType = Model.DataProcess();
+			print(playerType);
 			using (System.IO.StreamWriter file = 
             new System.IO.StreamWriter(@"/Users/lihongrui/Desktop/anikiFight/AnikiFight/Assets/Scripts/DataCollector.txt", true))
         	{
@@ -181,6 +179,7 @@ public class DumbAI : MonoBehaviour {
         switch (CheckStatus())
         {
             case WAIT_FOR_A_WHILE:
+				
                 if (waiting == true) {
                     if (Time.time - start_wating_time >= WAITING_TIME && accumulated_waiting > 9) {
                         waiting = false;
@@ -200,6 +199,7 @@ public class DumbAI : MonoBehaviour {
                     waiting = true;
                     start_wating_time = Time.time;
                 }
+				StatusCheck.PgetHitType = 0;
 				
                 break;
 				
@@ -224,31 +224,22 @@ public class DumbAI : MonoBehaviour {
 				if (Time.time - start_wating_time <= WAITING_TIME + 0.2f
 				   && Time.time - start_wating_time > WAITING_TIME && Time.time > 5) {
 					
-					if (playerType < 2 && flag > 5f) {
+					if (playerType > 1) {
 						anim.SetTrigger("w");
-						rg2d.velocity = new Vector2 (-7f * direct, 10f);
+						rg2d.velocity = new Vector2 (10f * direct, 16f);
 						accumulated_waiting = 0;
 						
-					} else {
+					} else if (attackRate >= ATTACK_WAITING_TIME) {
 						Combat(0);
+						attackRate = 0;
 						accumulated_waiting = 0;
 					}
 					
 				}
 				
 				if (Time.time - start_wating_time >= WAITING_TIME) {
-					 
-                        if (run == 0 && attackRate >= ATTACK_WAITING_TIME) {
-							Combat(0);
-							attackRate = 0;
-							accumulated_waiting = 0;
-						} else if (run == 1 && attackRate >= ATTACK_WAITING_TIME) {
-							Combat(1);
-							attackRate = 0;
-							accumulated_waiting = 0;
-						} else if (run < 2 && playerType == 1) {
-							MoveAway();
-						} else if (LightningCoolDown >800) {
+					
+					if (LightningCoolDown >300) {
 							
 							if (flag > 5f && YDistance < 4f) {
 								anim.SetTrigger("lightning");
@@ -262,14 +253,23 @@ public class DumbAI : MonoBehaviour {
 								attackRate = 0;
 								ATTACK_WAITING_TIME = 10;
 								LightningCoolDown = 0;
-							} else {
-								MoveTowards();
-							}
-							
+							} 
+					}
+					 	
+                        if (run == 0 && attackRate >= ATTACK_WAITING_TIME) {
+							Combat(0);
+							attackRate = 0;
+							accumulated_waiting = 0;
+						} else if (run == 1 && attackRate >= ATTACK_WAITING_TIME) {
+							Combat(1);
+							attackRate = 0;
+							accumulated_waiting = 0;
+						} else if (run < 2 && playerType == 1) {
+							MoveAway();
 						} else {
 							MoveTowards();
 						}
-                    }
+                }
 				
 				break;
 				
@@ -309,13 +309,14 @@ public class DumbAI : MonoBehaviour {
         } else if (hitResult != 0 && !invincible && currentHealth > 0)
         {
 			Model.PeffectiveAttack ++;
-			currentHealth = hitResult == 1 ? currentHealth - 1 : currentHealth - 3;
+			currentHealth -= hitResult;
+			GameControl.instance.Score ();
 
 			// Set the health bar's value to the current health.
         	healthSlider.value = currentHealth;
-			print(hitResult);
+			
 			anim.SetTrigger("hit");
-			if (hitResult == 2) {
+			if (hitResult == 4) {
 				float playerX = GameObject.Find("Aniki").transform.position.x;
         		float AIX = GameObject.Find("Enemy").transform.position.x;
 				
@@ -332,9 +333,9 @@ public class DumbAI : MonoBehaviour {
         } else if (currentHealth <= 0) {
 			OtherWin ++;
 			GameControl.instance.AIDead();
-//			string text = "This AI wins: " + ThisWin + " times " +
-//						"The Enemy(AI2/Player) wins: " + OtherWin + " times ";
-//			print(text);
+			string text = "This AI wins: " + ThisWin + " times " +
+						"The Enemy(AI2/Player) wins: " + OtherWin + " times ";
+			print(text);
 //			using (System.IO.StreamWriter file = 
 //            new System.IO.StreamWriter(@"/Users/lihongrui/Desktop/anikiFight/AnikiFight/Assets/Scripts/Performance.txt", true))
 //        	{
@@ -357,7 +358,7 @@ public class DumbAI : MonoBehaviour {
         float playerY = GameObject.Find("Aniki").transform.position.y;
         float AIY = GameObject.Find("Enemy").transform.position.y;
 		
-		if (randnum > 9.9f ) {
+		if (randnum > 9f ) {
 			randnum = -1;
 		} else {
 			randnum = 1;

@@ -7,6 +7,8 @@ public class gameStart : MonoBehaviour {
 
 	// Use this for initialization
 	public void load(string name){
+		print("hit");
 		SceneManager.LoadScene(name);
+		
 	}
 }

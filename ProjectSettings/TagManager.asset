@@ -14,7 +14,7 @@ TagManager:
   - 
   - 
   - Background
-  - 
+  - Effect
   - 
   - 
   - 
@@ -43,4 +43,7 @@ TagManager:
     locked: 0
   - name: background
     uniqueID: 4175436395
+    locked: 0
+  - name: playerLayer
+    uniqueID: 1756766249
     locked: 0

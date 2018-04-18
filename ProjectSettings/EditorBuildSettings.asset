@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Start.unity
     guid: 869c97fcf462e4c9c8919197bed0376a
+  - enabled: 0
+    path: 
+    guid: db8dff6398bfd48ebb478b78755ec40b
   - enabled: 1
     path: Assets/Scene/FightTest.unity
     guid: 6d3156c692f224f29ba1d154e91617fe
@@ -15,8 +18,8 @@ EditorBuildSettings:
     path: Assets/Scene/AIvsAI.unity
     guid: 6513676661f5f487f921047f95cffbfa
   - enabled: 1
-    path: Assets/Scene/MultiNissan.unity
-    guid: db8dff6398bfd48ebb478b78755ec40b
-  - enabled: 1
     path: Assets/Scene/help.unity
     guid: bba090071c19e490a80e966ec31acff4
+  - enabled: 1
+    path: Assets/Scene/MultiNisan.unity
+    guid: abb77265e93a74f14ba32453a728b37c

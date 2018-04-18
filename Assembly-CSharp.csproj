@@ -58,6 +58,8 @@
      <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
+     <Compile Include="Assets\idle.cs" />
+     <Compile Include="Assets\Particle.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -113,8 +115,8 @@
      <Compile Include="Assets\Scripts\Health.cs" />
      <Compile Include="Assets\Scripts\HeavyKick.cs" />
      <Compile Include="Assets\Scripts\hurt.cs" />
-     <Compile Include="Assets\Scripts\NissanCombo.cs" />
-     <Compile Include="Assets\Scripts\NissanController.cs" />
+     <Compile Include="Assets\Scripts\NiisanCombo.cs" />
+     <Compile Include="Assets\Scripts\NiisanController.cs" />
      <Compile Include="Assets\Scripts\StatusCheck.cs" />
      <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
      <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />

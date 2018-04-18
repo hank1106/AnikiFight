@@ -29,8 +29,8 @@ public class AI2 : MonoBehaviour {
 	private float start_data_record = 0;
 	private int accumulated_waiting = 0;
 
-    private const float WAITING_TIME = 0.5f;
-	private const float INVINCIBLE_TIME = 1f;
+    private const float WAITING_TIME = 0.3f;
+	private const float INVINCIBLE_TIME = 1.5f;
 	private const int LIGHT_ATTACK_FREQUENCY = 10;
 	private const int DATA_CONVOLUTION_WINDOW = 2;
 	private const int HEAVY_ATTACK_FREQUENCY = 20;
@@ -42,7 +42,7 @@ public class AI2 : MonoBehaviour {
 	
 	public static bool IS_ANIKI_BEING_ATTACKED = false;
 	public Animator anim;
-	public int health = 50;
+	public int health = 100;
 	AnimatorClipInfo[] m_CurrentClipInfo;
 	BoxCollider2D collider;
 	
@@ -53,8 +53,8 @@ public class AI2 : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name.Contains ("Enemy") 
-			&& StatusCheck.PlightningStatus 
-		    && !StatusCheck.AIlightningStatus) {
+			&& StatusCheck.AIlightningStatus 
+		    && !StatusCheck.PlightningStatus) {
 			GameControl.instance.Score();
 			health = health - 2;
 			rg2d.velocity = new Vector2 (0, 10f);
@@ -70,7 +70,7 @@ public class AI2 : MonoBehaviour {
         float AIX = GameObject.Find("Aniki").transform.position.x;
 		int direct = AIX - playerX > 2f ? 1 : -1;
 		
-		if (Random.Range(0, 10f) > 9.5f) {
+		if (Random.Range(0, 10f) > 9.8f) {
 				anim.SetTrigger("w");
 				rg2d.velocity = new Vector2 (10f * direct, 12f);
 		} else {
@@ -123,7 +123,7 @@ public class AI2 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		GameObject.Find("Blood1").transform.localScale = new Vector3(8.05f * health / 50 , 0.34f, 0);
+		GameObject.Find("Blood1").transform.localScale = new Vector3(7f * health / 100 , 0.16f, 0);
         float AIX = GameObject.Find("Aniki").transform.position.x;
         float AIY = GameObject.Find("Aniki").transform.position.y;
 		float playerX = GameObject.Find("Enemy").transform.position.x;
@@ -189,7 +189,7 @@ public class AI2 : MonoBehaviour {
 							Combat(1);
 							attackRate = 0;
 							accumulated_waiting = 0;
-						} else if (run > 2 && LightningCoolDown >800) {
+						} else if (run > 2 || LightningCoolDown >400) {
 							anim.SetTrigger("lightning");
 							attackRate = 0;
 							ATTACK_WAITING_TIME = 10;
@@ -215,14 +215,14 @@ public class AI2 : MonoBehaviour {
 			rg2d.velocity = new Vector2 (50 * direct, rg2d.velocity.y);
 	
 			invincible = true;
-			StatusCheck.AIlightningStatus = true;
+			StatusCheck.PlightningStatus = true;
 			attackRate = 0;
 			trigger = false;
 			
 		} else if (m_CurrentClipInfo[0].clip.name == "LightningEnd") {
 			
 			rg2d.velocity = new Vector2 (0, rg2d.velocity.y);
-			StatusCheck.AIlightningStatus = false;
+			StatusCheck.PlightningStatus = false;
 			collider.enabled = true;
 			trigger = true;
 		}
@@ -284,7 +284,7 @@ public class AI2 : MonoBehaviour {
         if (waiting == false) {
 			
 			if (playerY - AIY > 3f) {
-				if (Random.Range(0, 10f) > 9.5f) {
+				if (Random.Range(0, 10f) > 9.85f) {
 					anim.SetTrigger("w");
 					rg2d.velocity = new Vector2 (rg2d.velocity.x, 8f);
 				}

@@ -25,9 +25,10 @@ GameObject:
   - component: {fileID: 61235733367180760}
   - component: {fileID: 114633345595667396}
   - component: {fileID: 114772478866046866}
-  - component: {fileID: 114443314074566146}
+  - component: {fileID: 114843520774471430}
+  - component: {fileID: 114936766090816880}
   m_Layer: 0
-  m_Name: Nissan
+  m_Name: Niisan
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,19 +109,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114443314074566146
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1746531336069308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c4c63d6c8db74a3f9e95fcb363f774d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  arrAllAudioSource: []
-  anim: {fileID: 0}
 --- !u!114 &114633345595667396
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -135,22 +123,22 @@ MonoBehaviour:
   m_SceneId:
     m_Value: 0
   m_AssetId:
-    i0: 25
-    i1: 206
-    i2: 111
-    i3: 113
-    i4: 101
-    i5: 206
-    i6: 68
-    i7: 175
-    i8: 73
-    i9: 13
-    i10: 228
-    i11: 124
-    i12: 245
-    i13: 47
-    i14: 94
-    i15: 152
+    i0: 220
+    i1: 232
+    i2: 128
+    i3: 195
+    i4: 27
+    i5: 235
+    i6: 100
+    i7: 184
+    i8: 152
+    i9: 183
+    i10: 36
+    i11: 174
+    i12: 105
+    i13: 84
+    i14: 115
+    i15: 145
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
 --- !u!114 &114772478866046866
@@ -174,6 +162,32 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
+--- !u!114 &114843520774471430
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1746531336069308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79f58a590862540dd9fa802606d18702, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrAllAudioSource: []
+  anim: {fileID: 0}
+--- !u!114 &114936766090816880
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1746531336069308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 791c75f618c6d40eb9659a0fc3a95f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ComboText: {fileID: 0}
+  gameOverText: {fileID: 0}
 --- !u!212 &212197506141654648
 SpriteRenderer:
   m_ObjectHideFlags: 1

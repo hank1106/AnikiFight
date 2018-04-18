@@ -21,6 +21,7 @@ namespace SC {
 		
         private const float LIGHT_ATTACK = 2f;
 		private const float HEAVY_ATTACK = 3f;
+		private const float HEAVY_KICK = 4f;
 		private const int NONE = 0;
 		private const int LIGHT = 1;
 		private const int HEAVY = 2;
@@ -57,14 +58,17 @@ namespace SC {
 
             if (AIgetHitType == 1 && distance <= LIGHT_ATTACK)
             {
-				GameControl.instance.Score ();
+				
                 return 1;
             } else if (AIgetHitType == 2 && distance <= HEAVY_ATTACK) {
-				GameControl.instance.Score ();
+				
 				return 2;
 			} else if (AIgetHitType == 3) {
-				GameControl.instance.Score ();
+				
 				return 3;
+			} else if (AIgetHitType == 4 && distance <= HEAVY_KICK) {
+				
+				return 4;
 			}
             return 0;
         }
@@ -128,8 +132,12 @@ namespace SC {
 				
 				if (PgetHitType == 1 && distance <= LIGHT_ATTACK) {
 					return 1;
-				} else if (PgetHitType == 2 && distance <= HEAVY_ATTACK && DumbAI.m_CurrentClipInfo[0].clip.name == "HeavyOn") {
+				} else if (PgetHitType == 2 && distance <= HEAVY_ATTACK) {
 					return 2;
+				} else if (PgetHitType == 3) {
+					return 3;
+				} else if (PgetHitType == 4 && distance <= HEAVY_ATTACK) {
+					return 4;
 				}
 			}
             

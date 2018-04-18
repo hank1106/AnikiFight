@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEditor.Animations;
+
 using SC;
 using DM;
 public class AnikiOne : MonoBehaviour {
@@ -13,7 +13,7 @@ public class AnikiOne : MonoBehaviour {
 	public Animator anim;
 	private AnimatorClipInfo[] m_CurrentClipInfo;
 	
-	public int startingHealth = 50;                            // The amount of health the player starts the game with.
+	public int startingHealth = 100;                            // The amount of health the player starts the game with.
     public int currentHealth;                                   // The current health the player has.
     public Slider healthSlider;                                 // Reference to the UI's health bar.
    
@@ -136,7 +136,7 @@ public class AnikiOne : MonoBehaviour {
 				if (Input.GetKeyDown(KeyCode.I)) {
 					rg2d.velocity = new Vector2 (0, 0);
 					arrAllAudioSource[3].Play();
-					//anim.SetTrigger("i");
+					anim.SetTrigger("i");
 				}
 
 				if (Input.GetKeyDown(KeyCode.J) && attackRate > ATTACK_WAITING_TIME) {
@@ -149,9 +149,11 @@ public class AnikiOne : MonoBehaviour {
 
 				if (Input.GetKeyDown(KeyCode.K) && attackRate > ATTACK_WAITING_TIME) {
 					anim.SetTrigger("k");
+					StatusCheck.AIgetHitType = 2;
 					arrAllAudioSource[2].Play();
 					Model.InputAttack ++;
 					attackRate = 0;
+					ATTACK_WAITING_TIME = HEAVY_ATTACK_FREQUENCY;
 				}
 				
 				if (Input.GetKeyDown(KeyCode.L) && LightningCoolDown == 0) {
@@ -232,6 +234,7 @@ public class AnikiOne : MonoBehaviour {
         {
 			int damage = 0;
 			anim.SetTrigger("hit");
+			Model.AIeffectiveAttack ++;
 			start_wating_time = Time.time;	
 			accumulated_waiting ++;
 			rg2d.velocity = new Vector2 (0, rg2d.velocity.y);
@@ -239,7 +242,10 @@ public class AnikiOne : MonoBehaviour {
 			if (StatusCheck.PBeingHitCheck() == 1) {
 				damage = 1;
 			} else if (StatusCheck.PBeingHitCheck() == 2) {
-				damage = 5;
+				damage = 2;
+				
+			} else if (StatusCheck.PBeingHitCheck() == 4) {
+				damage = 4;
 				float playerX = GameObject.Find("Aniki").transform.position.x;
         		float AIX = GameObject.Find("Enemy").transform.position.x;
 				
@@ -251,14 +257,18 @@ public class AnikiOne : MonoBehaviour {
 			}
 			
 			currentHealth -= damage;
+			
+			GameControl.instance.ComboFail();
+			
 			healthSlider.value = currentHealth;
-
         	return true;
         }
         else
         {
         	return false;
         }
+		
+		
     }
            
 

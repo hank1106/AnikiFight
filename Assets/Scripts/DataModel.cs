@@ -49,25 +49,49 @@ namespace DM {
 			Vector4 Features = new Vector4(x1, x2, x3, x4);
 			StructuredData.Add(Features);
 			
+			AIeffectiveAttack = 1;
+			AIeffectiveDefense = 1;
+			PeffectiveAttack = 1;
+			PeffectiveDefense = 1;
+			InputAttack = 1;
+			RunAway = 0;
+		
+			
 			//Preprocess
 			//Hann function process
 			
-			if (StructuredData.Count > 4) {
+			if (StructuredData.Count > 10) {
+				StructuredData.RemoveAt(0);
+			}
+			
+			if (StructuredData.Count > 4 && StructuredData.Count < 11) {
 				int i = 0;
 			
-				for (i = 0; i < StructuredData.Count - 5; i++) {
-					ProcessedData.Add(0.3f * StructuredData[i]);
-				}
-				
-				//The weight outside the window is all 0.3
-				
 				for (i = 5; i > 0; i--) {
+				
 					float weight = 1 - 0.5f * (float)Math.Cos(2f * 3.14f * i / (WindowSize - 1));
 					//The minimum weight inside the window is set as 0.5
 					
 					ProcessedData.Add(weight * StructuredData[StructuredData.Count - i]);
 				}
+				
+				if (StructuredData.Count > 5) {
+				
+					for (i = 0; i < StructuredData.Count - 5; i++) {
+						ProcessedData.Add(0.3f * StructuredData[i]);
+					}
+
+					//The weight outside the window is all 0.3
+				}
+			} else {
+				return 0;
 			}
+			
+			
+//			foreach (Vector4 v in ProcessedData) {
+//				print(v);
+//			}
+			
 			
 			//Convolution process
 			//Convolution function: Y = 0.8F * X1 + 0.2F * X2   X = X3 - X4
@@ -76,23 +100,33 @@ namespace DM {
 			float Y = 0;
 			foreach (Vector4 v in ProcessedData) {
 			
-				Y =  v.w -  v.x;
-				X = v.y - v.z;
+				X =  0.8f * v.x - 0.2f * v.y;
+				Y = v.z - 0.7f * v.w;
 				
-				FeatureVectors.Add(new Vector2(Y, X));
+				FeatureVectors.Add(new Vector2(X, Y));
 			}
+			
+			X = 0;
+			Y = 0;
+			
+			foreach (Vector2 v in FeatureVectors) {
+				X += v.x;
+				Y += v.y;
+			}
+			ProcessedData.Clear();
+			FeatureVectors.Clear();
 			
 			if (Y >= 0 && X >= 0) {
 				return AGGRESSIVE;
 			} else if (Y <= 0 && X >= 0) {
 				return PASSIVE;
-			} else if (Y >= 0 && X <= 0) {
-				return AGILE;
 			} else if (Y <= 0 && X <= 0) {
+				return AGILE;
+			} else if (Y >= 0 && X <= 0) {
 				return CONSERVATIVE;
 			}
 			
-			//ProcessedData.clear();
+			
 			
 			return AGILE;
         }
