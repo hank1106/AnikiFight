@@ -19,9 +19,9 @@ namespace SC {
 		public static bool AIlightningPre = false;
 		public static bool PlightningPre = false;
 		
-        private const float LIGHT_ATTACK = 2f;
-		private const float HEAVY_ATTACK = 3f;
-		private const float HEAVY_KICK = 4f;
+        private const float LIGHT_ATTACK = 1.5f;
+		private const float HEAVY_ATTACK = 2.5f;
+		private const float HEAVY_KICK = 3.5f;
 		private const int NONE = 0;
 		private const int LIGHT = 1;
 		private const int HEAVY = 2;
